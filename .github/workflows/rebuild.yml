@@ -19,7 +19,7 @@ jobs:
 
       # Upload the profiles.json file as an artifact
       - name: Upload profiles.json as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: profiles-json
           path: ./assets/profiles.json

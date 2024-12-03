@@ -171,9 +171,11 @@ const createIndex = async () => {
         parseA7P(filePath, true)
             .then(result => {
                 // console.log(result.profile);
-                const normalizedPath = path.normalize(filePath);
-                const relativePath = path.relative('extracted-repo\\a7p-master\\gallery', normalizedPath);
-                const finalPath = '/' + relativePath.replace(/\\/g, '/');
+                const normalizedPath = path.normalize(filePath).replace(/\\/g, '/').split("/");
+                const finalPath = normalizedPath.slice(normalizedPath.indexOf('gallery')).join("/")
+                console.log(finalPath)
+                // const relativePath = path.relative('extracted-repo\\a7p-master\\gallery', normalizedPath);
+                // const finalPath = '/' + relativePath.replace(/\\/g, '/');
 
                 if (result && result.profile) {
                     const profile = result?.profile;
