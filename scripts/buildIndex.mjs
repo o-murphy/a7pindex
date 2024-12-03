@@ -2,6 +2,8 @@ import protobuf from 'protobufjs';
 import crypto from 'crypto';
 import path from 'path';
 import fs from 'fs';
+import vendors from '../dicts/vendors.js';
+import caliberTagMapping from '../dicts/possibleCalibers.js';
 
 
 // Path to your protobuf file
@@ -137,25 +139,58 @@ const indexPath = 'assets/profiles.json';
 const assetsDir = path.dirname(indexPath);
 
 
-const vendors = {
-    "HORNADY": "HORNADY",
-    "HOR": "HORNADY",
-    "SMK": "SIERRA BULLETS",
-    "SIERRA": "SIERRA BULLETS",
-    "SIERRA BULLETS": "SIERRA BULLETS",
-    "REMINGTON": "REMINGTON",
-    "REM": "REMINGTON",
+const resolveCaliber = (caliber, diameter) => {
+    const keys = Object.keys(caliberTagMapping).map(item => item.toUpperCase())
+    try {
+        if (keys.includes(caliber.toUpperCase())) {
+            if (caliberTagMapping[caliber]?.length === 1) {
+                return caliberTagMapping[caliber][0]
+            }
+        }
+        // return `${diameter}`
+        return caliber
+    
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 
-const resolveVendor = (data) => {
-    // return vendors[data] ?? data
-    return vendors[data] ?? null;
-}
+const resolveVendor = (vendor, filePath = "") => {
+    const vendorUpper = vendor.toUpperCase()
+    const words = vendorUpper.split(" ");
+
+    let resolved = undefined; // Changed to `let`
+    for (const word of words) {
+        resolved = vendors[word]; // Assigning value to `resolved`
+        if (resolved) {
+            return resolved;
+        }
+    }
+
+    const vendorKeys = Object.keys(vendors)
+    for (const key of vendorKeys) {
+        if (vendorUpper.includes(key)) {
+            return vendorKeys[key]
+        }
+    }
+
+    for (const key of vendorKeys) {
+        if (filePath.includes(key)) {
+            return vendorKeys[key]
+        }
+    }
+
+    console.log("Undefined vendor", vendor, filePath);
+    return resolved ?? null;
+};
+
 
 // Function to collect unique values for a given key
 const collectUniqueValues = (data, key) => {
-    return [...new Set(data.map(item => item[key]))];
+    return [...new Set(data.map(item => 
+        item[key] != null ? (typeof item[key] === 'string' ? item[key].trim().toLowerCase() : item[key]) : undefined
+    )).values()].filter(value => value != null); // Filter out null and undefined
 };
 
 
@@ -185,14 +220,14 @@ const createIndex = async () => {
                     profileIndex.push({
                         diameter: profile.bDiameter / 1000,
                         weight: profile.bWeight / 10,
-                        caliber: profile.caliber,
+                        caliber: resolveCaliber(profile.caliber, profile.bDiameter / 1000),
                         path: finalPath,
                         profileName: profile.profileName,
                         name: `${profile.caliber} ${profile.cartridgeName} ${profile.bulletName}`,
                         cartridge: profile.cartridgeName,
                         bullet: profile.bulletName,
-                        cartridgeVendor: resolveVendor(profile.cartridgeName.split(" ")[0]),
-                        bulletVendor: resolveVendor(profile.bulletName.split(" ")[0]),
+                        cartridgeVendor: resolveVendor(profile.cartridgeName, filePath),
+                        bulletVendor: resolveVendor(profile.bulletName, ),
                         dragModelType: profile.bcType
                     });
                 } else {
