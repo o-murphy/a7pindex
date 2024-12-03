@@ -15,3 +15,10 @@ jobs:
       - run: npm install
       - run: npm run fetchRepo
       - run: npm run buildIndex
+
+      # Upload the profiles.json file as an artifact
+      - name: Upload profiles.json as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: profiles-json
+          path: ./assets/profiles.json
