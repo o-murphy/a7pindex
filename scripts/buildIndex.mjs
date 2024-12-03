@@ -173,9 +173,6 @@ const createIndex = async () => {
                 // console.log(result.profile);
                 const normalizedPath = path.normalize(filePath).replace(/\\/g, '/').split("/");
                 const finalPath = normalizedPath.slice(normalizedPath.indexOf('gallery')).join("/")
-                console.log(finalPath)
-                // const relativePath = path.relative('extracted-repo\\a7p-master\\gallery', normalizedPath);
-                // const finalPath = '/' + relativePath.replace(/\\/g, '/');
 
                 if (result && result.profile) {
                     const profile = result?.profile;
