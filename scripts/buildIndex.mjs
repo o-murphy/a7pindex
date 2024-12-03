@@ -7,7 +7,7 @@ import caliberTagMapping from '../dicts/possibleCalibers.js';
 
 
 // Path to your protobuf file
-const PROTO_URL = path.resolve('./proto/profedit.proto'); // Adjust this path
+const PROTO_URL = path.resolve('./public/proto/profedit.proto'); // Adjust this path
 
 // MD5 hash function using Node.js crypto module
 function md5(data) {
