@@ -1,18 +1,6 @@
 {
   "profiles": [
     {
-      "id": 1,
-      "diameter": 0.511,
-      "weight": 857,
-      "caliber": "12.7x108mm",
-      "path": "gallery/12.7x108_DSHK/12.7x108_DSHK_BS_857GR_G1.a7p",
-      "profileName": "12.7x108 ДШК БС",
-      "name": "12,7x108 ДШК БС БС",
-      "cartridge": "ДШК БС",
-      "bullet": "БС",
-      "dragModelType": "G1"
-    },
-    {
       "id": 0,
       "diameter": 0.511,
       "weight": 745,
@@ -25,16 +13,16 @@
       "dragModelType": "G1"
     },
     {
-      "id": 2,
-      "diameter": 0.511,
-      "weight": 664,
-      "caliber": "12.7x108mm",
-      "path": "gallery/12.7x108_DSHK/12.7x108_DSHK_MDZ_664GR_G1.a7p",
-      "profileName": "12.7x108 ДШК МДЗ",
-      "name": "12,7x108 ДШК МДЗ МДЗ",
-      "cartridge": "ДШК МДЗ",
-      "bullet": "МДЗ",
-      "dragModelType": "G1"
+      "id": 3,
+      "diameter": 0.586,
+      "weight": 992,
+      "caliber": "14.5x114mm",
+      "path": "gallery/14.5x114/14.5x114_B32_992GR_G7.a7p",
+      "profileName": "14.5x114 Б-32",
+      "name": "14.5x114 14.5x114 Б-32 14.5x114 Б-32",
+      "cartridge": "14.5x114 Б-32",
+      "bullet": "14.5x114 Б-32",
+      "dragModelType": "G7"
     },
     {
       "id": 4,
@@ -51,41 +39,15 @@
       "dragModelType": "G1"
     },
     {
-      "id": 3,
-      "diameter": 0.586,
-      "weight": 992,
-      "caliber": "14.5x114mm",
-      "path": "gallery/14.5x114/14.5x114_B32_992GR_G7.a7p",
-      "profileName": "14.5x114 Б-32",
-      "name": "14.5x114 14.5x114 Б-32 14.5x114 Б-32",
-      "cartridge": "14.5x114 Б-32",
-      "bullet": "14.5x114 Б-32",
-      "dragModelType": "G7"
-    },
-    {
-      "id": 8,
-      "diameter": 0.172,
-      "weight": 25,
-      "caliber": ".17REM",
-      "path": "gallery/17REM/17REM_HORNADY_25GR_HP_G1.a7p",
-      "profileName": ".17REM HORNADY 25GR HP",
-      "name": ".17REM HORNADY 25GR HP REM 25GR HOR HP",
-      "cartridge": "HORNADY 25GR HP",
-      "bullet": "REM 25GR HOR HP",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": "REMINGTON",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 5,
-      "diameter": 0.586,
-      "weight": 925,
-      "caliber": "14.5x114mm",
-      "path": "gallery/14.5x114/14.5x114_MDZ_925GR_G1.a7p",
-      "profileName": "14.5x114 МДЗ",
-      "name": "14.5x114 14.5x114 МДЗ МДЗ",
-      "cartridge": "14.5x114 МДЗ",
-      "bullet": "МДЗ",
+      "id": 1,
+      "diameter": 0.511,
+      "weight": 857,
+      "caliber": "12.7x108mm",
+      "path": "gallery/12.7x108_DSHK/12.7x108_DSHK_BS_857GR_G1.a7p",
+      "profileName": "12.7x108 ДШК БС",
+      "name": "12,7x108 ДШК БС БС",
+      "cartridge": "ДШК БС",
+      "bullet": "БС",
       "dragModelType": "G1"
     },
     {
@@ -103,17 +65,27 @@
       "dragModelType": "G1"
     },
     {
-      "id": 9,
-      "diameter": 0.172,
-      "weight": 20,
-      "caliber": ".17REM",
-      "path": "gallery/17REM/17REM_REM_20GR_ACCUTIP_V_G1.a7p",
-      "profileName": ".17REM REMINGTON 20GR ACCUTIP-V",
-      "name": ".17REM REM 20GR ACCUTIP-V REM 20GR ACCUTIP-V",
-      "cartridge": "REM 20GR ACCUTIP-V",
-      "bullet": "REM 20GR ACCUTIP-V",
-      "cartridgeVendor": "REMINGTON",
-      "bulletVendor": "REMINGTON",
+      "id": 2,
+      "diameter": 0.511,
+      "weight": 664,
+      "caliber": "12.7x108mm",
+      "path": "gallery/12.7x108_DSHK/12.7x108_DSHK_MDZ_664GR_G1.a7p",
+      "profileName": "12.7x108 ДШК МДЗ",
+      "name": "12,7x108 ДШК МДЗ МДЗ",
+      "cartridge": "ДШК МДЗ",
+      "bullet": "МДЗ",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 5,
+      "diameter": 0.586,
+      "weight": 925,
+      "caliber": "14.5x114mm",
+      "path": "gallery/14.5x114/14.5x114_MDZ_925GR_G1.a7p",
+      "profileName": "14.5x114 МДЗ",
+      "name": "14.5x114 14.5x114 МДЗ МДЗ",
+      "cartridge": "14.5x114 МДЗ",
+      "bullet": "МДЗ",
       "dragModelType": "G1"
     },
     {
@@ -131,32 +103,32 @@
       "dragModelType": "G1"
     },
     {
-      "id": 13,
-      "diameter": 0.224,
-      "weight": 50,
-      "caliber": ".22-250 Remington",
-      "path": "gallery/22-250REM/22-250REM_WIN_50GR_ST_G1.a7p",
-      "profileName": ".22-250REM WIN 50GR ST",
-      "name": ".22-250 Remington WIN 50GR ST WINCHESTER 50GR ST",
-      "cartridge": "WIN 50GR ST",
-      "bullet": "WINCHESTER 50GR ST",
-      "cartridgeVendor": "WINCHESTER",
-      "bulletVendor": "WINCHESTER",
+      "id": 8,
+      "diameter": 0.172,
+      "weight": 25,
+      "caliber": ".17REM",
+      "path": "gallery/17REM/17REM_HORNADY_25GR_HP_G1.a7p",
+      "profileName": ".17REM HORNADY 25GR HP",
+      "name": ".17REM HORNADY 25GR HP REM 25GR HOR HP",
+      "cartridge": "HORNADY 25GR HP",
+      "bullet": "REM 25GR HOR HP",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": "REMINGTON",
       "dragModelType": "G1"
     },
     {
-      "id": 11,
-      "diameter": 0.224,
-      "weight": 50,
-      "caliber": ".22-250 Remington",
-      "path": "gallery/22-250REM/22-250REM_HORNADY_50GR_V_MAX_G7.a7p",
-      "profileName": ".22-250REM HORNADY 50GR V-MAX",
-      "name": ".22-250 Remington HORNADY 50GR V-MAX 50GR V-MAX",
-      "cartridge": "HORNADY 50GR V-MAX",
-      "bullet": "50GR V-MAX",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": "HORNADY",
-      "dragModelType": "G7"
+      "id": 9,
+      "diameter": 0.172,
+      "weight": 20,
+      "caliber": ".17REM",
+      "path": "gallery/17REM/17REM_REM_20GR_ACCUTIP_V_G1.a7p",
+      "profileName": ".17REM REMINGTON 20GR ACCUTIP-V",
+      "name": ".17REM REM 20GR ACCUTIP-V REM 20GR ACCUTIP-V",
+      "cartridge": "REM 20GR ACCUTIP-V",
+      "bullet": "REM 20GR ACCUTIP-V",
+      "cartridgeVendor": "REMINGTON",
+      "bulletVendor": "REMINGTON",
+      "dragModelType": "G1"
     },
     {
       "id": 10,
@@ -187,6 +159,34 @@
       "dragModelType": "G1"
     },
     {
+      "id": 11,
+      "diameter": 0.224,
+      "weight": 50,
+      "caliber": ".22-250 Remington",
+      "path": "gallery/22-250REM/22-250REM_HORNADY_50GR_V_MAX_G7.a7p",
+      "profileName": ".22-250REM HORNADY 50GR V-MAX",
+      "name": ".22-250 Remington HORNADY 50GR V-MAX 50GR V-MAX",
+      "cartridge": "HORNADY 50GR V-MAX",
+      "bullet": "50GR V-MAX",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": "HORNADY",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 13,
+      "diameter": 0.224,
+      "weight": 50,
+      "caliber": ".22-250 Remington",
+      "path": "gallery/22-250REM/22-250REM_WIN_50GR_ST_G1.a7p",
+      "profileName": ".22-250REM WIN 50GR ST",
+      "name": ".22-250 Remington WIN 50GR ST WINCHESTER 50GR ST",
+      "cartridge": "WIN 50GR ST",
+      "bullet": "WINCHESTER 50GR ST",
+      "cartridgeVendor": "WINCHESTER",
+      "bulletVendor": "WINCHESTER",
+      "dragModelType": "G1"
+    },
+    {
       "id": 14,
       "diameter": 0.224,
       "weight": 50,
@@ -199,20 +199,6 @@
       "cartridgeVendor": "WINCHESTER",
       "bulletVendor": "WINCHESTER",
       "dragModelType": "G1"
-    },
-    {
-      "id": 15,
-      "diameter": 0.224,
-      "weight": 50,
-      "caliber": ".222 Remington",
-      "path": "gallery/222REM/222REM_50GR_ACCUTIP_V_G7.a7p",
-      "profileName": "222REM 50GR ACCUTIP-V",
-      "name": ".222 Remington 50GR ACCUTIP-V 50GR ACCUTIP-V",
-      "cartridge": "50GR ACCUTIP-V",
-      "bullet": "50GR ACCUTIP-V",
-      "cartridgeVendor": "REMINGTON",
-      "bulletVendor": "REMINGTON",
-      "dragModelType": "G7"
     },
     {
       "id": 16,
@@ -229,18 +215,18 @@
       "dragModelType": "CUSTOM"
     },
     {
-      "id": 17,
+      "id": 15,
       "diameter": 0.224,
       "weight": 50,
       "caliber": ".222 Remington",
-      "path": "gallery/222REM/222REM_NORMA_50GR_SP_G1.a7p",
-      "profileName": "222REM NORMA 50GR SP",
-      "name": ".222 Remington NORMA 50GR SP NORMA 50GR SP",
-      "cartridge": "NORMA 50GR SP",
-      "bullet": "NORMA 50GR SP",
-      "cartridgeVendor": "NORMA",
-      "bulletVendor": "NORMA",
-      "dragModelType": "G1"
+      "path": "gallery/222REM/222REM_50GR_ACCUTIP_V_G7.a7p",
+      "profileName": "222REM 50GR ACCUTIP-V",
+      "name": ".222 Remington 50GR ACCUTIP-V 50GR ACCUTIP-V",
+      "cartridge": "50GR ACCUTIP-V",
+      "bullet": "50GR ACCUTIP-V",
+      "cartridgeVendor": "REMINGTON",
+      "bulletVendor": "REMINGTON",
+      "dragModelType": "G7"
     },
     {
       "id": 18,
@@ -252,6 +238,34 @@
       "name": ".222 Remington NORMA 55GR ORYX NORMA 55GR ORYX",
       "cartridge": "NORMA 55GR ORYX",
       "bullet": "NORMA 55GR ORYX",
+      "cartridgeVendor": "NORMA",
+      "bulletVendor": "NORMA",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 19,
+      "diameter": 0.224,
+      "weight": 50,
+      "caliber": ".222 Remington",
+      "path": "gallery/222REM/222REM_RWS_50GR_TMS_G1.a7p",
+      "profileName": "222REM RWS 50GR TMS",
+      "name": ".222 Remington RWS 50GR TMS RWS 50GR TMS",
+      "cartridge": "RWS 50GR TMS",
+      "bullet": "RWS 50GR TMS",
+      "cartridgeVendor": "RWS",
+      "bulletVendor": "RWS",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 17,
+      "diameter": 0.224,
+      "weight": 50,
+      "caliber": ".222 Remington",
+      "path": "gallery/222REM/222REM_NORMA_50GR_SP_G1.a7p",
+      "profileName": "222REM NORMA 50GR SP",
+      "name": ".222 Remington NORMA 50GR SP NORMA 50GR SP",
+      "cartridge": "NORMA 50GR SP",
+      "bullet": "NORMA 50GR SP",
       "cartridgeVendor": "NORMA",
       "bulletVendor": "NORMA",
       "dragModelType": "G1"
@@ -285,20 +299,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 22,
-      "diameter": 0.224,
-      "weight": 50,
-      "caliber": "222 Remington",
-      "path": "gallery/222REM/222REM_SELLIER&BELLOT_50GR_SP_G1.a7p",
-      "profileName": "222REM SELLIER & BELLOT 50GR SP",
-      "name": "222 Remington S&B 50GR SP S&B 50GR SP",
-      "cartridge": "S&B 50GR SP",
-      "bullet": "S&B 50GR SP",
-      "cartridgeVendor": "SELLIER & BELLOT",
-      "bulletVendor": "SELLIER & BELLOT",
-      "dragModelType": "G1"
-    },
-    {
       "id": 23,
       "diameter": 0.224,
       "weight": 50,
@@ -313,17 +313,17 @@
       "dragModelType": "G1"
     },
     {
-      "id": 19,
+      "id": 22,
       "diameter": 0.224,
       "weight": 50,
-      "caliber": ".222 Remington",
-      "path": "gallery/222REM/222REM_RWS_50GR_TMS_G1.a7p",
-      "profileName": "222REM RWS 50GR TMS",
-      "name": ".222 Remington RWS 50GR TMS RWS 50GR TMS",
-      "cartridge": "RWS 50GR TMS",
-      "bullet": "RWS 50GR TMS",
-      "cartridgeVendor": "RWS",
-      "bulletVendor": "RWS",
+      "caliber": "222 Remington",
+      "path": "gallery/222REM/222REM_SELLIER&BELLOT_50GR_SP_G1.a7p",
+      "profileName": "222REM SELLIER & BELLOT 50GR SP",
+      "name": "222 Remington S&B 50GR SP S&B 50GR SP",
+      "cartridge": "S&B 50GR SP",
+      "bullet": "S&B 50GR SP",
+      "cartridgeVendor": "SELLIER & BELLOT",
+      "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G1"
     },
     {
@@ -355,18 +355,16 @@
       "dragModelType": "G7"
     },
     {
-      "id": 27,
+      "id": 28,
       "diameter": 0.224,
-      "weight": 73,
+      "weight": 50,
       "caliber": ".223 Remington",
-      "path": "gallery/223REM_5.56x45_NATO/223REM_BERGER_73GR_BT_G7.a7p",
-      "profileName": ".223REM BERGER 73GRN BT",
-      "name": ".223 Remington BERGER 73GR  BT BERGER 73GR  BT",
-      "cartridge": "BERGER 73GR  BT",
-      "bullet": "BERGER 73GR  BT",
-      "cartridgeVendor": "BERGER",
-      "bulletVendor": "BERGER",
-      "dragModelType": "G7"
+      "path": "gallery/223REM_5.56x45_NATO/223REM_BLACK_HILLS_50GR_FMJ_G1.a7p",
+      "profileName": ".223R BLACK HILLS 50GR FMJ",
+      "name": ".223 Remington BLACK HILLS 50GR FMJ BLACK HILLS 50GR FMJ",
+      "cartridge": "BLACK HILLS 50GR FMJ",
+      "bullet": "BLACK HILLS 50GR FMJ",
+      "dragModelType": "G1"
     },
     {
       "id": 26,
@@ -383,18 +381,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 28,
-      "diameter": 0.224,
-      "weight": 50,
-      "caliber": ".223 Remington",
-      "path": "gallery/223REM_5.56x45_NATO/223REM_BLACK_HILLS_50GR_FMJ_G1.a7p",
-      "profileName": ".223R BLACK HILLS 50GR FMJ",
-      "name": ".223 Remington BLACK HILLS 50GR FMJ BLACK HILLS 50GR FMJ",
-      "cartridge": "BLACK HILLS 50GR FMJ",
-      "bullet": "BLACK HILLS 50GR FMJ",
-      "dragModelType": "G1"
-    },
-    {
       "id": 29,
       "diameter": 0.224,
       "weight": 62,
@@ -407,6 +393,20 @@
       "cartridgeVendor": "FEDERAL",
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1"
+    },
+    {
+      "id": 27,
+      "diameter": 0.224,
+      "weight": 73,
+      "caliber": ".223 Remington",
+      "path": "gallery/223REM_5.56x45_NATO/223REM_BERGER_73GR_BT_G7.a7p",
+      "profileName": ".223REM BERGER 73GRN BT",
+      "name": ".223 Remington BERGER 73GR  BT BERGER 73GR  BT",
+      "cartridge": "BERGER 73GR  BT",
+      "bullet": "BERGER 73GR  BT",
+      "cartridgeVendor": "BERGER",
+      "bulletVendor": "BERGER",
+      "dragModelType": "G7"
     },
     {
       "id": 30,
@@ -423,6 +423,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 32,
+      "diameter": 0.224,
+      "weight": 62,
+      "caliber": ".223 Remington",
+      "path": "gallery/223REM_5.56x45_NATO/223REM_HORNADY_62GR_FMJ_G1.a7p",
+      "profileName": ".223REM HORNADY 62GR FMJ",
+      "name": ".223 Remington HORNADY 62GR FMJ 62GR FMJ",
+      "cartridge": "HORNADY 62GR FMJ",
+      "bullet": "62GR FMJ",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": null,
+      "dragModelType": "G1"
+    },
+    {
       "id": 31,
       "diameter": 0.224,
       "weight": 55,
@@ -432,20 +446,6 @@
       "name": ".223 Remington HORNADY 55GR V-MAX HORNADY 55GR V-MAX",
       "cartridge": "HORNADY 55GR V-MAX",
       "bullet": "HORNADY 55GR V-MAX",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": "HORNADY",
-      "dragModelType": "G7"
-    },
-    {
-      "id": 33,
-      "diameter": 0.224,
-      "weight": 75,
-      "caliber": ".223 Remington",
-      "path": "gallery/223REM_5.56x45_NATO/223REM_HORNADY_75GR_BTHP_G7.a7p",
-      "profileName": ".223REM HORNADY 75GR BTHP",
-      "name": ".223 Remington HORNADY 75GR BTHP HORNADY 75GR BTHP",
-      "cartridge": "HORNADY 75GR BTHP",
-      "bullet": "HORNADY 75GR BTHP",
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
       "dragModelType": "G7"
@@ -479,20 +479,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 32,
-      "diameter": 0.224,
-      "weight": 62,
-      "caliber": ".223 Remington",
-      "path": "gallery/223REM_5.56x45_NATO/223REM_HORNADY_62GR_FMJ_G1.a7p",
-      "profileName": ".223REM HORNADY 62GR FMJ",
-      "name": ".223 Remington HORNADY 62GR FMJ 62GR FMJ",
-      "cartridge": "HORNADY 62GR FMJ",
-      "bullet": "62GR FMJ",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": null,
-      "dragModelType": "G1"
-    },
-    {
       "id": 36,
       "diameter": 0.224,
       "weight": 55,
@@ -507,6 +493,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 33,
+      "diameter": 0.224,
+      "weight": 75,
+      "caliber": ".223 Remington",
+      "path": "gallery/223REM_5.56x45_NATO/223REM_HORNADY_75GR_BTHP_G7.a7p",
+      "profileName": ".223REM HORNADY 75GR BTHP",
+      "name": ".223 Remington HORNADY 75GR BTHP HORNADY 75GR BTHP",
+      "cartridge": "HORNADY 75GR BTHP",
+      "bullet": "HORNADY 75GR BTHP",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": "HORNADY",
+      "dragModelType": "G7"
+    },
+    {
       "id": 37,
       "diameter": 0.224,
       "weight": 50,
@@ -516,20 +516,6 @@
       "name": "5.56x45 FEDERAL 50GR AE FEDERAL 50GR AE",
       "cartridge": "FEDERAL 50GR AE",
       "bullet": "FEDERAL 50GR AE",
-      "cartridgeVendor": "FEDERAL",
-      "bulletVendor": "FEDERAL",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 39,
-      "diameter": 0.224,
-      "weight": 55,
-      "caliber": "5.56x45",
-      "path": "gallery/223REM_5.56x45_NATO/5.56x45_FEDERAL_55GR_VSHOK_G1.a7p",
-      "profileName": "5.56x45 FEDERAL 55GR VSHOK",
-      "name": "5.56x45 FEDERAL 55GR VS FEDERAL 55GR VS",
-      "cartridge": "FEDERAL 55GR VS",
-      "bullet": "FEDERAL 55GR VS",
       "cartridgeVendor": "FEDERAL",
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1"
@@ -549,6 +535,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 39,
+      "diameter": 0.224,
+      "weight": 55,
+      "caliber": "5.56x45",
+      "path": "gallery/223REM_5.56x45_NATO/5.56x45_FEDERAL_55GR_VSHOK_G1.a7p",
+      "profileName": "5.56x45 FEDERAL 55GR VSHOK",
+      "name": "5.56x45 FEDERAL 55GR VS FEDERAL 55GR VS",
+      "cartridge": "FEDERAL 55GR VS",
+      "bullet": "FEDERAL 55GR VS",
+      "cartridgeVendor": "FEDERAL",
+      "bulletVendor": "FEDERAL",
+      "dragModelType": "G1"
+    },
+    {
       "id": 42,
       "diameter": 0.224,
       "weight": 56,
@@ -560,20 +560,6 @@
       "bullet": "GECO 56GR EXPRESS",
       "cartridgeVendor": "GECO",
       "bulletVendor": "GECO",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 40,
-      "diameter": 0.224,
-      "weight": 62,
-      "caliber": "5.56x45",
-      "path": "gallery/223REM_5.56x45_NATO/5.56x45_FEDERAL_62GR_FMJBT_G1.a7p",
-      "profileName": "5.56x45 FEDERAL 62GR FMJBT",
-      "name": "5.56x45 FEDERAL 62GR FMJBT FEDERAL 62GR",
-      "cartridge": "FEDERAL 62GR FMJBT",
-      "bullet": "FEDERAL 62GR",
-      "cartridgeVendor": "FEDERAL",
-      "bulletVendor": "FEDERAL",
       "dragModelType": "G1"
     },
     {
@@ -589,6 +575,20 @@
       "cartridgeVendor": "GECO",
       "bulletVendor": "GECO",
       "dragModelType": "G7"
+    },
+    {
+      "id": 40,
+      "diameter": 0.224,
+      "weight": 62,
+      "caliber": "5.56x45",
+      "path": "gallery/223REM_5.56x45_NATO/5.56x45_FEDERAL_62GR_FMJBT_G1.a7p",
+      "profileName": "5.56x45 FEDERAL 62GR FMJBT",
+      "name": "5.56x45 FEDERAL 62GR FMJBT FEDERAL 62GR",
+      "cartridge": "FEDERAL 62GR FMJBT",
+      "bullet": "FEDERAL 62GR",
+      "cartridgeVendor": "FEDERAL",
+      "bulletVendor": "FEDERAL",
+      "dragModelType": "G1"
     },
     {
       "id": 43,
@@ -633,20 +633,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 46,
-      "diameter": 0.224,
-      "weight": 60,
-      "caliber": "5.56x45",
-      "path": "gallery/223REM_5.56x45_NATO/5.56x45_HORNADY_60GR_VMAX_G7.a7p",
-      "profileName": "5.56x45 HORNADY 60GR V-MAX",
-      "name": "5.56x45 HORNADY 60GR V-MAX HORNADY 60GR V-MAX",
-      "cartridge": "HORNADY 60GR V-MAX",
-      "bullet": "HORNADY 60GR V-MAX",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": "HORNADY",
-      "dragModelType": "G7"
-    },
-    {
       "id": 47,
       "diameter": 0.224,
       "weight": 68,
@@ -661,18 +647,18 @@
       "dragModelType": "G1"
     },
     {
-      "id": 48,
+      "id": 46,
       "diameter": 0.224,
-      "weight": 68,
+      "weight": 60,
       "caliber": "5.56x45",
-      "path": "gallery/223REM_5.56x45_NATO/5.56x45_HORNADY_68GR_FMJ_G1.a7p",
-      "profileName": "5.56x45 HORNADY 68GR FMJ",
-      "name": "5.56x45 HORNADY 68GR FMJ HORNADY 68GR FMJ",
-      "cartridge": "HORNADY 68GR FMJ",
-      "bullet": "HORNADY 68GR FMJ",
+      "path": "gallery/223REM_5.56x45_NATO/5.56x45_HORNADY_60GR_VMAX_G7.a7p",
+      "profileName": "5.56x45 HORNADY 60GR V-MAX",
+      "name": "5.56x45 HORNADY 60GR V-MAX HORNADY 60GR V-MAX",
+      "cartridge": "HORNADY 60GR V-MAX",
+      "bullet": "HORNADY 60GR V-MAX",
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
-      "dragModelType": "G1"
+      "dragModelType": "G7"
     },
     {
       "id": 50,
@@ -687,6 +673,20 @@
       "cartridgeVendor": "(NATO)",
       "bulletVendor": "(NATO)",
       "dragModelType": "G7"
+    },
+    {
+      "id": 48,
+      "diameter": 0.224,
+      "weight": 68,
+      "caliber": "5.56x45",
+      "path": "gallery/223REM_5.56x45_NATO/5.56x45_HORNADY_68GR_FMJ_G1.a7p",
+      "profileName": "5.56x45 HORNADY 68GR FMJ",
+      "name": "5.56x45 HORNADY 68GR FMJ HORNADY 68GR FMJ",
+      "cartridge": "HORNADY 68GR FMJ",
+      "bullet": "HORNADY 68GR FMJ",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": "HORNADY",
+      "dragModelType": "G1"
     },
     {
       "id": 51,
@@ -717,20 +717,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 54,
-      "diameter": 0.224,
-      "weight": 88,
-      "caliber": "224 VALKYRIE",
-      "path": "gallery/224VALKYRIE/224VALKYRIE_HORNADY_88GR_ELDM_G7.a7p",
-      "profileName": "224VALKYRIE HORNADY 88GR ELD-M",
-      "name": "224 VALKYRIE HORNADY 88GR ELD-M HORNADY 88GR ELD-M",
-      "cartridge": "HORNADY 88GR ELD-M",
-      "bullet": "HORNADY 88GR ELD-M",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": "HORNADY",
-      "dragModelType": "G7"
-    },
-    {
       "id": 53,
       "diameter": 0.224,
       "weight": 75,
@@ -745,6 +731,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 54,
+      "diameter": 0.224,
+      "weight": 88,
+      "caliber": "224 VALKYRIE",
+      "path": "gallery/224VALKYRIE/224VALKYRIE_HORNADY_88GR_ELDM_G7.a7p",
+      "profileName": "224VALKYRIE HORNADY 88GR ELD-M",
+      "name": "224 VALKYRIE HORNADY 88GR ELD-M HORNADY 88GR ELD-M",
+      "cartridge": "HORNADY 88GR ELD-M",
+      "bullet": "HORNADY 88GR ELD-M",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": "HORNADY",
+      "dragModelType": "G7"
+    },
+    {
       "id": 55,
       "diameter": 0.22,
       "weight": 40,
@@ -756,20 +756,6 @@
       "bullet": "CCI 40GR STD",
       "cartridgeVendor": "CCI AMMUNITION",
       "bulletVendor": "CCI AMMUNITION",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 57,
-      "diameter": 0.22,
-      "weight": 40,
-      "caliber": "22LR",
-      "path": "gallery/22LR/22LR_RWS_R50_40GR_G1.a7p",
-      "profileName": "22LR RWS R50 40GR",
-      "name": "22LR RWS R50 40GR RWS R50 40GR",
-      "cartridge": "RWS R50 40GR",
-      "bullet": "RWS R50 40GR",
-      "cartridgeVendor": "RWS",
-      "bulletVendor": "RWS",
       "dragModelType": "G1"
     },
     {
@@ -787,32 +773,18 @@
       "dragModelType": "G1"
     },
     {
-      "id": 59,
-      "diameter": 0.277,
-      "weight": 130,
-      "caliber": ".270 Winchester",
-      "path": "gallery/270WIN/270WIN_BALSER_130GR_CDP_G1.a7p",
-      "profileName": ".270WIN BALSER 130GR CDP",
-      "name": ".270 Winchester BALSER 130GR CDP BALSER 8.4 CDP",
-      "cartridge": "BALSER 130GR CDP",
-      "bullet": "BALSER 8.4 CDP",
-      "cartridgeVendor": "BLASER",
-      "bulletVendor": "BLASER",
+      "id": 57,
+      "diameter": 0.22,
+      "weight": 40,
+      "caliber": "22LR",
+      "path": "gallery/22LR/22LR_RWS_R50_40GR_G1.a7p",
+      "profileName": "22LR RWS R50 40GR",
+      "name": "22LR RWS R50 40GR RWS R50 40GR",
+      "cartridge": "RWS R50 40GR",
+      "bullet": "RWS R50 40GR",
+      "cartridgeVendor": "RWS",
+      "bulletVendor": "RWS",
       "dragModelType": "G1"
-    },
-    {
-      "id": 60,
-      "diameter": 0.277,
-      "weight": 180,
-      "caliber": ".270 Winchester",
-      "path": "gallery/270WIN/270WIN_BARNES_180GR_TST_BT_G7.a7p",
-      "profileName": ".270WIN BARNES 180GR TST BT",
-      "name": ".270 Winchester BARNES 180GR TST BT BARNES 180GR TST BT",
-      "cartridge": "BARNES 180GR TST BT",
-      "bullet": "BARNES 180GR TST BT",
-      "cartridgeVendor": "BARNES",
-      "bulletVendor": "BARNES",
-      "dragModelType": "G7"
     },
     {
       "id": 58,
@@ -829,6 +801,20 @@
       "dragModelType": "G7"
     },
     {
+      "id": 59,
+      "diameter": 0.277,
+      "weight": 130,
+      "caliber": ".270 Winchester",
+      "path": "gallery/270WIN/270WIN_BALSER_130GR_CDP_G1.a7p",
+      "profileName": ".270WIN BALSER 130GR CDP",
+      "name": ".270 Winchester BALSER 130GR CDP BALSER 8.4 CDP",
+      "cartridge": "BALSER 130GR CDP",
+      "bullet": "BALSER 8.4 CDP",
+      "cartridgeVendor": "BLASER",
+      "bulletVendor": "BLASER",
+      "dragModelType": "G1"
+    },
+    {
       "id": 61,
       "diameter": 0.277,
       "weight": 145,
@@ -841,6 +827,34 @@
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
       "dragModelType": "G7"
+    },
+    {
+      "id": 60,
+      "diameter": 0.277,
+      "weight": 180,
+      "caliber": ".270 Winchester",
+      "path": "gallery/270WIN/270WIN_BARNES_180GR_TST_BT_G7.a7p",
+      "profileName": ".270WIN BARNES 180GR TST BT",
+      "name": ".270 Winchester BARNES 180GR TST BT BARNES 180GR TST BT",
+      "cartridge": "BARNES 180GR TST BT",
+      "bullet": "BARNES 180GR TST BT",
+      "cartridgeVendor": "BARNES",
+      "bulletVendor": "BARNES",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 62,
+      "diameter": 0.277,
+      "weight": 140,
+      "caliber": ".270 Winchester",
+      "path": "gallery/270WIN/270WIN_WIN_140GR_ACCUBOND_CT_G1.a7p",
+      "profileName": ".270WIN WIN 140GR ACCUBOND CT",
+      "name": ".270 Winchester WIN 140GR ACCUBOND CT WIN 140GR ACCUBOND CT",
+      "cartridge": "WIN 140GR ACCUBOND CT",
+      "bullet": "WIN 140GR ACCUBOND CT",
+      "cartridgeVendor": "WINCHESTER",
+      "bulletVendor": "WINCHESTER",
+      "dragModelType": "G1"
     },
     {
       "id": 63,
@@ -899,34 +913,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 62,
-      "diameter": 0.277,
-      "weight": 140,
-      "caliber": ".270 Winchester",
-      "path": "gallery/270WIN/270WIN_WIN_140GR_ACCUBOND_CT_G1.a7p",
-      "profileName": ".270WIN WIN 140GR ACCUBOND CT",
-      "name": ".270 Winchester WIN 140GR ACCUBOND CT WIN 140GR ACCUBOND CT",
-      "cartridge": "WIN 140GR ACCUBOND CT",
-      "bullet": "WIN 140GR ACCUBOND CT",
-      "cartridgeVendor": "WINCHESTER",
-      "bulletVendor": "WINCHESTER",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 69,
-      "diameter": 0.308,
-      "weight": 194,
-      "caliber": "300 Blackout/Whisper",
-      "path": "gallery/300BLK/300BLK_LEHIGH_194GR_ME_G1.a7p",
-      "profileName": "300BLK LEHIGH 194GR ME",
-      "name": "300 Blackout/Whisper LEHIGH 194GR ME LEHIGH 194GR ME",
-      "cartridge": "LEHIGH 194GR ME",
-      "bullet": "LEHIGH 194GR ME",
-      "cartridgeVendor": "LEHIGH",
-      "bulletVendor": "LEHIGH",
-      "dragModelType": "G1"
-    },
-    {
       "id": 67,
       "diameter": 0.308,
       "weight": 190,
@@ -953,6 +939,20 @@
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
       "dragModelType": "G7"
+    },
+    {
+      "id": 69,
+      "diameter": 0.308,
+      "weight": 194,
+      "caliber": "300 Blackout/Whisper",
+      "path": "gallery/300BLK/300BLK_LEHIGH_194GR_ME_G1.a7p",
+      "profileName": "300BLK LEHIGH 194GR ME",
+      "name": "300 Blackout/Whisper LEHIGH 194GR ME LEHIGH 194GR ME",
+      "cartridge": "LEHIGH 194GR ME",
+      "bullet": "LEHIGH 194GR ME",
+      "cartridgeVendor": "LEHIGH",
+      "bulletVendor": "LEHIGH",
+      "dragModelType": "G1"
     },
     {
       "id": 70,
@@ -997,20 +997,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 74,
-      "diameter": 0.308,
-      "weight": 230,
-      "caliber": ".300 Norma Magnum",
-      "path": "gallery/300NM/300NM_BERGER_245GR_ELITE_HUNT_G7.a7p",
-      "profileName": ".300NM_MRAD 300NM_BERGER 230GR HYBRID",
-      "name": ".300 Norma Magnum BERGER 230GR HYBRID BERGER 230GR HYBRID",
-      "cartridge": "BERGER 230GR HYBRID",
-      "bullet": "BERGER 230GR HYBRID",
-      "cartridgeVendor": "BERGER",
-      "bulletVendor": "BERGER",
-      "dragModelType": "G7"
-    },
-    {
       "id": 73,
       "diameter": 0.308,
       "weight": 210,
@@ -1025,17 +1011,17 @@
       "dragModelType": "G7"
     },
     {
-      "id": 76,
+      "id": 74,
       "diameter": 0.308,
       "weight": 230,
       "caliber": ".300 Norma Magnum",
-      "path": "gallery/300NM/300NM_HORNADY_230GR_ATIP_G7.a7p",
-      "profileName": ".300NM HORNADY 230GR A-TIP",
-      "name": ".300 Norma Magnum HORNADY 230GR A-TIP A-TIP 230GR",
-      "cartridge": "HORNADY 230GR A-TIP",
-      "bullet": "A-TIP 230GR",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": "HORNADY",
+      "path": "gallery/300NM/300NM_BERGER_245GR_ELITE_HUNT_G7.a7p",
+      "profileName": ".300NM_MRAD 300NM_BERGER 230GR HYBRID",
+      "name": ".300 Norma Magnum BERGER 230GR HYBRID BERGER 230GR HYBRID",
+      "cartridge": "BERGER 230GR HYBRID",
+      "bullet": "BERGER 230GR HYBRID",
+      "cartridgeVendor": "BERGER",
+      "bulletVendor": "BERGER",
       "dragModelType": "G7"
     },
     {
@@ -1053,18 +1039,18 @@
       "dragModelType": "G7"
     },
     {
-      "id": 78,
+      "id": 76,
       "diameter": 0.308,
-      "weight": 180,
-      "caliber": ".300 RUM",
-      "path": "gallery/300RUM/300RUM_Blaser_Scirocco_180GR_G1.a7p",
-      "profileName": "300RUM Blaser Scirocco",
-      "name": ".300 RUM Scirocco Scirocco",
-      "cartridge": "Scirocco",
-      "bullet": "Scirocco",
-      "cartridgeVendor": "SWIFT",
-      "bulletVendor": "SWIFT",
-      "dragModelType": "G1"
+      "weight": 230,
+      "caliber": ".300 Norma Magnum",
+      "path": "gallery/300NM/300NM_HORNADY_230GR_ATIP_G7.a7p",
+      "profileName": ".300NM HORNADY 230GR A-TIP",
+      "name": ".300 Norma Magnum HORNADY 230GR A-TIP A-TIP 230GR",
+      "cartridge": "HORNADY 230GR A-TIP",
+      "bullet": "A-TIP 230GR",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": "HORNADY",
+      "dragModelType": "G7"
     },
     {
       "id": 77,
@@ -1081,29 +1067,17 @@
       "dragModelType": "G1"
     },
     {
-      "id": 81,
+      "id": 78,
       "diameter": 0.308,
-      "weight": 165,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_165GR_SUBSONIC_G1.a7p",
-      "profileName": "308W 165GR SUBSONIC",
-      "name": ".308 Winchester 165GR SUBSONIC 165GR SUBSONIC",
-      "cartridge": "165GR SUBSONIC",
-      "bullet": "165GR SUBSONIC",
-      "cartridgeVendor": null,
-      "bulletVendor": null,
-      "dragModelType": "G1"
-    },
-    {
-      "id": 80,
-      "diameter": 0.308,
-      "weight": 150,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_150GR_SUBSONIC_G1.a7p",
-      "profileName": "308W 150GR SUBSONIC",
-      "name": ".308 Winchester 308Win 150GR SUB 308Win 150GR",
-      "cartridge": "308Win 150GR SUB",
-      "bullet": "308Win 150GR",
+      "weight": 180,
+      "caliber": ".300 RUM",
+      "path": "gallery/300RUM/300RUM_Blaser_Scirocco_180GR_G1.a7p",
+      "profileName": "300RUM Blaser Scirocco",
+      "name": ".300 RUM Scirocco Scirocco",
+      "cartridge": "Scirocco",
+      "bullet": "Scirocco",
+      "cartridgeVendor": "SWIFT",
+      "bulletVendor": "SWIFT",
       "dragModelType": "G1"
     },
     {
@@ -1121,18 +1095,30 @@
       "dragModelType": "G7"
     },
     {
-      "id": 82,
+      "id": 80,
       "diameter": 0.308,
-      "weight": 170,
+      "weight": 150,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_170GR_SUBSONIC_G7.a7p",
-      "profileName": "308W 170GR SUBSONIC",
-      "name": ".308 Winchester 170GR SUBSONIC 170GR SUBSONIC",
-      "cartridge": "170GR SUBSONIC",
-      "bullet": "170GR SUBSONIC",
+      "path": "gallery/308W/308W_150GR_SUBSONIC_G1.a7p",
+      "profileName": "308W 150GR SUBSONIC",
+      "name": ".308 Winchester 308Win 150GR SUB 308Win 150GR",
+      "cartridge": "308Win 150GR SUB",
+      "bullet": "308Win 150GR",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 81,
+      "diameter": 0.308,
+      "weight": 165,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_165GR_SUBSONIC_G1.a7p",
+      "profileName": "308W 165GR SUBSONIC",
+      "name": ".308 Winchester 165GR SUBSONIC 165GR SUBSONIC",
+      "cartridge": "165GR SUBSONIC",
+      "bullet": "165GR SUBSONIC",
       "cartridgeVendor": null,
       "bulletVendor": null,
-      "dragModelType": "G7"
+      "dragModelType": "G1"
     },
     {
       "id": 83,
@@ -1149,6 +1135,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 82,
+      "diameter": 0.308,
+      "weight": 170,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_170GR_SUBSONIC_G7.a7p",
+      "profileName": "308W 170GR SUBSONIC",
+      "name": ".308 Winchester 170GR SUBSONIC 170GR SUBSONIC",
+      "cartridge": "170GR SUBSONIC",
+      "bullet": "170GR SUBSONIC",
+      "cartridgeVendor": null,
+      "bulletVendor": null,
+      "dragModelType": "G7"
+    },
+    {
       "id": 84,
       "diameter": 0.308,
       "weight": 147,
@@ -1158,20 +1158,6 @@
       "name": ".308 Winchester ABR 147GR M80 FMJ ABR 147GR M80 FMJ",
       "cartridge": "ABR 147GR M80 FMJ",
       "bullet": "ABR 147GR M80 FMJ",
-      "cartridgeVendor": "ABR TACTICAL",
-      "bulletVendor": "ABR TACTICAL",
-      "dragModelType": "G7"
-    },
-    {
-      "id": 85,
-      "diameter": 0.308,
-      "weight": 155,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_ABR_155GR_A_MAX_G7.a7p",
-      "profileName": "308W ABR 155GR A-MAX",
-      "name": ".308 Winchester ABR 155GR A-MAX ABR 155GR A-MAX",
-      "cartridge": "ABR 155GR A-MAX",
-      "bullet": "ABR 155GR A-MAX",
       "cartridgeVendor": "ABR TACTICAL",
       "bulletVendor": "ABR TACTICAL",
       "dragModelType": "G7"
@@ -1191,15 +1177,15 @@
       "dragModelType": "G7"
     },
     {
-      "id": 87,
+      "id": 85,
       "diameter": 0.308,
-      "weight": 178,
+      "weight": 155,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_ABR_178GR_A_MAX_G7.a7p",
-      "profileName": "308W ABR 178GR A-MAX",
-      "name": ".308 Winchester ABR 178GR A-MAX ABR 178GR A-MAX",
-      "cartridge": "ABR 178GR A-MAX",
-      "bullet": "ABR 178GR A-MAX",
+      "path": "gallery/308W/308W_ABR_155GR_A_MAX_G7.a7p",
+      "profileName": "308W ABR 155GR A-MAX",
+      "name": ".308 Winchester ABR 155GR A-MAX ABR 155GR A-MAX",
+      "cartridge": "ABR 155GR A-MAX",
+      "bullet": "ABR 155GR A-MAX",
       "cartridgeVendor": "ABR TACTICAL",
       "bulletVendor": "ABR TACTICAL",
       "dragModelType": "G7"
@@ -1216,6 +1202,34 @@
       "bullet": "ABR 178GR BTHP",
       "cartridgeVendor": "ABR TACTICAL",
       "bulletVendor": "ABR TACTICAL",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 87,
+      "diameter": 0.308,
+      "weight": 178,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_ABR_178GR_A_MAX_G7.a7p",
+      "profileName": "308W ABR 178GR A-MAX",
+      "name": ".308 Winchester ABR 178GR A-MAX ABR 178GR A-MAX",
+      "cartridge": "ABR 178GR A-MAX",
+      "bullet": "ABR 178GR A-MAX",
+      "cartridgeVendor": "ABR TACTICAL",
+      "bulletVendor": "ABR TACTICAL",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 89,
+      "diameter": 0.308,
+      "weight": 168,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_BERGER_168GR_CH_G7.a7p",
+      "profileName": "308W BERGER 168GR CH",
+      "name": ".308 Winchester BERGER 168GR BERGER 168GR CH",
+      "cartridge": "BERGER 168GR",
+      "bullet": "BERGER 168GR CH",
+      "cartridgeVendor": "BERGER",
+      "bulletVendor": "BERGER",
       "dragModelType": "G7"
     },
     {
@@ -1247,18 +1261,18 @@
       "dragModelType": "G7"
     },
     {
-      "id": 89,
+      "id": 92,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_BERGER_168GR_CH_G7.a7p",
-      "profileName": "308W BERGER 168GR CH",
-      "name": ".308 Winchester BERGER 168GR BERGER 168GR CH",
-      "cartridge": "BERGER 168GR",
-      "bullet": "BERGER 168GR CH",
+      "path": "gallery/308W/308W_BERGER_168GR_VLD_G1.a7p",
+      "profileName": "308W BERGER 168GR VLD",
+      "name": ".308 Winchester BERGER 168GR VLD BERGER 168GR VLD",
+      "cartridge": "BERGER 168GR VLD",
+      "bullet": "BERGER 168GR VLD",
       "cartridgeVendor": "BERGER",
       "bulletVendor": "BERGER",
-      "dragModelType": "G7"
+      "dragModelType": "G1"
     },
     {
       "id": 93,
@@ -1289,18 +1303,18 @@
       "dragModelType": "G7"
     },
     {
-      "id": 92,
+      "id": 95,
       "diameter": 0.308,
-      "weight": 168,
+      "weight": 185,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_BERGER_168GR_VLD_G1.a7p",
-      "profileName": "308W BERGER 168GR VLD",
-      "name": ".308 Winchester BERGER 168GR VLD BERGER 168GR VLD",
-      "cartridge": "BERGER 168GR VLD",
-      "bullet": "BERGER 168GR VLD",
+      "path": "gallery/308W/308W_BERGER_185GR_CH_G7.a7p",
+      "profileName": "308W BERGER CH 185GR",
+      "name": ".308 Winchester BERGER CH 185GR BERGER CH 185GR",
+      "cartridge": "BERGER CH 185GR",
+      "bullet": "BERGER CH 185GR",
       "cartridgeVendor": "BERGER",
       "bulletVendor": "BERGER",
-      "dragModelType": "G1"
+      "dragModelType": "G7"
     },
     {
       "id": 96,
@@ -1312,20 +1326,6 @@
       "name": ".308 Winchester BERGER 185GR HYBRID 185GR HYBRID",
       "cartridge": "BERGER 185GR HYBRID",
       "bullet": "185GR HYBRID",
-      "cartridgeVendor": "BERGER",
-      "bulletVendor": "BERGER",
-      "dragModelType": "G7"
-    },
-    {
-      "id": 95,
-      "diameter": 0.308,
-      "weight": 185,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_BERGER_185GR_CH_G7.a7p",
-      "profileName": "308W BERGER CH 185GR",
-      "name": ".308 Winchester BERGER CH 185GR BERGER CH 185GR",
-      "cartridge": "BERGER CH 185GR",
-      "bullet": "BERGER CH 185GR",
       "cartridgeVendor": "BERGER",
       "bulletVendor": "BERGER",
       "dragModelType": "G7"
@@ -1387,20 +1387,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 102,
-      "diameter": 0.308,
-      "weight": 168,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_FEDERAL_168GR_G7.a7p",
-      "profileName": "308W FEDERAL 168GR",
-      "name": ".308 Winchester FEDERAL 168GR FEDERAL 168GR",
-      "cartridge": "FEDERAL 168GR",
-      "bullet": "FEDERAL 168GR",
-      "cartridgeVendor": "FEDERAL",
-      "bulletVendor": "FEDERAL",
-      "dragModelType": "G7"
-    },
-    {
       "id": 101,
       "diameter": 0.308,
       "weight": 175,
@@ -1415,18 +1401,18 @@
       "dragModelType": "G7"
     },
     {
-      "id": 103,
+      "id": 102,
       "diameter": 0.308,
-      "weight": 180,
+      "weight": 168,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_FEDERAL_180GR_TB_G1.a7p",
-      "profileName": "308W FEDERAL 180GR TB",
-      "name": ".308 Winchester FEDERAL 180GR TB FEDERAL 180GR TB",
-      "cartridge": "FEDERAL 180GR TB",
-      "bullet": "FEDERAL 180GR TB",
+      "path": "gallery/308W/308W_FEDERAL_168GR_G7.a7p",
+      "profileName": "308W FEDERAL 168GR",
+      "name": ".308 Winchester FEDERAL 168GR FEDERAL 168GR",
+      "cartridge": "FEDERAL 168GR",
+      "bullet": "FEDERAL 168GR",
       "cartridgeVendor": "FEDERAL",
       "bulletVendor": "FEDERAL",
-      "dragModelType": "G1"
+      "dragModelType": "G7"
     },
     {
       "id": 104,
@@ -1443,17 +1429,17 @@
       "dragModelType": "G7"
     },
     {
-      "id": 106,
+      "id": 103,
       "diameter": 0.308,
-      "weight": 170,
+      "weight": 180,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_GECO_170GR_TM_G1.a7p",
-      "profileName": "308W GECO 170GR TM",
-      "name": ".308 Winchester GECO 170GR TM GECO 170GR TM",
-      "cartridge": "GECO 170GR TM",
-      "bullet": "GECO 170GR TM",
-      "cartridgeVendor": "GECO",
-      "bulletVendor": "GECO",
+      "path": "gallery/308W/308W_FEDERAL_180GR_TB_G1.a7p",
+      "profileName": "308W FEDERAL 180GR TB",
+      "name": ".308 Winchester FEDERAL 180GR TB FEDERAL 180GR TB",
+      "cartridge": "FEDERAL 180GR TB",
+      "bullet": "FEDERAL 180GR TB",
+      "cartridgeVendor": "FEDERAL",
+      "bulletVendor": "FEDERAL",
       "dragModelType": "G1"
     },
     {
@@ -1485,6 +1471,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 106,
+      "diameter": 0.308,
+      "weight": 170,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_GECO_170GR_TM_G1.a7p",
+      "profileName": "308W GECO 170GR TM",
+      "name": ".308 Winchester GECO 170GR TM GECO 170GR TM",
+      "cartridge": "GECO 170GR TM",
+      "bullet": "GECO 170GR TM",
+      "cartridgeVendor": "GECO",
+      "bulletVendor": "GECO",
+      "dragModelType": "G1"
+    },
+    {
       "id": 109,
       "diameter": 0.308,
       "weight": 175,
@@ -1499,20 +1499,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 110,
-      "diameter": 0.308,
-      "weight": 180,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_GGG_180GR_G7.a7p",
-      "profileName": "308W GGG 180GR",
-      "name": ".308 Winchester GGG 180GR GGG 180GR",
-      "cartridge": "GGG 180GR",
-      "bullet": "GGG 180GR",
-      "cartridgeVendor": "GGG",
-      "bulletVendor": "GGG",
-      "dragModelType": "G7"
-    },
-    {
       "id": 108,
       "diameter": 0.308,
       "weight": 168,
@@ -1522,6 +1508,20 @@
       "name": ".308 Winchester GGG 168 SMK GGG 168 SMK",
       "cartridge": "GGG 168 SMK",
       "bullet": "GGG 168 SMK",
+      "cartridgeVendor": "GGG",
+      "bulletVendor": "GGG",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 110,
+      "diameter": 0.308,
+      "weight": 180,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_GGG_180GR_G7.a7p",
+      "profileName": "308W GGG 180GR",
+      "name": ".308 Winchester GGG 180GR GGG 180GR",
+      "cartridge": "GGG 180GR",
+      "bullet": "GGG 180GR",
       "cartridgeVendor": "GGG",
       "bulletVendor": "GGG",
       "dragModelType": "G7"
@@ -1667,20 +1667,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 121,
-      "diameter": 0.308,
-      "weight": 168,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_HORNADY_168GR_HPBT_G7.a7p",
-      "profileName": "308W HPBT 168GR HORNADY",
-      "name": ".308 Winchester HPBT 168GR HORNADY HPBT 168GR HORNADY",
-      "cartridge": "HPBT 168GR HORNADY",
-      "bullet": "HPBT 168GR HORNADY",
-      "cartridgeVendor": "HORNADY",
-      "bulletVendor": "HORNADY",
-      "dragModelType": "G7"
-    },
-    {
       "id": 122,
       "diameter": 0.308,
       "weight": 178,
@@ -1695,15 +1681,15 @@
       "dragModelType": "G1"
     },
     {
-      "id": 124,
+      "id": 121,
       "diameter": 0.308,
-      "weight": 178,
+      "weight": 168,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_HORNADY_178GR_G7.a7p",
-      "profileName": "308W HORNADY 178GRN",
-      "name": ".308 Winchester HORNADY 178GRN HORNADY 178GRN",
-      "cartridge": "HORNADY 178GRN",
-      "bullet": "HORNADY 178GRN",
+      "path": "gallery/308W/308W_HORNADY_168GR_HPBT_G7.a7p",
+      "profileName": "308W HPBT 168GR HORNADY",
+      "name": ".308 Winchester HPBT 168GR HORNADY HPBT 168GR HORNADY",
+      "cartridge": "HPBT 168GR HORNADY",
+      "bullet": "HPBT 168GR HORNADY",
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
       "dragModelType": "G7"
@@ -1737,18 +1723,18 @@
       "dragModelType": "G1"
     },
     {
-      "id": 126,
+      "id": 124,
       "diameter": 0.308,
-      "weight": 180,
+      "weight": 178,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_INTERLOCK_180GR_RN_G1.a7p",
-      "profileName": "308W INTERLOCK 180GR RN",
-      "name": ".308 Winchester INTERLOCK 180GR RN INTERLOCK 180GR RN",
-      "cartridge": "INTERLOCK 180GR RN",
-      "bullet": "INTERLOCK 180GR RN",
+      "path": "gallery/308W/308W_HORNADY_178GR_G7.a7p",
+      "profileName": "308W HORNADY 178GRN",
+      "name": ".308 Winchester HORNADY 178GRN HORNADY 178GRN",
+      "cartridge": "HORNADY 178GRN",
+      "bullet": "HORNADY 178GRN",
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
-      "dragModelType": "G1"
+      "dragModelType": "G7"
     },
     {
       "id": 127,
@@ -1762,6 +1748,20 @@
       "bullet": "LAPUA MEGA 185GR",
       "cartridgeVendor": "LAPUA",
       "bulletVendor": "LAPUA",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 126,
+      "diameter": 0.308,
+      "weight": 180,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_INTERLOCK_180GR_RN_G1.a7p",
+      "profileName": "308W INTERLOCK 180GR RN",
+      "name": ".308 Winchester INTERLOCK 180GR RN INTERLOCK 180GR RN",
+      "cartridge": "INTERLOCK 180GR RN",
+      "bullet": "INTERLOCK 180GR RN",
+      "cartridgeVendor": "HORNADY",
+      "bulletVendor": "HORNADY",
       "dragModelType": "G1"
     },
     {
@@ -1863,20 +1863,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 135,
-      "diameter": 0.308,
-      "weight": 165,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_NOSLER_165GRG1.a7p",
-      "profileName": "308W NOSLER 165GR",
-      "name": ".308 Winchester NOSLER 165GR NOSLER 165GR",
-      "cartridge": "NOSLER 165GR",
-      "bullet": "NOSLER 165GR",
-      "cartridgeVendor": "NOSLER",
-      "bulletVendor": "NOSLER",
-      "dragModelType": "G1"
-    },
-    {
       "id": 136,
       "diameter": 0.308,
       "weight": 168,
@@ -1886,6 +1872,20 @@
       "name": ".308 Winchester NOSLER 168GR NOSLER 168GR",
       "cartridge": "NOSLER 168GR",
       "bullet": "NOSLER 168GR",
+      "cartridgeVendor": "NOSLER",
+      "bulletVendor": "NOSLER",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 135,
+      "diameter": 0.308,
+      "weight": 165,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_NOSLER_165GRG1.a7p",
+      "profileName": "308W NOSLER 165GR",
+      "name": ".308 Winchester NOSLER 165GR NOSLER 165GR",
+      "cartridge": "NOSLER 165GR",
+      "bullet": "NOSLER 165GR",
       "cartridgeVendor": "NOSLER",
       "bulletVendor": "NOSLER",
       "dragModelType": "G1"
@@ -1989,20 +1989,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 145,
-      "diameter": 0.308,
-      "weight": 124,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_SELLIER_BELLOT_124GR_G1.a7p",
-      "profileName": "308W SELLIER BELLOT 124GR",
-      "name": ".308 Winchester SELLIER BELLOT 124GR SELLIER BELLOT 124GR",
-      "cartridge": "SELLIER BELLOT 124GR",
-      "bullet": "SELLIER BELLOT 124GR",
-      "cartridgeVendor": "SELLIER & BELLOT",
-      "bulletVendor": "SELLIER & BELLOT",
-      "dragModelType": "G1"
-    },
-    {
       "id": 144,
       "diameter": 0.308,
       "weight": 184,
@@ -2031,6 +2017,34 @@
       "dragModelType": "G7"
     },
     {
+      "id": 145,
+      "diameter": 0.308,
+      "weight": 124,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_SELLIER_BELLOT_124GR_G1.a7p",
+      "profileName": "308W SELLIER BELLOT 124GR",
+      "name": ".308 Winchester SELLIER BELLOT 124GR SELLIER BELLOT 124GR",
+      "cartridge": "SELLIER BELLOT 124GR",
+      "bullet": "SELLIER BELLOT 124GR",
+      "cartridgeVendor": "SELLIER & BELLOT",
+      "bulletVendor": "SELLIER & BELLOT",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 148,
+      "diameter": 0.308,
+      "weight": 180,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_SELLIER_BELLOT_180GR_FMJ_G1.a7p",
+      "profileName": "308W SELLIER BELLOT FMJ 180GR",
+      "name": ".308 Winchester SB FMJ 180 SB FMJ",
+      "cartridge": "SB FMJ 180",
+      "bullet": "SB FMJ",
+      "cartridgeVendor": "SELLIER & BELLOT",
+      "bulletVendor": "SELLIER & BELLOT",
+      "dragModelType": "G1"
+    },
+    {
       "id": 147,
       "diameter": 0.308,
       "weight": 175,
@@ -2054,20 +2068,6 @@
       "name": ".308 Winchester Sellier Bellot 180GR Sellier Bellot 180GR",
       "cartridge": "Sellier Bellot 180GR",
       "bullet": "Sellier Bellot 180GR",
-      "cartridgeVendor": "SELLIER & BELLOT",
-      "bulletVendor": "SELLIER & BELLOT",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 148,
-      "diameter": 0.308,
-      "weight": 180,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_SELLIER_BELLOT_180GR_FMJ_G1.a7p",
-      "profileName": "308W SELLIER BELLOT FMJ 180GR",
-      "name": ".308 Winchester SB FMJ 180 SB FMJ",
-      "cartridge": "SB FMJ 180",
-      "bullet": "SB FMJ",
       "cartridgeVendor": "SELLIER & BELLOT",
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G1"
@@ -2115,20 +2115,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 154,
-      "diameter": 0.308,
-      "weight": 175,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_SIERRA_175GR_SMK_G7.a7p",
-      "profileName": "308W SMK 175GR",
-      "name": ".308 Winchester 308W SMK 175GR 308W SMK 175GR",
-      "cartridge": "308W SMK 175GR",
-      "bullet": "308W SMK 175GR",
-      "cartridgeVendor": "SIERRA BULLETS",
-      "bulletVendor": "SIERRA BULLETS",
-      "dragModelType": "G7"
-    },
-    {
       "id": 153,
       "diameter": 0.308,
       "weight": 168,
@@ -2143,15 +2129,15 @@
       "dragModelType": "G7"
     },
     {
-      "id": 155,
+      "id": 154,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_SIERRA_175GR_SMK_SUBSONIC_G7.a7p",
-      "profileName": "308W SIERRA 175GR SMK SUBSONIC",
-      "name": ".308 Winchester 175 SMK SUBSONIC 175 SMK SUBSONIC",
-      "cartridge": "175 SMK SUBSONIC",
-      "bullet": "175 SMK SUBSONIC",
+      "path": "gallery/308W/308W_SIERRA_175GR_SMK_G7.a7p",
+      "profileName": "308W SMK 175GR",
+      "name": ".308 Winchester 308W SMK 175GR 308W SMK 175GR",
+      "cartridge": "308W SMK 175GR",
+      "bullet": "308W SMK 175GR",
       "cartridgeVendor": "SIERRA BULLETS",
       "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G7"
@@ -2169,6 +2155,20 @@
       "cartridgeVendor": "SIERRA BULLETS",
       "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G1"
+    },
+    {
+      "id": 155,
+      "diameter": 0.308,
+      "weight": 175,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_SIERRA_175GR_SMK_SUBSONIC_G7.a7p",
+      "profileName": "308W SIERRA 175GR SMK SUBSONIC",
+      "name": ".308 Winchester 175 SMK SUBSONIC 175 SMK SUBSONIC",
+      "cartridge": "175 SMK SUBSONIC",
+      "bullet": "175 SMK SUBSONIC",
+      "cartridgeVendor": "SIERRA BULLETS",
+      "bulletVendor": "SIERRA BULLETS",
+      "dragModelType": "G7"
     },
     {
       "id": 157,
@@ -2213,20 +2213,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 161,
-      "diameter": 0.308,
-      "weight": 165,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_SST_165GR_G7.a7p",
-      "profileName": "308W SST 165GR",
-      "name": ".308 Winchester SST 165 SST 165",
-      "cartridge": "SST 165",
-      "bullet": "SST 165",
-      "cartridgeVendor": "SST",
-      "bulletVendor": "SST",
-      "dragModelType": "G7"
-    },
-    {
       "id": 160,
       "diameter": 0.308,
       "weight": 150,
@@ -2238,6 +2224,20 @@
       "bullet": "HORNADY 150GR SST",
       "cartridgeVendor": "SST",
       "bulletVendor": "HORNADY",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 161,
+      "diameter": 0.308,
+      "weight": 165,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_SST_165GR_G7.a7p",
+      "profileName": "308W SST 165GR",
+      "name": ".308 Winchester SST 165 SST 165",
+      "cartridge": "SST 165",
+      "bullet": "SST 165",
+      "cartridgeVendor": "SST",
+      "bulletVendor": "SST",
       "dragModelType": "G7"
     },
     {
@@ -2269,20 +2269,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 164,
-      "diameter": 0.308,
-      "weight": 178,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_STS_178GR_SUBSONIC_G7.a7p",
-      "profileName": "308W STS 178GR SUBSONIC",
-      "name": ".308 Winchester STS 178GR SUBSONIC STS 178GR SUBSONIC",
-      "cartridge": "STS 178GR SUBSONIC",
-      "bullet": "STS 178GR SUBSONIC",
-      "cartridgeVendor": "STS",
-      "bulletVendor": "STS",
-      "dragModelType": "G7"
-    },
-    {
       "id": 165,
       "diameter": 0.308,
       "weight": 167,
@@ -2297,6 +2283,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 164,
+      "diameter": 0.308,
+      "weight": 178,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_STS_178GR_SUBSONIC_G7.a7p",
+      "profileName": "308W STS 178GR SUBSONIC",
+      "name": ".308 Winchester STS 178GR SUBSONIC STS 178GR SUBSONIC",
+      "cartridge": "STS 178GR SUBSONIC",
+      "bullet": "STS 178GR SUBSONIC",
+      "cartridgeVendor": "STS",
+      "bulletVendor": "STS",
+      "dragModelType": "G7"
+    },
+    {
       "id": 166,
       "diameter": 0.308,
       "weight": 168,
@@ -2308,6 +2308,20 @@
       "bullet": "RUAG 168GR SWISS P",
       "cartridgeVendor": "SWISS",
       "bulletVendor": "SWISS",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 168,
+      "diameter": 0.308,
+      "weight": 175,
+      "caliber": ".308 Winchester",
+      "path": "gallery/308W/308W_UKROP_175GR_SMK_G7.a7p",
+      "profileName": "308W UKROP SMK 175GR",
+      "name": ".308 Winchester UKROP 175GR SMK UKROP 175GR SMK",
+      "cartridge": "UKROP 175GR SMK",
+      "bullet": "UKROP 175GR SMK",
+      "cartridgeVendor": "UKROP",
+      "bulletVendor": "UKROP",
       "dragModelType": "G7"
     },
     {
@@ -2325,20 +2339,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 168,
-      "diameter": 0.308,
-      "weight": 175,
-      "caliber": ".308 Winchester",
-      "path": "gallery/308W/308W_UKROP_175GR_SMK_G7.a7p",
-      "profileName": "308W UKROP SMK 175GR",
-      "name": ".308 Winchester UKROP 175GR SMK UKROP 175GR SMK",
-      "cartridge": "UKROP 175GR SMK",
-      "bullet": "UKROP 175GR SMK",
-      "cartridgeVendor": "UKROP",
-      "bulletVendor": "UKROP",
-      "dragModelType": "G7"
-    },
-    {
       "id": 169,
       "diameter": 0.308,
       "weight": 175,
@@ -2353,20 +2353,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 170,
-      "diameter": 0.338,
-      "weight": 300,
-      "caliber": ".338 Lapua Magnum",
-      "path": "gallery/338LM/338LM_BARNES_300GR_OTM_G1.a7p",
-      "profileName": "338LM BARNES 300GR OTM",
-      "name": ".338 Lapua Magnum BARNES 300GR OTM BARNES 300GR OTM",
-      "cartridge": "BARNES 300GR OTM",
-      "bullet": "BARNES 300GR OTM",
-      "cartridgeVendor": "BARNES",
-      "bulletVendor": "BARNES",
-      "dragModelType": "G1"
-    },
-    {
       "id": 171,
       "diameter": 0.338,
       "weight": 300,
@@ -2378,6 +2364,20 @@
       "bullet": "BLACKHILLS 300GR OTM",
       "cartridgeVendor": "BLACK HILLS",
       "bulletVendor": "BLACK HILLS",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 170,
+      "diameter": 0.338,
+      "weight": 300,
+      "caliber": ".338 Lapua Magnum",
+      "path": "gallery/338LM/338LM_BARNES_300GR_OTM_G1.a7p",
+      "profileName": "338LM BARNES 300GR OTM",
+      "name": ".338 Lapua Magnum BARNES 300GR OTM BARNES 300GR OTM",
+      "cartridge": "BARNES 300GR OTM",
+      "bullet": "BARNES 300GR OTM",
+      "cartridgeVendor": "BARNES",
+      "bulletVendor": "BARNES",
       "dragModelType": "G1"
     },
     {
@@ -2465,20 +2465,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 178,
-      "diameter": 0.338,
-      "weight": 250,
-      "caliber": ".338 Lapua Magnum",
-      "path": "gallery/338LM/338LM_RWS_250GR_SPEED_TIP_G1.a7p",
-      "profileName": "338LM RWS 250GR SPEED TIP",
-      "name": ".338 Lapua Magnum RWS 250GR SPEED TIP RWS 250GR SPEED TIP",
-      "cartridge": "RWS 250GR SPEED TIP",
-      "bullet": "RWS 250GR SPEED TIP",
-      "cartridgeVendor": "RWS",
-      "bulletVendor": "RWS",
-      "dragModelType": "G1"
-    },
-    {
       "id": 179,
       "diameter": 0.338,
       "weight": 250,
@@ -2504,6 +2490,20 @@
       "bullet": "SWISS 251GR FMJ",
       "cartridgeVendor": "SWISS",
       "bulletVendor": "SWISS",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 178,
+      "diameter": 0.338,
+      "weight": 250,
+      "caliber": ".338 Lapua Magnum",
+      "path": "gallery/338LM/338LM_RWS_250GR_SPEED_TIP_G1.a7p",
+      "profileName": "338LM RWS 250GR SPEED TIP",
+      "name": ".338 Lapua Magnum RWS 250GR SPEED TIP RWS 250GR SPEED TIP",
+      "cartridge": "RWS 250GR SPEED TIP",
+      "bullet": "RWS 250GR SPEED TIP",
+      "cartridgeVendor": "RWS",
+      "bulletVendor": "RWS",
       "dragModelType": "G1"
     },
     {
@@ -2534,20 +2534,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 183,
-      "diameter": 0.338,
-      "weight": 250,
-      "caliber": ".338 Lapua Magnum",
-      "path": "gallery/338LM/338LM_UKROP_250GR_SMK_G7.a7p",
-      "profileName": ".338LM UKROP 250GR SMK",
-      "name": ".338 Lapua Magnum UKROP 250GR SMK UKROP 250GR SMK",
-      "cartridge": "UKROP 250GR SMK",
-      "bullet": "UKROP 250GR SMK",
-      "cartridgeVendor": "UKROP",
-      "bulletVendor": "UKROP",
-      "dragModelType": "G7"
-    },
-    {
       "id": 184,
       "diameter": 0.338,
       "weight": 300,
@@ -2557,6 +2543,20 @@
       "name": ".338 Lapua Magnum UKROP 300GR SMK UKROP 300GR SMK",
       "cartridge": "UKROP 300GR SMK",
       "bullet": "UKROP 300GR SMK",
+      "cartridgeVendor": "UKROP",
+      "bulletVendor": "UKROP",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 183,
+      "diameter": 0.338,
+      "weight": 250,
+      "caliber": ".338 Lapua Magnum",
+      "path": "gallery/338LM/338LM_UKROP_250GR_SMK_G7.a7p",
+      "profileName": ".338LM UKROP 250GR SMK",
+      "name": ".338 Lapua Magnum UKROP 250GR SMK UKROP 250GR SMK",
+      "cartridge": "UKROP 250GR SMK",
+      "bullet": "UKROP 250GR SMK",
       "cartridgeVendor": "UKROP",
       "bulletVendor": "UKROP",
       "dragModelType": "G7"
@@ -2618,20 +2618,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 190,
-      "diameter": 0.375,
-      "weight": 350,
-      "caliber": ".375 CheyTac",
-      "path": "gallery/375CT/375CT_SIERRA_350GR_G1.a7p",
-      "profileName": ".375CT SIERRA 350GR",
-      "name": ".375 CheyTac SIERRA 350GR SIERRA 350GR",
-      "cartridge": "SIERRA 350GR",
-      "bullet": "SIERRA 350GR",
-      "cartridgeVendor": "SIERRA BULLETS",
-      "bulletVendor": "SIERRA BULLETS",
-      "dragModelType": "G1"
-    },
-    {
       "id": 189,
       "diameter": 0.375,
       "weight": 352,
@@ -2646,16 +2632,17 @@
       "dragModelType": "G7"
     },
     {
-      "id": 193,
-      "diameter": 0.408,
-      "weight": 370,
-      "caliber": ".408 CheyTac",
-      "path": "gallery/408CT/408CT_SOLID_370GR_G1.a7p",
-      "profileName": ".408CT 370GR SOLID",
-      "name": ".408 CheyTac 370GR SOLID 370GR SOLID",
-      "cartridge": "370GR SOLID",
-      "bullet": "370GR SOLID",
-      "bulletVendor": null,
+      "id": 190,
+      "diameter": 0.375,
+      "weight": 350,
+      "caliber": ".375 CheyTac",
+      "path": "gallery/375CT/375CT_SIERRA_350GR_G1.a7p",
+      "profileName": ".375CT SIERRA 350GR",
+      "name": ".375 CheyTac SIERRA 350GR SIERRA 350GR",
+      "cartridge": "SIERRA 350GR",
+      "bullet": "SIERRA 350GR",
+      "cartridgeVendor": "SIERRA BULLETS",
+      "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G1"
     },
     {
@@ -2673,17 +2660,16 @@
       "dragModelType": "G1"
     },
     {
-      "id": 194,
-      "diameter": 0.416,
-      "weight": 400,
-      "caliber": ".416 Remington Magnum",
-      "path": "gallery/416RM/416RM_Blaser_A_Frame_400GR_G1.a7p",
-      "profileName": "416RM Blaser A-Frame 400GR",
-      "name": ".416 Remington Magnum A-Frame A-Frame",
-      "cartridge": "A-Frame",
-      "bullet": "A-Frame",
-      "cartridgeVendor": "SWIFT",
-      "bulletVendor": "SWIFT",
+      "id": 193,
+      "diameter": 0.408,
+      "weight": 370,
+      "caliber": ".408 CheyTac",
+      "path": "gallery/408CT/408CT_SOLID_370GR_G1.a7p",
+      "profileName": ".408CT 370GR SOLID",
+      "name": ".408 CheyTac 370GR SOLID 370GR SOLID",
+      "cartridge": "370GR SOLID",
+      "bullet": "370GR SOLID",
+      "bulletVendor": null,
       "dragModelType": "G1"
     },
     {
@@ -2699,6 +2685,20 @@
       "cartridgeVendor": "CUTTING EDGE",
       "bulletVendor": "CUTTING EDGE",
       "dragModelType": "G7"
+    },
+    {
+      "id": 194,
+      "diameter": 0.416,
+      "weight": 400,
+      "caliber": ".416 Remington Magnum",
+      "path": "gallery/416RM/416RM_Blaser_A_Frame_400GR_G1.a7p",
+      "profileName": "416RM Blaser A-Frame 400GR",
+      "name": ".416 Remington Magnum A-Frame A-Frame",
+      "cartridge": "A-Frame",
+      "bullet": "A-Frame",
+      "cartridgeVendor": "SWIFT",
+      "bulletVendor": "SWIFT",
+      "dragModelType": "G1"
     },
     {
       "id": 195,
@@ -2727,18 +2727,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 198,
-      "diameter": 0.22,
-      "weight": 52,
-      "caliber": "5.45x39mm",
-      "path": "gallery/5.45x39/5.45x39_PS_52GRN_G1.a7p",
-      "profileName": "5.45x39 PS 52GRN",
-      "name": "5,45x39 5.45x39 PS",
-      "cartridge": "5.45x39",
-      "bullet": "PS",
-      "dragModelType": "G1"
-    },
-    {
       "id": 197,
       "diameter": 0.22,
       "weight": 52,
@@ -2749,20 +2737,6 @@
       "cartridge": "5.45x39",
       "bullet": "7H6M",
       "dragModelType": "G7"
-    },
-    {
-      "id": 200,
-      "diameter": 0.51,
-      "weight": 661,
-      "caliber": ".50 BMG",
-      "path": "gallery/50BMG/50BMG_M33_BALL_661GR_G1.a7p",
-      "profileName": ".50BMG M33 BALL 661GR",
-      "name": ".50 BMG M33 BALL 661GR M33 BALL 661GR",
-      "cartridge": "M33 BALL 661GR",
-      "bullet": "M33 BALL 661GR",
-      "cartridgeVendor": "(NATO)",
-      "bulletVendor": "(NATO)",
-      "dragModelType": "G1"
     },
     {
       "id": 199,
@@ -2777,6 +2751,32 @@
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
       "dragModelType": "G7"
+    },
+    {
+      "id": 198,
+      "diameter": 0.22,
+      "weight": 52,
+      "caliber": "5.45x39mm",
+      "path": "gallery/5.45x39/5.45x39_PS_52GRN_G1.a7p",
+      "profileName": "5.45x39 PS 52GRN",
+      "name": "5,45x39 5.45x39 PS",
+      "cartridge": "5.45x39",
+      "bullet": "PS",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 200,
+      "diameter": 0.51,
+      "weight": 661,
+      "caliber": ".50 BMG",
+      "path": "gallery/50BMG/50BMG_M33_BALL_661GR_G1.a7p",
+      "profileName": ".50BMG M33 BALL 661GR",
+      "name": ".50 BMG M33 BALL 661GR M33 BALL 661GR",
+      "cartridge": "M33 BALL 661GR",
+      "bullet": "M33 BALL 661GR",
+      "cartridgeVendor": "(NATO)",
+      "bulletVendor": "(NATO)",
+      "dragModelType": "G1"
     },
     {
       "id": 201,
@@ -2889,6 +2889,18 @@
       "dragModelType": "G1"
     },
     {
+      "id": 211,
+      "diameter": 0.311,
+      "weight": 123,
+      "caliber": "7.62x39mm",
+      "path": "gallery/7.62x39/7.62x39_PS_123GR_G1.a7p",
+      "profileName": "7.62x39 PS 123GR",
+      "name": "7,62x39 ПС ПС",
+      "cartridge": "ПС",
+      "bullet": "ПС",
+      "dragModelType": "G1"
+    },
+    {
       "id": 209,
       "diameter": 0.311,
       "weight": 123,
@@ -2914,18 +2926,6 @@
       "bullet": "MESKO 123GR",
       "cartridgeVendor": "MESKO",
       "bulletVendor": "MESKO",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 211,
-      "diameter": 0.311,
-      "weight": 123,
-      "caliber": "7.62x39mm",
-      "path": "gallery/7.62x39/7.62x39_PS_123GR_G1.a7p",
-      "profileName": "7.62x39 PS 123GR",
-      "name": "7,62x39 ПС ПС",
-      "cartridge": "ПС",
-      "bullet": "ПС",
       "dragModelType": "G1"
     },
     {
@@ -2957,32 +2957,6 @@
       "dragModelType": "G7"
     },
     {
-      "id": 216,
-      "diameter": 0.308,
-      "weight": 168,
-      "caliber": "7,82 WARBIRD",
-      "path": "gallery/7.82 WARBIRD LAZZERONI/7.82WA_WARBIRD_LAZZERONI_168GR_G7.a7p",
-      "profileName": "7.82WA WARBIRD LAZZERONI 168GR ",
-      "name": "7,82 WARBIRD 168gr LAZZERONI 168gr LAZZERONI",
-      "cartridge": "168gr LAZZERONI",
-      "bullet": "168gr LAZZERONI",
-      "cartridgeVendor": "LAZZERONI",
-      "bulletVendor": "LAZZERONI",
-      "dragModelType": "G7"
-    },
-    {
-      "id": 214,
-      "diameter": 0.311,
-      "weight": 194,
-      "caliber": "7.62x39mm",
-      "path": "gallery/7.62x39/7.62X39_US_194GR_G1.a7p",
-      "profileName": "7.62x39 US",
-      "name": "7,62x39 УС УС",
-      "cartridge": "УС",
-      "bullet": "УС",
-      "dragModelType": "G1"
-    },
-    {
       "id": 215,
       "diameter": 0.308,
       "weight": 150,
@@ -2997,18 +2971,16 @@
       "dragModelType": "G1"
     },
     {
-      "id": 218,
-      "diameter": 0.284,
-      "weight": 180,
-      "caliber": "7mm Remington Magnum",
-      "path": "gallery/7RM/7RM_Hybrid_Target_180GR_G7.a7p",
-      "profileName": "7RM Hybrid Target 180GR",
-      "name": "7mm Remington Magnum 7RM Hybrid Target 180GR 7RM Hybrid Target 180GR",
-      "cartridge": "7RM Hybrid Target 180GR",
-      "bullet": "7RM Hybrid Target 180GR",
-      "cartridgeVendor": "BERGER",
-      "bulletVendor": "BERGER",
-      "dragModelType": "G7"
+      "id": 214,
+      "diameter": 0.311,
+      "weight": 194,
+      "caliber": "7.62x39mm",
+      "path": "gallery/7.62x39/7.62X39_US_194GR_G1.a7p",
+      "profileName": "7.62x39 US",
+      "name": "7,62x39 УС УС",
+      "cartridge": "УС",
+      "bullet": "УС",
+      "dragModelType": "G1"
     },
     {
       "id": 217,
@@ -3025,6 +2997,34 @@
       "dragModelType": "G7"
     },
     {
+      "id": 218,
+      "diameter": 0.284,
+      "weight": 180,
+      "caliber": "7mm Remington Magnum",
+      "path": "gallery/7RM/7RM_Hybrid_Target_180GR_G7.a7p",
+      "profileName": "7RM Hybrid Target 180GR",
+      "name": "7mm Remington Magnum 7RM Hybrid Target 180GR 7RM Hybrid Target 180GR",
+      "cartridge": "7RM Hybrid Target 180GR",
+      "bullet": "7RM Hybrid Target 180GR",
+      "cartridgeVendor": "BERGER",
+      "bulletVendor": "BERGER",
+      "dragModelType": "G7"
+    },
+    {
+      "id": 220,
+      "diameter": 0.285,
+      "weight": 170,
+      "caliber": "7x64mm Brenneke",
+      "path": "gallery/7x64/7x64_NORMA_VULKAN_170GR_G1.a7p",
+      "profileName": "7x64 NORMA VULKAN 170GR",
+      "name": "7x64 NORMA VULKAN 170GR NORMA VULKAN 170GR",
+      "cartridge": "NORMA VULKAN 170GR",
+      "bullet": "NORMA VULKAN 170GR",
+      "cartridgeVendor": "NORMA",
+      "bulletVendor": "NORMA",
+      "dragModelType": "G1"
+    },
+    {
       "id": 219,
       "diameter": 0.284,
       "weight": 162,
@@ -3039,6 +3039,20 @@
       "dragModelType": "G1"
     },
     {
+      "id": 216,
+      "diameter": 0.308,
+      "weight": 168,
+      "caliber": "7,82 WARBIRD",
+      "path": "gallery/7.82 WARBIRD LAZZERONI/7.82WA_WARBIRD_LAZZERONI_168GR_G7.a7p",
+      "profileName": "7.82WA WARBIRD LAZZERONI 168GR ",
+      "name": "7,82 WARBIRD 168gr LAZZERONI 168gr LAZZERONI",
+      "cartridge": "168gr LAZZERONI",
+      "bullet": "168gr LAZZERONI",
+      "cartridgeVendor": "LAZZERONI",
+      "bulletVendor": "LAZZERONI",
+      "dragModelType": "G7"
+    },
+    {
       "id": 221,
       "diameter": 0.285,
       "weight": 177,
@@ -3050,6 +3064,20 @@
       "bullet": "RWS 11.5 ID CLASSIC",
       "cartridgeVendor": "RWS",
       "bulletVendor": "RWS",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 222,
+      "diameter": 0.324,
+      "weight": 196,
+      "caliber": "8x57",
+      "path": "gallery/8x57/8x57_BLASER_196GR_CDP_G1.a7p",
+      "profileName": "8x57 BLASER 196GR CDP",
+      "name": "8x57 BLASER 12.7 CDP BLASER 12.7 CDP",
+      "cartridge": "BLASER 12.7 CDP",
+      "bullet": "BLASER 12.7 CDP",
+      "cartridgeVendor": "BLASER",
+      "bulletVendor": "BLASER",
       "dragModelType": "G1"
     },
     {
@@ -3095,48 +3123,6 @@
       "dragModelType": "G1"
     },
     {
-      "id": 222,
-      "diameter": 0.324,
-      "weight": 196,
-      "caliber": "8x57",
-      "path": "gallery/8x57/8x57_BLASER_196GR_CDP_G1.a7p",
-      "profileName": "8x57 BLASER 196GR CDP",
-      "name": "8x57 BLASER 12.7 CDP BLASER 12.7 CDP",
-      "cartridge": "BLASER 12.7 CDP",
-      "bullet": "BLASER 12.7 CDP",
-      "cartridgeVendor": "BLASER",
-      "bulletVendor": "BLASER",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 220,
-      "diameter": 0.285,
-      "weight": 170,
-      "caliber": "7x64mm Brenneke",
-      "path": "gallery/7x64/7x64_NORMA_VULKAN_170GR_G1.a7p",
-      "profileName": "7x64 NORMA VULKAN 170GR",
-      "name": "7x64 NORMA VULKAN 170GR NORMA VULKAN 170GR",
-      "cartridge": "NORMA VULKAN 170GR",
-      "bullet": "NORMA VULKAN 170GR",
-      "cartridgeVendor": "NORMA",
-      "bulletVendor": "NORMA",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 228,
-      "diameter": 0.323,
-      "weight": 180,
-      "caliber": "8x68S",
-      "path": "gallery/8x68S/8x68S_RWS_180GR_KS_G1.a7p",
-      "profileName": "8x68S RWS 180GR KS",
-      "name": "8x68S RWS 11.7KS RWS 11.7KS",
-      "cartridge": "RWS 11.7KS",
-      "bullet": "RWS 11.7KS",
-      "cartridgeVendor": "RWS",
-      "bulletVendor": "RWS",
-      "dragModelType": "G1"
-    },
-    {
       "id": 226,
       "diameter": 0.323,
       "weight": 196,
@@ -3148,20 +3134,6 @@
       "bullet": "BLASER CDP 12.7G",
       "cartridgeVendor": "BLASER",
       "bulletVendor": "BLASER",
-      "dragModelType": "G1"
-    },
-    {
-      "id": 230,
-      "diameter": 0.356,
-      "weight": 125,
-      "caliber": "9x21mm IMI",
-      "path": "gallery/9x21/9x21_8G_125GR_FMJ_G1.a7p",
-      "profileName": "9x21 8G 125GR FMJ",
-      "name": "9x21 8G FMJ 8G FMJ",
-      "cartridge": "8G FMJ",
-      "bullet": "8G FMJ",
-      "cartridgeVendor": "(NATO)",
-      "bulletVendor": "(NATO)",
       "dragModelType": "G1"
     },
     {
@@ -3179,17 +3151,45 @@
       "dragModelType": "G1"
     },
     {
-      "id": 231,
+      "id": 228,
+      "diameter": 0.323,
+      "weight": 180,
+      "caliber": "8x68S",
+      "path": "gallery/8x68S/8x68S_RWS_180GR_KS_G1.a7p",
+      "profileName": "8x68S RWS 180GR KS",
+      "name": "8x68S RWS 11.7KS RWS 11.7KS",
+      "cartridge": "RWS 11.7KS",
+      "bullet": "RWS 11.7KS",
+      "cartridgeVendor": "RWS",
+      "bulletVendor": "RWS",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 229,
+      "diameter": 0.366,
+      "weight": 247,
+      "caliber": "9.3x74R",
+      "path": "gallery/9.3x74R/9.3x74R_RWS_247GR_KS_G1.a7p",
+      "profileName": "9.3x74R RWS 247GR KS",
+      "name": "9.3x74R RWS 247GR KS RWS 247GR KS",
+      "cartridge": "RWS 247GR KS",
+      "bullet": "RWS 247GR KS",
+      "cartridgeVendor": "RWS",
+      "bulletVendor": "RWS",
+      "dragModelType": "G1"
+    },
+    {
+      "id": 230,
       "diameter": 0.356,
-      "weight": 148,
+      "weight": 125,
       "caliber": "9x21mm IMI",
-      "path": "gallery/9x21/9x21_FIOCCHI_148GR_LL_G1.a7p",
-      "profileName": "9x21 FIOCCHI 148GR LL",
-      "name": "9x21 FIOCCHI 148GR FIOCCHI 148GR LL",
-      "cartridge": "FIOCCHI 148GR",
-      "bullet": "FIOCCHI 148GR LL",
-      "cartridgeVendor": "FIOCCHI",
-      "bulletVendor": "FIOCCHI",
+      "path": "gallery/9x21/9x21_8G_125GR_FMJ_G1.a7p",
+      "profileName": "9x21 8G 125GR FMJ",
+      "name": "9x21 8G FMJ 8G FMJ",
+      "cartridge": "8G FMJ",
+      "bullet": "8G FMJ",
+      "cartridgeVendor": "(NATO)",
+      "bulletVendor": "(NATO)",
       "dragModelType": "G1"
     },
     {
@@ -3207,31 +3207,17 @@
       "dragModelType": "G1"
     },
     {
-      "id": 234,
-      "diameter": 2,
-      "weight": 1000,
-      "caliber": "РАКЕТА",
-      "path": "gallery/CORSAR/CORSAR_RK-3K_1000GR_G7.a7p",
-      "profileName": "CORSAR RK-3K 1000GR",
-      "name": "РАКЕТА RK-3K RK-3K",
-      "cartridge": "RK-3K",
-      "bullet": "RK-3K",
-      "cartridgeVendor": null,
-      "bulletVendor": null,
-      "dragModelType": "G7"
-    },
-    {
-      "id": 229,
-      "diameter": 0.366,
-      "weight": 247,
-      "caliber": "9.3x74R",
-      "path": "gallery/9.3x74R/9.3x74R_RWS_247GR_KS_G1.a7p",
-      "profileName": "9.3x74R RWS 247GR KS",
-      "name": "9.3x74R RWS 247GR KS RWS 247GR KS",
-      "cartridge": "RWS 247GR KS",
-      "bullet": "RWS 247GR KS",
-      "cartridgeVendor": "RWS",
-      "bulletVendor": "RWS",
+      "id": 231,
+      "diameter": 0.356,
+      "weight": 148,
+      "caliber": "9x21mm IMI",
+      "path": "gallery/9x21/9x21_FIOCCHI_148GR_LL_G1.a7p",
+      "profileName": "9x21 FIOCCHI 148GR LL",
+      "name": "9x21 FIOCCHI 148GR FIOCCHI 148GR LL",
+      "cartridge": "FIOCCHI 148GR",
+      "bullet": "FIOCCHI 148GR LL",
+      "cartridgeVendor": "FIOCCHI",
+      "bulletVendor": "FIOCCHI",
       "dragModelType": "G1"
     },
     {
@@ -3261,6 +3247,20 @@
       "cartridgeVendor": null,
       "bulletVendor": null,
       "dragModelType": "G1"
+    },
+    {
+      "id": 234,
+      "diameter": 2,
+      "weight": 1000,
+      "caliber": "РАКЕТА",
+      "path": "gallery/CORSAR/CORSAR_RK-3K_1000GR_G7.a7p",
+      "profileName": "CORSAR RK-3K 1000GR",
+      "name": "РАКЕТА RK-3K RK-3K",
+      "cartridge": "RK-3K",
+      "bullet": "RK-3K",
+      "cartridgeVendor": null,
+      "bulletVendor": null,
+      "dragModelType": "G7"
     }
   ],
   "uniqueKeys": {
@@ -3269,16 +3269,16 @@
       "14.5x114mm",
       ".17rem",
       "17hmr",
-      ".22-250 remington",
       "20 gauge",
+      ".22-250 remington",
       ".222 remington",
       "222 remington",
       ".223 remington",
       "5.56x45",
       "224 valkyrie",
       "22lr",
-      ".270 winchester",
       ".260rem",
+      ".270 winchester",
       ".270 wsm",
       "30-338lm",
       "300 blackout/whisper",
@@ -3288,8 +3288,8 @@
       ".338 lapua magnum",
       ".338 winmag",
       ".375 cheytac",
-      ".408 cheytac",
       ".375 h&h",
+      ".408 cheytac",
       ".416 remington magnum",
       "45 blaser",
       "5.45x39mm",
@@ -3301,27 +3301,27 @@
       "7.62x39mm",
       "7,82 warbird",
       "7mm remington magnum",
+      "7x64mm brenneke",
       "7x65r",
       "8x57",
       "8x68s",
-      "7x64mm brenneke",
       "8x68mm s",
-      "9x21mm imi",
       "8x68mm",
-      "ракета",
       "9.3x74r",
+      "9x21mm imi",
       "bolt",
-      "выстрел"
+      "выстрел",
+      "ракета"
     ],
     "diameters": [
       0.511,
       0.586,
       0.172,
-      0.224,
       2,
+      0.224,
       0.22,
-      0.277,
       0.264,
+      0.277,
       0.308,
       0.338,
       0.375,
@@ -3336,23 +3336,23 @@
       0.285,
       0.324,
       0.323,
-      0.356,
       0.366,
+      0.356,
       0.5,
       1
     ],
     "bulletVendors": [
-      "remington",
       "hornady",
-      "winchester",
+      "remington",
       "rottweil",
+      "winchester",
       "lapua",
       "norma",
       "rws",
       "sellier & bellot",
       "abr tactical",
-      "berger",
       "federal",
+      "berger",
       "ggg",
       "sierra bullets",
       "black hills",
@@ -3379,15 +3379,15 @@
     "cartridgeVendors": [
       "hornady",
       "remington",
-      "winchester",
       "rottweil",
+      "winchester",
       "lapua",
       "norma",
       "rws",
       "sellier & bellot",
       "abr tactical",
-      "berger",
       "federal",
+      "berger",
       "ggg",
       "sierra bullets",
       "black hills",
