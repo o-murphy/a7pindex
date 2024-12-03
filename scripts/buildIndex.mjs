@@ -153,6 +153,12 @@ const resolveVendor = (data) => {
     return vendors[data] ?? null;
 }
 
+// Function to collect unique values for a given key
+const collectUniqueValues = (data, key) => {
+    return [...new Set(data.map(item => item[key]))];
+};
+
+
 
 const createIndex = async () => {
     const profileIndex = [];
@@ -177,8 +183,8 @@ const createIndex = async () => {
                 if (result && result.profile) {
                     const profile = result?.profile;
                     profileIndex.push({
-                        diameter: Math.round(profile.bDiameter / 1000, 3),
-                        weight: Math.round(profile.bWeight / 10, 1),
+                        diameter: profile.bDiameter / 1000,
+                        weight: profile.bWeight / 10,
                         caliber: profile.caliber,
                         path: finalPath,
                         profileName: profile.profileName,
@@ -201,16 +207,31 @@ const createIndex = async () => {
     Promise.all(parsePromises)
         .then(() => {
             // After all promises are resolved, save the file
-            const jsonString = JSON.stringify(profileIndex, null, 2);
+
+            const outputData = {
+                profiles: profileIndex,
+                uniqueKeys: {
+                    calibers: collectUniqueValues(profileIndex, 'caliber'),
+                    diameters: collectUniqueValues(profileIndex, 'diameter'),
+                    bulletVendors: collectUniqueValues(profileIndex, 'bulletVendor'),
+                    cartridgeVendors: collectUniqueValues(profileIndex, 'cartridgeVendor')
+                }
+            }
+
+            const jsonString = JSON.stringify(outputData, null, 2);
+
             fs.mkdirSync(assetsDir, { recursive: true });
             fs.writeFileSync(indexPath, jsonString, 'utf8');
-            console.log('File saved successfully!');
+            
+            console.log('Files saved successfully!');
 
             console.log("Profiles updated:", validFilePaths.length)
         })
         .catch(error => {
             console.error('Error during parsing:', error.message);
         });
+
+    
 }
 
 createIndex();

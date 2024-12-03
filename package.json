@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fetchRepo": "node scripts/fetchRepo.mjs",
-    "buildIndex": "node scripts/buildIndex.mjs"
+    "buildIndex": "node scripts/buildIndex.mjs",
+    "filterIndex": "node scripts/filterIndex.mjs"
   },
   "keywords": [],
   "author": "",
