@@ -1,5 +1,6 @@
 import protobuf from 'protobufjs';
 import CryptoJS from 'crypto-js';
+import { Linking, Platform } from 'react-native';
 
 type FetchProfileArgs = {
     path?: string;
@@ -65,7 +66,7 @@ export default async function parseA7P(arrayBuffer: any) {
 
 };
 
-export const fetchDetails = async ({path, onSuccess, onError}: FetchProfileArgs) => {
+export const fetchDetails = async ({ path, onSuccess, onError }: FetchProfileArgs) => {
     console.log(path)
     const fileUrl = "/" + path; // Path to the file in the public directory
     try {
@@ -80,5 +81,26 @@ export const fetchDetails = async ({path, onSuccess, onError}: FetchProfileArgs)
     } catch (error) {
         console.error("Error fetching file:", error);
         onError?.()
+    }
+}
+
+export const downloadProfile = (path?: string) => {
+    if (!path) {
+        console.log("Undefined path")
+        return
+    }
+
+    const fileUrl = "/" + path;
+
+    if (Platform.OS === "web") {
+        const anchor = document.createElement("a");
+        anchor.href = fileUrl;
+        anchor.download = fileUrl.split("/").pop();
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+    } else {
+        // Open the file URL in the browser for native platforms
+        Linking.openURL(fileUrl);
     }
 }
