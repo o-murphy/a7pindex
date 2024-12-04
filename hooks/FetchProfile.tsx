@@ -9,8 +9,10 @@ type FetchProfileArgs = {
 }
 
 // Path to your protobuf file
-const PROTO_URL = __DEV__ ? '/proto/profedit.proto' : '/a7pIndex/proto/profedit.proto';
+const PUBLIC_PATH = __DEV__ ? '/' : '/a7pIndex/'
+const PROTO_URL = PUBLIC_PATH + 'proto/profedit.proto';
 const MD5_LENGTH = 32;
+
 
 // Utility function to convert array buffer to base64
 export function bufferToBase64(buffer: any) {
@@ -68,7 +70,7 @@ export default async function parseA7P(arrayBuffer: any) {
 
 export const fetchDetails = async ({ path, onSuccess, onError }: FetchProfileArgs) => {
     console.log(path)
-    const fileUrl = "/" + path; // Path to the file in the public directory
+    const fileUrl = PUBLIC_PATH + path; // Path to the file in the public directory
     try {
         const response = await fetch(fileUrl);
         if (!response.ok) {
@@ -90,7 +92,7 @@ export const downloadProfile = (path?: string) => {
         return
     }
 
-    const fileUrl = "/" + path;
+    const fileUrl = PUBLIC_PATH + path;
 
     if (Platform.OS === "web") {
         const anchor = document.createElement("a");
