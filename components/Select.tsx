@@ -7,7 +7,7 @@ import {
     Dimensions,
     LayoutRectangle,
 } from 'react-native';
-import { Divider, List, MD3DarkTheme, Portal, TextInput } from 'react-native-paper';
+import { Dialog, Divider, List, MD3DarkTheme, Portal, TextInput } from 'react-native-paper';
 
 type SelectProps = {
     label?: string;
@@ -50,7 +50,7 @@ const Select = ({ label = "<LABEL>", items, value, onChange }: SelectProps) => {
 
     const localItems = items ?? ["All", "Mr", "Mrs", "Miss"];
 
-    const handleShowPicker = useCallback(() => {
+    const togglePicker = useCallback(() => {
         if (inputRef.current) {
             inputRef.current.measure(
                 (x, y, width, height, pageX, pageY) => {
@@ -67,7 +67,7 @@ const Select = ({ label = "<LABEL>", items, value, onChange }: SelectProps) => {
     }, []);
 
     return (
-        <TouchableOpacity onPress={handleShowPicker} activeOpacity={1}>
+        <TouchableOpacity onPress={togglePicker} activeOpacity={1}>
             <View ref={inputRef}>
                 <TextInput
                     mode="outlined"
@@ -80,7 +80,7 @@ const Select = ({ label = "<LABEL>", items, value, onChange }: SelectProps) => {
                     style={{ margin: 4 }}
                     right={
                         <TextInput.Icon
-                            onPress={handleShowPicker}
+                            onPress={togglePicker}
                             icon={show ? "chevron-up" : "chevron-down"}
                         />
                     }
@@ -88,33 +88,34 @@ const Select = ({ label = "<LABEL>", items, value, onChange }: SelectProps) => {
             </View>
             {show && dropdownPosition && (
                 <Portal>
-                    <FlatList
-                        style={{
-                            position: 'absolute',
-                            top: dropdownPosition.y,
-                            left: dropdownPosition.x,
-                            width: dropdownPosition.width,
-                            maxHeight: Dimensions.get("window").height / 2,
-                            backgroundColor: MD3DarkTheme.colors.background,
-                            elevation: 5,
-                            zIndex: 1000,
-                        }}
-                        data={localItems}
-                        renderItem={({ item }) => (
-                            <View>
-                                <List.Item
-                                    style={{
-                                        backgroundColor: MD3DarkTheme.colors.elevation.level5,
-                                    }}
-                                    title={item}
-                                    onPress={() => hidePicker(item)}
-                                />
-                                <Divider />
-                            </View>
-                        )}
-                        keyExtractor={(item) => item}
-                        keyboardShouldPersistTaps="handled"
-                    />
+                    <Dialog visible={true} onDismiss={togglePicker} style={{ backgroundColor: "transparent" }}>
+                        <FlatList
+                            style={{
+                                position: 'absolute',
+                                top: dropdownPosition.y - dropdownPosition.height - Dimensions.get("window").height / 2,
+                                left: dropdownPosition.x,
+                                width: dropdownPosition.width,
+                                maxHeight: Dimensions.get("window").height / 2,
+                                backgroundColor: MD3DarkTheme.colors.background,
+                                elevation: 5,
+                            }}
+                            data={localItems}
+                            renderItem={({ item }) => (
+                                <View>
+                                    <List.Item
+                                        style={{
+                                            backgroundColor: MD3DarkTheme.colors.elevation.level5,
+                                        }}
+                                        title={item}
+                                        onPress={() => hidePicker(item)}
+                                    />
+                                    <Divider />
+                                </View>
+                            )}
+                            keyExtractor={(item) => item}
+                            keyboardShouldPersistTaps="handled"
+                        />
+                    </Dialog>
                 </Portal>
             )}
         </TouchableOpacity>

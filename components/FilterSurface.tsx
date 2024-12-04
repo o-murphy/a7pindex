@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import { FAB, Surface, TextInput } from "react-native-paper";
+import { FAB, Surface } from "react-native-paper";
 import Select from "./Select";
 import { ProfileIndexType, ProfilesJson, useFilterContext } from "@/hooks/FilterHook";
+import DecimalInput from "./Decimalnput";
+
+
+const allValues = "All";
 
 const FilterSurface = () => {
     const { uniqueKeys } = ProfilesJson;
@@ -11,6 +15,8 @@ const FilterSurface = () => {
     const { filter, setFilter } = useFilterContext();
 
     const [localFilter, setLocalFilter] = useState<Partial<ProfileIndexType>>({});
+    const [diameter, setDiameter] = useState<string>((filter?.diameter || 0)?.toFixed(3))
+    const [weight, setWeight] = useState<string>((filter?.weight || 0)?.toFixed(1))
 
     // Helper function to check if the filter is empty
     const isFilterEmpty = () =>
@@ -19,61 +25,71 @@ const FilterSurface = () => {
     const onFilterChange = (key: string, value: any) => {
         setLocalFilter((prevFilter) => ({
             ...prevFilter,
-            [key]: value === "All" ? null : value,
+            [key]: value === allValues ? null : value,
         }));
     };
 
     const applyFilter = () => {
-        setFilter(localFilter);
+        setFilter({
+            diameter: parseFloat(diameter.replace(",", ".")) || 0,
+            weight: parseFloat(weight.replace(",", ".")) || 0,
+            caliber: localFilter?.caliber,
+            bulletVendor: localFilter?.bulletVendor,
+            cartridgeVendor: localFilter?.cartridgeVendor,
+        });
     };
 
     const resetFilter = () => {
+        setDiameter((0).toFixed(3))
+        setWeight((0).toFixed(1))
         setLocalFilter({});
         setFilter({});
     };
-
-    console.log(filter);
 
     return (
         <Surface elevation={3} style={{ flexDirection: "row", flexWrap: "wrap", padding: 8, margin: 8 }}>
             <Select
                 label={"Caliber"}
-                items={["All", ...calibers]}
-                value={localFilter.caliber ?? "All"}
+                items={[allValues, ...calibers]}
+                value={localFilter.caliber ?? allValues}
                 onChange={(value) => onFilterChange("caliber", value)}
             />
             <Select
                 label={"Cartridge vendor"}
-                items={["All", ...cartridgeVendors]}
-                value={localFilter.cartridgeVendor ?? "All"}
+                items={[allValues, ...cartridgeVendors]}
+                value={localFilter.cartridgeVendor ?? allValues}
                 onChange={(value) => onFilterChange("cartridgeVendor", value)}
             />
             <Select
                 label={"Bullet vendor"}
-                items={["All", ...bulletVendors]}
-                value={localFilter.bulletVendor ?? "All"}
+                items={[allValues, ...bulletVendors]}
+                value={localFilter.bulletVendor ?? allValues}
                 onChange={(value) => onFilterChange("bulletVendor", value)}
             />
-            <TextInput
+            <DecimalInput
+                value={diameter}
+                onChangeText={setDiameter}
                 mode={"outlined"}
                 dense={true}
                 label={"Diameter"}
-                inputMode="decimal"
+                inputMode={"decimal"}
+                // keyboardType={"numeric"}
                 style={{ margin: 4 }}
-                onChangeText={(value) => onFilterChange("diameter", parseFloat(value))}
             />
-            <TextInput
+            <DecimalInput
+                value={weight}
+                onChangeText={setWeight}
                 mode={"outlined"}
                 dense={true}
                 label={"Weight"}
-                inputMode="decimal"
+                inputMode={"decimal"}
+                // keyboardType={"numeric"}
                 style={{ margin: 4 }}
-                onChangeText={(value) => onFilterChange("weight", parseFloat(value))}
             />
             <Select
                 label={"Drag Model"}
-                items={["All", ...dragModelTypes]}
-                value={localFilter.dragModelType ?? "All"}
+                items={[allValues, ...dragModelTypes]}
+                value={localFilter.dragModelType ?? allValues}
                 onChange={(value) => onFilterChange("dragModelType", value)}
             />
             <Surface elevation={0} style={{ flexDirection: "row" }}>
