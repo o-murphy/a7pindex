@@ -203,7 +203,7 @@ const mergeProfilesIndex = ({prevProfilesIndex, profilesIndex}) => {
             const prevIdx = prevProfilesIndex.indexOf(found)
             mergedProfilesIndex.push({
                 ...cur,
-                meta: prevProfilesIndex[prevIdx].meta
+                meta: {...cur?.meta, ...prevProfilesIndex[prevIdx].meta}
             })
         } else {
             mergedProfilesIndex.push(cur)
@@ -251,13 +251,14 @@ const createIndex = async () => {
                         meta: {
                             "productName": "",
                             "vendor": "",
-                            "caliber": "",
+                            "bulletVendor": "",
                             "caliber": "",
                             "muzzle_velocity": null,
                             "bc": null,
                             "g7": null,
-                            "bulletName": "",
+                            "bulletType": "",
                             "weight": null,
+                            "country": "",
                             "url": null
                         }
                     });
