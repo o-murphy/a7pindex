@@ -660,13 +660,13 @@
       "meta": {
         "productName": "",
         "vendor": "ABR",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 69,
         "country": "Ukraine",
         "url": null
       }
@@ -692,8 +692,8 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 77,
         "country": "Ukraine",
         "url": null
       }
@@ -712,17 +712,17 @@
       "bulletVendor": "BERGER",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "223 Remington 73 Grain Boat Tail Target Rifle Ammunition",
         "vendor": "Berger",
-        "bulletVendor": "",
+        "bulletVendor": "Berger",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 859,
+        "bc": 0.348,
+        "g7": 0.178,
+        "bulletType": "Boat Tail Target",
+        "weight": 73,
+        "country": "USA",
+        "url": "https://bergerbullets.com/product/223-remington-73-grain-boat-tail-target/"
       }
     },
     {
@@ -747,7 +747,7 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
+        "weight": 77,
         "country": "Ukraine",
         "url": null
       }
@@ -1092,12 +1092,12 @@
         "vendor": "GECO",
         "bulletVendor": "",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
+        "muzzle_velocity": 963,
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 56,
+        "country": "Canada",
         "url": null
       }
     },
@@ -1123,8 +1123,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 56,
+        "country": "Canada",
         "url": null
       }
     },
@@ -1177,8 +1177,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "Full Metal Jacket (FMJ)",
-        "weight": null,
-        "country": "",
+        "weight": 63,
+        "country": "Canada",
         "url": null
       }
     },
@@ -1370,8 +1370,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 80.5,
+        "country": "USA",
         "url": null
       }
     },
@@ -1694,8 +1694,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 210,
+        "country": "USA",
         "url": null
       }
     },
@@ -1964,8 +1964,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 210,
+        "country": "USA",
         "url": null
       }
     },
@@ -1983,17 +1983,17 @@
       "bulletVendor": "BERGER",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "300 Norma Magnum 230gr Hybrid OTM Tactical Rifle Ammunition",
         "vendor": "Berger",
         "bulletVendor": "",
         "caliber": "300 Norma Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 894,
+        "bc": 0.717,
+        "g7": 0.368,
+        "bulletType": "Hybrid OTM Tactical",
+        "weight": 230,
+        "country": "USA",
+        "url": "https://bergerbullets.com/product/300-norma-magnum-230gr-hybrid-otm-tactical/"
       }
     },
     {
@@ -2253,13 +2253,13 @@
       "meta": {
         "productName": "",
         "vendor": "ABR",
-        "bulletVendor": "",
+        "bulletVendor": "Hornady",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
         "bulletType": "A‑MAX®",
-        "weight": null,
+        "weight": 155,
         "country": "Ukraine",
         "url": null
       }
@@ -2286,7 +2286,7 @@
         "bc": null,
         "g7": null,
         "bulletType": "Full Metal Jacket (FMJ)",
-        "weight": null,
+        "weight": 147,
         "country": "Ukraine",
         "url": null
       }
@@ -2307,13 +2307,13 @@
       "meta": {
         "productName": "",
         "vendor": "ABR",
-        "bulletVendor": "",
+        "bulletVendor": "Hornady",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
         "bulletType": "A‑MAX®",
-        "weight": null,
+        "weight": 168,
         "country": "Ukraine",
         "url": null
       }
@@ -2334,13 +2334,13 @@
       "meta": {
         "productName": "",
         "vendor": "ABR",
-        "bulletVendor": "",
+        "bulletVendor": "Hornady",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
         "bulletType": "A‑MAX®",
-        "weight": null,
+        "weight": 178,
         "country": "Ukraine",
         "url": null
       }
@@ -2361,13 +2361,13 @@
       "meta": {
         "productName": "",
         "vendor": "ABR",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 178,
         "country": "Ukraine",
         "url": null
       }
@@ -2386,17 +2386,17 @@
       "bulletVendor": "BERGER",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "308 Winchester 168gr Classic Hunter Rifle Ammunition",
         "vendor": "Berger",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 815,
+        "bc": 0.489,
+        "g7": 0.251,
+        "bulletType": "Classic Hunter Hybrid",
+        "weight": 168,
+        "country": "USA",
+        "url": "https://bergerbullets.com/product/308-winchester-168gr-classic-hunter/"
       }
     },
     {
@@ -2413,17 +2413,17 @@
       "bulletVendor": "BERGER",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "308 Winchester 168gr Classic Hunter Rifle Ammunition",
         "vendor": "Berger",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 815,
+        "bc": 0.489,
+        "g7": 0.251,
+        "bulletType": "Classic Hunter Hybrid",
+        "weight": 168,
+        "country": "USA",
+        "url": "https://bergerbullets.com/product/308-winchester-168gr-classic-hunter/"
       }
     },
     {
@@ -2448,8 +2448,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 168,
+        "country": "USA",
         "url": null
       }
     },
@@ -2475,8 +2475,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 175,
+        "country": "USA",
         "url": null
       }
     },
@@ -2494,17 +2494,17 @@
       "bulletVendor": "BERGER",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "308 Winchester 175gr OTM Tactical Rifle Ammunition",
         "vendor": "Berger",
-        "bulletVendor": "",
+        "bulletVendor": "Berger",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 813,
+        "bc": 0.512,
+        "g7": 0.263,
+        "bulletType": "OTM Tactical",
+        "weight": 175,
+        "country": "USA",
+        "url": "https://bergerbullets.com/product/308-winchester-175gr-otm-tactical/"
       }
     },
     {
@@ -2521,17 +2521,17 @@
       "bulletVendor": "BERGER",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "308 Winchester 185gr Classic Hunter Rifle Ammunition",
         "vendor": "Berger",
-        "bulletVendor": "",
+        "bulletVendor": "Berger",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 772,
+        "bc": 0.533,
+        "g7": 0.273,
+        "bulletType": "Classic Hunter Hybrid",
+        "weight": 185,
+        "country": "USA",
+        "url": "https://bergerbullets.com/product/308-winchester-185gr-classic-hunter/"
       }
     },
     {
@@ -2556,8 +2556,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 185,
+        "country": "USA",
         "url": null
       }
     },
@@ -2583,8 +2583,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 210,
+        "country": "USA",
         "url": null
       }
     },
@@ -2632,17 +2632,17 @@
       "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "DTM Ammo .308 Win 175gr Premium Match",
         "vendor": "Desert Tech",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 808,
+        "bc": 0.496,
+        "g7": 0.243,
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 175,
+        "country": "USA",
+        "url": "https://deserttech.com/dtm-ammo-308win-175gr.html"
       }
     },
     {
@@ -2667,8 +2667,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 168,
+        "country": "USA",
         "url": null
       }
     },
@@ -2713,17 +2713,17 @@
       "bulletVendor": "DESERT TECH",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "DTM Ammo .308 Win 175gr Premium Match",
         "vendor": "Desert Tech",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 808,
+        "bc": 0.496,
+        "g7": 0.243,
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 175,
+        "country": "USA",
+        "url": "https://deserttech.com/dtm-ammo-308win-175gr.html"
       }
     },
     {
@@ -2796,15 +2796,15 @@
       "meta": {
         "productName": "",
         "vendor": "GECO",
-        "bulletVendor": "",
+        "bulletVendor": "GECO",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 825,
+        "bc": 0.404,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Fragmentation EXPRESS",
+        "weight": 165,
+        "country": "Canada",
+        "url": "https://geco-ammunition.com/en/ammunition/products-overview/centrefire-rifle-cartridges/geco-express/geco-308-win-express-107g"
       }
     },
     {
@@ -2829,8 +2829,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 170,
+        "country": "Canada",
         "url": null
       }
     },
@@ -4967,8 +4967,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 407,
+        "country": "USA",
         "url": null
       }
     },
@@ -5067,17 +5067,17 @@
       "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "DTM Ammo .375 CheyTac 352gr Premium Match",
         "vendor": "Desert Tech",
-        "bulletVendor": "",
+        "bulletVendor": "Cutting Edge",
         "caliber": "375 CheyTac / 375 Cheyenne Tactical",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 939,
+        "bc": 0.89,
+        "g7": 0.408,
+        "bulletType": "Cutting Edge Bullets Match",
+        "weight": 352,
+        "country": "USA",
+        "url": "https://deserttech.com/dtm-ammo-375ct-352gr.html"
       }
     },
     {
@@ -5552,8 +5552,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 105,
+        "country": "USA",
         "url": null
       }
     },
@@ -5625,7 +5625,7 @@
       "bulletVendor": "BARNAUL",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Barnaul 7.62x39mm ПС",
         "vendor": "Barnaul",
         "bulletVendor": "Barnaul",
         "caliber": "7.62x39mm",
@@ -5845,8 +5845,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 180,
+        "country": "USA",
         "url": null
       }
     },
@@ -5873,7 +5873,7 @@
         "g7": 0.349,
         "bulletType": "Hybrid",
         "weight": 180,
-        "country": "",
+        "country": "USA",
         "url": "https://bergerbullets.com/product/7-mm-180-grain-hybrid-target/",
         "_fields": {
           "productLine": "Hybrid Target"
@@ -6091,8 +6091,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 185,
+        "country": "Canada",
         "url": null
       }
     },
