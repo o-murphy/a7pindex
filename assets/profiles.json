@@ -19,7 +19,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "Б-32",
         "weight": null,
         "country": "",
         "url": null
@@ -717,7 +717,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -771,7 +771,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ BT",
         "weight": null,
         "country": "",
         "url": null
@@ -798,7 +798,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -825,7 +825,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -879,7 +879,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "V‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -987,7 +987,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -1068,7 +1068,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ BT",
         "weight": null,
         "country": "",
         "url": null
@@ -1176,7 +1176,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -1230,7 +1230,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -1257,7 +1257,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "V‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -1316,7 +1316,8 @@
         "country": "",
         "url": "https://www.hornady.com/ammunition/rifle/5.56-nato-68-gr-bthp-match-frontier#!/",
         "_fields": {
-          "productLine": "Frontier®"
+          "productLine": "Frontier®",
+          "haveIssues": true
         }
       }
     },
@@ -1449,7 +1450,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -1557,7 +1558,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "ELD-X®",
         "weight": null,
         "country": "",
         "url": null
@@ -1665,7 +1666,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "ELD-X®",
         "weight": null,
         "country": "",
         "url": null
@@ -1746,7 +1747,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ BT",
         "weight": null,
         "country": "",
         "url": null
@@ -1773,7 +1774,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -1827,7 +1828,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -2016,7 +2017,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "ELD® Match",
         "weight": null,
         "country": "",
         "url": null
@@ -2028,10 +2029,10 @@
       "weight": 230,
       "caliber": ".300 Norma Magnum",
       "path": "gallery/300NM/300NM_HORNADY_230GR_ATIP_G7.a7p",
-      "profileName": ".300NM HORNADY 230GR A-TIP",
-      "name": ".300 Norma Magnum HORNADY 230GR A-TIP A-TIP 230GR",
-      "cartridge": "HORNADY 230GR A-TIP",
-      "bullet": "A-TIP 230GR",
+      "profileName": ".300NM HORNADY 230GR A-TIP®",
+      "name": ".300 Norma Magnum HORNADY 230GR A-TIP® A-TIP® 230GR",
+      "cartridge": "HORNADY 230GR A-TIP®",
+      "bullet": "A-TIP® 230GR",
       "cartridgeVendor": "HORNADY",
       "bulletVendor": "HORNADY",
       "dragModelType": "G7",
@@ -2043,7 +2044,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A-TIP®",
         "weight": null,
         "country": "",
         "url": null
@@ -2257,7 +2258,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -2284,7 +2285,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -2419,7 +2420,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -2446,7 +2447,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -3016,7 +3017,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -3043,7 +3044,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "ELD® Match",
         "weight": null,
         "country": "",
         "url": null
@@ -3124,7 +3125,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -3259,7 +3260,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "ELD® Match",
         "weight": null,
         "country": "",
         "url": null
@@ -3286,7 +3287,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "ELD-X®",
         "weight": null,
         "country": "",
         "url": null
@@ -3934,7 +3935,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -3961,7 +3962,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
@@ -4804,7 +4805,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "ELD-X®",
         "weight": null,
         "country": "",
         "url": null
@@ -4858,7 +4859,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": 251,
         "country": "",
         "url": null
@@ -5363,7 +5364,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "A‑MAX®",
         "weight": null,
         "country": "",
         "url": null
@@ -5737,7 +5738,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "FMJ",
         "weight": null,
         "country": "",
         "url": null
