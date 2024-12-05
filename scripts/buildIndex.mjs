@@ -149,7 +149,7 @@ const resolveCaliber = (caliber, diameter) => {
         }
         // return `${diameter}`
         return caliber
-    
+
     } catch (error) {
         console.log(error)
     }
@@ -188,15 +188,33 @@ const resolveVendor = (vendor, filePath = "") => {
 
 // Function to collect unique values for a given key
 const collectUniqueValues = (data, key) => {
-    return [...new Set(data.map(item => 
+    return [...new Set(data.map(item =>
         item[key] != null ? (typeof item[key] === 'string' ? item[key].trim().toLowerCase() : item[key]) : undefined
     )).values()].filter(value => value != null); // Filter out null and undefined
 };
 
 
 
+const mergeProfilesIndex = ({prevProfilesIndex, profilesIndex}) => {    
+    const mergedProfilesIndex = [];
+    profilesIndex.map(cur => {
+        const found = prevProfilesIndex.find(item => item?.path === cur?.path );
+        if (found) {
+            const prevIdx = prevProfilesIndex.indexOf(found)
+            mergedProfilesIndex.push({
+                ...cur,
+                meta: prevProfilesIndex[prevIdx].meta
+            })
+        } else {
+            mergedProfilesIndex.push(cur)
+        }
+    })
+    return mergedProfilesIndex
+}
+
+
 const createIndex = async () => {
-    const profileIndex = [];
+    const profilesIndex = [];
 
     // Filter criteria: Include only JavaScript and Markdown files
     const criteria = (filePath) => ['.a7p'].includes(path.extname(filePath));
@@ -217,7 +235,7 @@ const createIndex = async () => {
 
                 if (result && result.profile) {
                     const profile = result?.profile;
-                    profileIndex.push({
+                    profilesIndex.push({
                         id: index,
                         diameter: profile.bDiameter / 1000,
                         weight: profile.bWeight / 10,
@@ -228,8 +246,20 @@ const createIndex = async () => {
                         cartridge: profile.cartridgeName,
                         bullet: profile.bulletName,
                         cartridgeVendor: resolveVendor(profile.cartridgeName, filePath),
-                        bulletVendor: resolveVendor(profile.bulletName, ),
-                        dragModelType: profile.bcType
+                        bulletVendor: resolveVendor(profile.bulletName,),
+                        dragModelType: profile.bcType,
+                        meta: {
+                            "productName": "",
+                            "vendor": "",
+                            "caliber": "",
+                            "caliber": "",
+                            "muzzle_velocity": null,
+                            "bc": null,
+                            "g7": null,
+                            "bulletName": "",
+                            "weight": null,
+                            "url": null
+                        }
                     });
                 } else {
                     throw new Error(`Error on file: ${filePath}`)
@@ -239,35 +269,78 @@ const createIndex = async () => {
             .catch(error => console.error(`Error on file: ${filePath}`))
     );
 
-    // Wait for all parsing operations to finish
-    Promise.all(parsePromises)
-        .then(() => {
-            // After all promises are resolved, save the file
 
-            const outputData = {
-                profiles: profileIndex,
-                uniqueKeys: {
-                    calibers: collectUniqueValues(profileIndex, 'caliber'),
-                    diameters: collectUniqueValues(profileIndex, 'diameter'),
-                    bulletVendors: collectUniqueValues(profileIndex, 'bulletVendor'),
-                    cartridgeVendors: collectUniqueValues(profileIndex, 'cartridgeVendor')
-                }
+    try {
+        await Promise.all(parsePromises)
+        let prevProfilesIndex = [];
+        try {
+            const fileData = fs.readFileSync(indexPath, 'utf8');
+            const fileJsonData = JSON.parse(fileData);
+            prevProfilesIndex = fileJsonData.profiles || [];
+        } catch {
+            console.log("Error load lastIndex")
+        }
+        console.log(profilesIndex)
+        
+        const outputData = {
+            profiles: mergeProfilesIndex({prevProfilesIndex, profilesIndex}),
+            uniqueKeys: {
+                calibers: collectUniqueValues(profilesIndex, 'caliber'),
+                diameters: collectUniqueValues(profilesIndex, 'diameter'),
+                bulletVendors: collectUniqueValues(profilesIndex, 'bulletVendor'),
+                cartridgeVendors: collectUniqueValues(profilesIndex, 'cartridgeVendor')
             }
+        }
 
-            const jsonString = JSON.stringify(outputData, null, 2);
+        const jsonString = JSON.stringify(outputData, null, 2);
 
-            fs.mkdirSync(assetsDir, { recursive: true });
-            fs.writeFileSync(indexPath, jsonString, 'utf8');
+        fs.mkdirSync(assetsDir, { recursive: true });
+        fs.writeFileSync(indexPath, jsonString, 'utf8');
+
+        console.log('Files saved successfully!');
+
+        console.log("Profiles updated:", validFilePaths.length)
+    } catch (error) {
+        console.error(`Error during parsing: ${error.message}`);
+    }
+
+    // Wait for all parsing operations to finish
+    // Promise.all(parsePromises)
+    //     .then(() => {
+    //         // After all promises are resolved, save the file
             
-            console.log('Files saved successfully!');
+    //         let prevProfilesIndex = [];
+    //         try {
+    //             const fileData = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+    //             prevProfilesIndex = fileData?.profiles || [];
+    //         } catch {
+    //             console.log("Error load lastIndex")
+    //         }
+    //         console.log(prevProfilesIndex)
+    //         const outputData = {
+    //             profiles: mergeProfilesIndex(prevProfilesIndex, profileIndex),
+    //             uniqueKeys: {
+    //                 calibers: collectUniqueValues(profileIndex, 'caliber'),
+    //                 diameters: collectUniqueValues(profileIndex, 'diameter'),
+    //                 bulletVendors: collectUniqueValues(profileIndex, 'bulletVendor'),
+    //                 cartridgeVendors: collectUniqueValues(profileIndex, 'cartridgeVendor')
+    //             }
+    //         }
 
-            console.log("Profiles updated:", validFilePaths.length)
-        })
-        .catch(error => {
-            console.error('Error during parsing:', error.message);
-        });
+    //         const jsonString = JSON.stringify(outputData, null, 2);
 
-    
+    //         fs.mkdirSync(assetsDir, { recursive: true });
+    //         fs.writeFileSync(indexPath, jsonString, 'utf8');
+
+    //         console.log('Files saved successfully!');
+
+    //         console.log("Profiles updated:", validFilePaths.length)
+    //     })
+    //     .catch(error => {
+    //         console.error('Error during parsing:', error.message);
+    //     });
+
+
 }
 
 createIndex();
