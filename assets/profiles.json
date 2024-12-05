@@ -771,7 +771,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": null,
         "country": "",
         "url": null
@@ -791,17 +791,17 @@
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "American Eagle Rifle 223 Rem 62 Grain",
         "vendor": "Federal",
         "bulletVendor": "",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 920,
+        "bc": 0.307,
         "g7": null,
-        "bulletType": "FMJ BT",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Full Metal Jacket Boat Tail (FMJ BT)",
+        "weight": 62,
+        "country": "USA",
+        "url": "https://www.federalpremium.com/rifle/american-eagle/american-eagle-rifle/11-AE223N.html"
       }
     },
     {
@@ -818,17 +818,17 @@
       "bulletVendor": "GGG",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "GGG .223 REM DESIGN GPR11",
         "vendor": "GGG",
         "bulletVendor": "",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 1015,
+        "bc": 0.272,
         "g7": null,
-        "bulletType": "FMJ",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Full Metal Jacket (FMJ)",
+        "weight": 55,
+        "country": "Lithuania",
+        "url": "https://ggg-ammo.lt/en/civil-ammunition/ggg-223-rem-design-gpr11-en"
       }
     },
     {
@@ -906,7 +906,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": null,
         "country": "USA",
         "url": null
@@ -960,7 +960,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": null,
         "country": "",
         "url": null
@@ -980,17 +980,17 @@
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Varmint & Predator 223 Rem 50 Grain (American Eagle)",
         "vendor": "Federal",
         "bulletVendor": "",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 1013,
+        "bc": 0.204,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Jacketed Hollow Point",
+        "weight": 50,
+        "country": "USA",
+        "url": "https://www.federalpremium.com/rifle/american-eagle/american-eagle-varmint/11-AE223G.html"
       }
     },
     {
@@ -1016,7 +1016,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1034,17 +1034,17 @@
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "American Eagle Rifle 223 Rem 62 Grain",
         "vendor": "Federal",
         "bulletVendor": "",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 920,
+        "bc": 0.307,
         "g7": null,
-        "bulletType": "FMJ BT",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Full Metal Jacket Boat Tail (FMJ BT)",
+        "weight": 62,
+        "country": "USA",
+        "url": "https://www.federalpremium.com/rifle/american-eagle/american-eagle-rifle/11-AE223N.html"
       }
     },
     {
@@ -1142,17 +1142,17 @@
       "bulletVendor": "GGG",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "GGG .223 REM DESIGN GPR12",
         "vendor": "GGG",
         "bulletVendor": "",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 950,
+        "bc": 0.298,
         "g7": null,
-        "bulletType": "FMJ",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Full Metal Jacket (FMJ)",
+        "weight": 62,
+        "country": "Lithuania",
+        "url": "https://ggg-ammo.lt/en/civil-ammunition/ggg-223-rem-design-gpr12-en"
       }
     },
     {
@@ -1176,7 +1176,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": null,
         "country": "",
         "url": null
@@ -1196,17 +1196,17 @@
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Federal Barnes TSX 223 Rem 55 Grain",
         "vendor": "Federal",
-        "bulletVendor": "",
+        "bulletVendor": "Barnes",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 975,
+        "bc": 0.209,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Barnes Triple-Shock X Bullet (TSX)",
+        "weight": 55,
+        "country": "USA",
+        "url": "https://www.federalpremium.com/rifle/premium-centerfire-rifle/barnes-tsx/11-P223S.html"
       }
     },
     {
@@ -1250,17 +1250,17 @@
       "bulletVendor": "GGG",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "GGG .223 REM DESIGN GPR13",
         "vendor": "GGG",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 900,
+        "bc": 0.301,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 69,
+        "country": "Lithuania",
+        "url": "https://ggg-ammo.lt/en/civil-ammunition/ggg-223-rem-design-gpr13-en"
       }
     },
     {
@@ -1342,7 +1342,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": null,
         "country": "",
         "url": null
@@ -1416,16 +1416,16 @@
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "American Eagle Rifle 224 Valkyrie 75 Grain",
         "vendor": "Federal",
         "bulletVendor": "",
         "caliber": "224 Valkyrie",
-        "muzzle_velocity": null,
+        "muzzle_velocity": 914,
         "bc": 0.4,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": 75,
-        "country": "",
+        "country": "USA",
         "url": "https://www.federalpremium.com/rifle/american-eagle/american-eagle-rifle/11-AE224VLK1.html"
       }
     },
@@ -1716,11 +1716,11 @@
         "productName": "",
         "vendor": "Hornady",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
+        "caliber": "300 AAC Blackout / Whisper",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ BT",
+        "bulletType": "Full Metal Jacket Boat Tail (FMJ BT)",
         "weight": null,
         "country": "USA",
         "url": null
@@ -1743,7 +1743,7 @@
         "productName": "",
         "vendor": "Hornady",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
+        "caliber": "300 AAC Blackout / Whisper",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -1770,7 +1770,7 @@
         "productName": "",
         "vendor": "Hornady",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
+        "caliber": "300 AAC Blackout / Whisper",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -1797,7 +1797,7 @@
         "productName": "",
         "vendor": "Hornady",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
+        "caliber": "300 AAC Blackout / Whisper",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -1851,7 +1851,7 @@
         "productName": "",
         "vendor": "Lehigh",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
+        "caliber": "300 AAC Blackout / Whisper",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -1875,17 +1875,17 @@
       "bulletVendor": "NOSLER",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "300 AAC Blackout 220gr Subsonic Match Grade Ammunition",
         "vendor": "Nosler",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
-        "muzzle_velocity": null,
+        "caliber": "300 AAC Blackout / Whisper",
+        "muzzle_velocity": 310,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Round Nose",
+        "weight": 220,
+        "country": "USA",
+        "url": "https://www.nosler.com/300-aac-blackout-220gr-subsonic-match-grade-ammunition.html"
       }
     },
     {
@@ -1905,7 +1905,7 @@
         "productName": "",
         "vendor": "Swiss P",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
+        "caliber": "300 AAC Blackout / Whisper",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -1932,7 +1932,7 @@
         "productName": "",
         "vendor": "Nexus",
         "bulletVendor": "",
-        "caliber": "300 Blackout / Whisper",
+        "caliber": "300 AAC Blackout / Whisper",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -2285,7 +2285,7 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": null,
         "country": "Ukraine",
         "url": null
@@ -2602,7 +2602,7 @@
       "bulletVendor": "BLACK HILLS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "308 Win 168 gr A‑MAX® Hornady BLACK®",
         "vendor": "Black Hills",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
@@ -2748,8 +2748,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 168,
+        "country": "USA",
         "url": null
       }
     },
@@ -2767,17 +2767,17 @@
       "bulletVendor": "FEDERAL",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Federal Trophy Bonded Tip 308 Win 180 Grain",
         "vendor": "Federal",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 798,
+        "bc": 0.500,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Trophy Bonded Tip (TB)",
+        "weight": 180,
+        "country": "USA",
+        "url": "https://www.federalpremium.com/rifle/premium-centerfire-rifle/trophy-bonded-tip/11-P308TT1.html"
       }
     },
     {
@@ -2848,17 +2848,17 @@
       "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "GGG .308 WIN DESIGN GPX14 FOR HUNTING",
         "vendor": "GGG",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 805,
+        "bc": 0.404,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "SBT",
+        "weight": 165,
+        "country": "Lithuania",
+        "url": "https://ggg-ammo.lt/en/civil-ammunition/ggg-308-win-design-gpx14-for-hunting-en"
       }
     },
     {
@@ -2875,17 +2875,17 @@
       "bulletVendor": "FEDERAL",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "Federal Trophy Bonded Tip 308 Win 180 Grain",
         "vendor": "Federal",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 798,
+        "bc": 0.500,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Trophy Bonded Tip (TB)",
+        "weight": 180,
+        "country": "USA",
+        "url": "https://www.federalpremium.com/rifle/premium-centerfire-rifle/trophy-bonded-tip/11-P308TT1.html"
       }
     },
     {
@@ -2902,17 +2902,17 @@
       "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "GGG .308 WIN DESIGN GPX15",
         "vendor": "GGG",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 810,
+        "bc": 0.496,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 175,
+        "country": "Lithuania",
+        "url": "https://ggg-ammo.lt/en/civil-ammunition/ggg-308-win-design-gpx15-en"
       }
     },
     {
@@ -3037,17 +3037,17 @@
       "bulletVendor": "GGG",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "GGG .308 WIN DESIGN GPX19 FOR HUNTING",
         "vendor": "GGG",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 780,
+        "bc": 0.506,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "SBT",
+        "weight": 180,
+        "country": "Lithuania",
+        "url": "https://ggg-ammo.lt/en/civil-ammunition/ggg-308-win-dizainas-gpx19-for-hunting-en"
       }
     },
     {
@@ -3091,17 +3091,17 @@
       "bulletVendor": "GGG",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "GGG .308 WIN DESIGN GPX13",
         "vendor": "GGG",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 805,
+        "bc": 0.462,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 168,
+        "country": "Lithuania",
+        "url": "https://ggg-ammo.lt/en/civil-ammunition/ggg-308-win-design-gpx13-en"
       }
     },
     {
@@ -3449,9 +3449,9 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
-        "weight": null,
-        "country": "",
+        "bulletType": "Full Metal Jacket (FMJ)",
+        "weight": 146,
+        "country": "Poland",
         "url": null
       }
     },
@@ -3504,8 +3504,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 148,
+        "country": "Poland",
         "url": null
       }
     },
@@ -3558,8 +3558,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 165,
+        "country": "USA",
         "url": null
       }
     },
@@ -3639,8 +3639,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 168,
+        "country": "USA",
         "url": null
       }
     },
@@ -3666,8 +3666,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 180,
+        "country": "USA",
         "url": null
       }
     },
@@ -3908,7 +3908,7 @@
         "muzzle_velocity": 905,
         "bc": 0.379,
         "g7": 0.191,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": 124,
         "country": "Czech",
         "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-training-fmj/detail/252/"
@@ -3935,7 +3935,7 @@
         "muzzle_velocity": 850,
         "bc": 0.407,
         "g7": 0.204,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": 147,
         "country": "Czech",
         "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-fmj/detail/145/"
@@ -3989,7 +3989,7 @@
         "muzzle_velocity": 735,
         "bc": 0.498,
         "g7": 0.25,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": 180,
         "country": "Czech",
         "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-fmj/detail/144/"
@@ -4630,17 +4630,17 @@
       "bulletVendor": "SIERRA BULLETS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "Federal Gold Medal Sierra MatchKing 338 Lapua Mag 300 Grain",
         "vendor": "Federal",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "338 Lapua Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 786,
+        "bc": 0.768,
+        "g7": 0.387,
+        "bulletType": "HPBT Sierra Match King",
+        "weight": 300,
+        "country": "USA",
+        "url": "https://www.federalpremium.com/rifle/gold-medal/gold-medal-sierra-matchking/11-GM338LM2.html"
       }
     },
     {
@@ -4666,7 +4666,7 @@
         "g7": 0.381,
         "bulletType": "HPBT Sierra Match King",
         "weight": 300,
-        "country": "",
+        "country": "Italy",
         "url": "https://fiocchi.com/en/709977.html",
         "_fields": {
           "g7": "G7 by Litz lb-in2"
@@ -4832,7 +4832,7 @@
         "muzzle_velocity": 855,
         "bc": 0.6571,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": 251,
         "country": "Belgium",
         "url": "https://www.swiss-p.com/en/Products/338-Lapua-Mag-SWISS-P-Ball-163-g-251-gr"
@@ -4852,7 +4852,7 @@
       "bulletVendor": "SWISS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": ".338 Lapua Mag. SWISS P AP",
         "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "338 Lapua Magnum",
@@ -4932,7 +4932,7 @@
       "bulletVendor": null,
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": ".338 Lapua Mag. SWISS P AP",
         "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "338 Lapua Magnum",
@@ -5280,16 +5280,16 @@
       "bullet": "7H22",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
-        "vendor": "",
-        "bulletVendor": "",
+        "productName": "5.45x39mm 7H22",
+        "vendor": "(USSR)",
+        "bulletVendor": "(USSR)",
         "caliber": "5.45x39mm",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "7H22",
+        "weight": 67,
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -5305,16 +5305,16 @@
       "bullet": "7H6M",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
-        "vendor": "",
-        "bulletVendor": "",
+        "productName": "5.45x39mm 7H6M",
+        "vendor": "(USSR)",
+        "bulletVendor": "(USSR)",
         "caliber": "5.45x39mm",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 52,
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -5330,15 +5330,15 @@
       "bullet": "PS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
-        "vendor": "",
-        "bulletVendor": "",
+        "productName": "5.45x39mm ПС",
+        "vendor": "(USSR)",
+        "bulletVendor": "(USSR)",
         "caliber": "5.45x39mm",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
+        "bulletType": "ПС",
+        "weight": 52,
         "country": "",
         "url": null
       }
@@ -5517,17 +5517,17 @@
       "bulletVendor": "NOSLER",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "6.5-284 Norma 140gr AccuBond Trophy Grade Ammunition",
         "vendor": "Nosler",
-        "bulletVendor": "",
+        "bulletVendor": "Norma",
         "caliber": "6.5-284 Norma AB",
-        "muzzle_velocity": null,
+        "muzzle_velocity": 838,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Nosler AccuBond (Spitzer)",
+        "weight": 140,
+        "country": "USA",
+        "url": "https://www.nosler.com/6-5-284-norma-140gr-accubond-trophy-grade-ammunition.html"
       }
     },
     {
@@ -5627,14 +5627,14 @@
       "meta": {
         "productName": "",
         "vendor": "Barnaul",
-        "bulletVendor": "",
+        "bulletVendor": "Barnaul",
         "caliber": "7.62x39mm",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "ПС",
+        "weight": 123,
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -5660,8 +5660,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 123,
+        "country": "Poland",
         "url": null
       }
     },
@@ -5677,16 +5677,16 @@
       "bullet": "ПС",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "7.62x39mm ПС",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "7.62x39mm",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "ПС",
+        "weight": 123,
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -5711,7 +5711,7 @@
         "muzzle_velocity": 738,
         "bc": 0.286,
         "g7": 0.143,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": 124,
         "country": "Czech",
         "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-fmj/detail/132/"
@@ -5783,16 +5783,16 @@
       "bullet": "УС",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "7.62x39mm УС",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "7.62x39mm",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "УС",
+        "weight": 194,
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -5818,8 +5818,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 168,
+        "country": "USA",
         "url": null
       }
     },
@@ -6011,7 +6011,7 @@
         "g7": null,
         "bulletType": "Vulkan",
         "weight": 196,
-        "country": "",
+        "country": "Sweden",
         "url": "https://www.norma-ammunition.com/en-gb/products/dedicated-hunting/centerfire-rifle/norma-vulkan/norma-vulkan-8x57-jrs-196gr---20180192"
       }
     },
@@ -6198,9 +6198,9 @@
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "FMJ",
+        "bulletType": "Full Metal Jacket (FMJ)",
         "weight": 125,
-        "country": "",
+        "country": "(NATO)",
         "url": null
       }
     },
@@ -6227,7 +6227,7 @@
         "g7": null,
         "bulletType": "RNCP",
         "weight": 148,
-        "country": "",
+        "country": "Italy",
         "url": "https://fiocchi.com/en/719381.html"
       }
     },
@@ -6335,7 +6335,7 @@
         "g7": null,
         "bulletType": "unknown",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     }
