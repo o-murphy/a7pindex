@@ -12,7 +12,7 @@
       "bullet": "ДШК Б-32",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "12.7x108 Б-32",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "12.7x108mm",
@@ -21,7 +21,7 @@
         "g7": null,
         "bulletType": "Б-32",
         "weight": null,
-        "country": "",
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -37,7 +37,7 @@
       "bullet": "МДЗ",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "12.7x108 МДЗ",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "12.7x108mm",
@@ -46,7 +46,7 @@
         "g7": null,
         "bulletType": "МДЗ",
         "weight": 664,
-        "country": "",
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -64,7 +64,7 @@
       "bulletVendor": null,
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "14.5x114mm БС",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "14.5x114mm",
@@ -73,7 +73,7 @@
         "g7": null,
         "bulletType": "БС",
         "weight": null,
-        "country": "",
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -89,7 +89,7 @@
       "bullet": "14.5x114 Б-32",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "14.5x114mm Б-32",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "14.5x114mm",
@@ -98,7 +98,7 @@
         "g7": null,
         "bulletType": "Б-32",
         "weight": 992,
-        "country": "",
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -114,7 +114,7 @@
       "bullet": "БС",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "12.7x108 БС",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "12.7x108mm",
@@ -123,7 +123,7 @@
         "g7": null,
         "bulletType": "БС",
         "weight": 857,
-        "country": "",
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -139,7 +139,7 @@
       "bullet": "МДЗ",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "14.5x114 МДЗ",
         "vendor": "",
         "bulletVendor": "",
         "caliber": "14.5x114mm",
@@ -148,7 +148,7 @@
         "g7": null,
         "bulletType": "МДЗ",
         "weight": 925,
-        "country": "",
+        "country": "(USSR)",
         "url": null
       }
     },
@@ -171,11 +171,11 @@
         "bulletVendor": "",
         "caliber": "17HMR / 17 Remington / Hornady Magnum Rifle",
         "muzzle_velocity": null,
-        "bc": null,
+        "bc": 0.185,
         "g7": null,
         "bulletType": "V‑MAX®",
         "weight": 20,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/bullets/rifle/17-cal-172-20-gr-v-max#!/"
       }
     },
@@ -202,7 +202,7 @@
         "g7": null,
         "bulletType": "HP XTP",
         "weight": 20,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/ammunition/rimfire/17-hmr-20-gr-xtp#!/",
         "_fields": {
           "productLine": "Varmint Express® Rimfire"
@@ -262,7 +262,7 @@
         "g7": null,
         "bulletType": "V‑MAX®",
         "weight": 25,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/bullets/rifle/17-cal-172-25-gr-v-max#!/"
       }
     },
@@ -289,7 +289,7 @@
         "g7": null,
         "bulletType": "V‑MAX®",
         "weight": 50,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/ammunition/rifle/22-250-rem-50-gr-v-max-superformance#!/"
       }
     },
@@ -316,7 +316,7 @@
         "g7": null,
         "bulletType": "V‑MAX®",
         "weight": 55,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/ammunition/rifle/22-250-rem-55-gr-v-max#!/"
       }
     },
@@ -335,7 +335,7 @@
       "dragModelType": "G1",
       "meta": {
         "productName": "",
-        "vendor": "",
+        "vendor": "Winchester",
         "bulletVendor": "",
         "caliber": "22-250 Remington",
         "muzzle_velocity": null,
@@ -363,14 +363,14 @@
       "meta": {
         "productName": "Premier AccuTip-V 17 Remington 20 Grain",
         "vendor": "Remington",
-        "bulletVendor": "",
+        "bulletVendor": "Remington",
         "caliber": "17HMR / 17 Remington / Hornady Magnum Rifle",
         "muzzle_velocity": 1295,
         "bc": 0.185,
         "g7": null,
         "bulletType": "AccuTip-V",
         "weight": 20,
-        "country": "",
+        "country": "USA",
         "url": "https://www.remington.com/rifle/premier-accutip-v/29-29162.html"
       }
     },
@@ -390,14 +390,14 @@
       "meta": {
         "productName": "Premier AccuTip-V 222 Rem 50 Grain",
         "vendor": "Remington",
-        "bulletVendor": "",
+        "bulletVendor": "Remington",
         "caliber": "222 Remington",
         "muzzle_velocity": 957,
         "bc": 0.242,
         "g7": null,
         "bulletType": "AccuTip-V",
         "weight": 50,
-        "country": "",
+        "country": "USA",
         "url": "https://www.remington.com/rifle/premier-accutip-v/29-29174.html"
       }
     },
@@ -450,7 +450,7 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
+        "weight": 50,
         "country": "",
         "url": null
       }
@@ -469,17 +469,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "222 REM. SPV344932 50 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "222 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 970,
+        "bc": 0.177,
+        "g7": 0.088,
+        "bulletType": "Semi-Jacketed Soft Point",
+        "weight": 50,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-sp/detail/183/"
       }
     },
     {
@@ -523,17 +523,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .222 Rem. MATCH JAGD 3,4g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "222 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 980,
+        "bc": 0.183,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Match JAGD",
+        "weight": 52,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-222-rem-match-jagd-3-4g"
       }
     },
     {
@@ -550,17 +550,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "222 REM. SPV344932 50 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "222 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 970,
+        "bc": 0.177,
+        "g7": 0.088,
+        "bulletType": "Semi-Jacketed Soft Point",
+        "weight": 50,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-sp/detail/183/"
       }
     },
     {
@@ -604,17 +604,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .222 Rem. TMS 3,2g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "222 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 1020,
+        "bc": 0.186        ,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Teilmantel / TMS",
+        "weight": 50,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-222-rem-tms-3-2g"
       }
     },
     {
@@ -631,17 +631,17 @@
       "bulletVendor": "NORMA",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Norma Oryx .222 Remington 55gr",
         "vendor": "Norma",
-        "bulletVendor": "",
+        "bulletVendor": "Norma",
         "caliber": "222 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 930,
+        "bc": 0.185,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Oryx",
+        "weight": 55,
+        "country": "Sweden",
+        "url": "https://www.norma-ammunition.com/en-us/products/dedicated-hunting/centerfire-rifle/norma-oryx/norma-oryx-222-remington-55gr---20157042"
       }
     },
     {
@@ -667,7 +667,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -694,7 +694,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -746,7 +746,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -800,7 +800,7 @@
         "g7": null,
         "bulletType": "FMJ",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -854,7 +854,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -881,7 +881,7 @@
         "g7": null,
         "bulletType": "V‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -899,17 +899,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .223 Rem. TMS 3,6g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "5.56mm NATO / 5.56x45 / 223 Remington",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 1000,
+        "bc": 0.207,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Teilmantel / TMS",
+        "weight": 55,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-223-rem-tms-3-6g"
       }
     },
     {
@@ -1259,7 +1259,7 @@
         "g7": null,
         "bulletType": "V‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1286,7 +1286,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1313,7 +1313,7 @@
         "g7": null,
         "bulletType": "BTHP Match™",
         "weight": 68,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/ammunition/rifle/5.56-nato-68-gr-bthp-match-frontier#!/",
         "_fields": {
           "productLine": "Frontier®",
@@ -1344,7 +1344,7 @@
         "g7": 0.274,
         "bulletType": "ELD® Match",
         "weight": 88,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/ammunition/rifle/224-valkyrie-88-gr-eld-match#!/"
       }
     },
@@ -1397,8 +1397,8 @@
         "bc": null,
         "g7": null,
         "bulletType": "",
-        "weight": null,
-        "country": "",
+        "weight": 55,
+        "country": "Sweden",
         "url": null
       }
     },
@@ -1473,7 +1473,7 @@
         "productName": "",
         "vendor": "CCI",
         "bulletVendor": "",
-        "caliber": "22 Long Rifle",
+        "caliber": "22 Long Rifle / Hornet",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -1497,17 +1497,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .22 Hornet HIT 2,6g",
         "vendor": "RWS",
-        "bulletVendor": "",
-        "caliber": "22 Long Rifle",
-        "muzzle_velocity": null,
-        "bc": null,
+        "bulletVendor": "RWS",
+        "caliber": "22 Long Rifle / Hornet",
+        "muzzle_velocity": 736,
+        "bc": 0.123,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "RWS HIT",
+        "weight": 40,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-22-hornet-hit-2-6g"
       }
     },
     {
@@ -1560,7 +1560,7 @@
         "g7": null,
         "bulletType": "ELD-X®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1608,7 +1608,7 @@
         "productName": "",
         "vendor": "",
         "bulletVendor": "",
-        "caliber": "22 Long Rifle",
+        "caliber": "22 Long Rifle / Hornet",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
@@ -1668,7 +1668,7 @@
         "g7": null,
         "bulletType": "ELD-X®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1686,17 +1686,17 @@
       "bulletVendor": "NORMA",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Norma Oryx .270 WSM 150gr",
         "vendor": "Norma",
-        "bulletVendor": "",
+        "bulletVendor": "Norma",
         "caliber": "270 Winchester Short Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 940,
+        "bc": 0.373,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Oryx",
+        "weight": 150,
+        "country": "Sweden",
+        "url": "https://www.norma-ammunition.com/en-us/products/dedicated-hunting/centerfire-rifle/norma-oryx/norma-oryx-270-wsm-150gr---20169322"
       }
     },
     {
@@ -1749,7 +1749,7 @@
         "g7": null,
         "bulletType": "FMJ BT",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1776,7 +1776,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1803,7 +1803,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1830,7 +1830,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -1903,7 +1903,7 @@
       "dragModelType": "G7",
       "meta": {
         "productName": "",
-        "vendor": "Swiss",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "300 Blackout / Whisper",
         "muzzle_velocity": null,
@@ -2019,7 +2019,7 @@
         "g7": null,
         "bulletType": "ELD® Match",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -2046,7 +2046,7 @@
         "g7": null,
         "bulletType": "A-TIP®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -2127,7 +2127,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -2260,7 +2260,7 @@
         "g7": null,
         "bulletType": "FMJ",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -2287,7 +2287,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -2341,7 +2341,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -2422,7 +2422,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -2449,7 +2449,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -2965,7 +2965,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -2992,7 +2992,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3019,7 +3019,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3046,7 +3046,7 @@
         "g7": null,
         "bulletType": "ELD® Match",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3073,7 +3073,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3100,7 +3100,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3127,7 +3127,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3154,7 +3154,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3181,7 +3181,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3208,7 +3208,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3235,7 +3235,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3262,7 +3262,7 @@
         "g7": null,
         "bulletType": "ELD® Match",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3289,7 +3289,7 @@
         "g7": null,
         "bulletType": "ELD-X®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3316,7 +3316,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3370,7 +3370,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3451,7 +3451,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -3577,17 +3577,17 @@
       "bulletVendor": "NORMA",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Norma Oryx .308 Winchester 180gr",
         "vendor": "Norma",
-        "bulletVendor": "",
+        "bulletVendor": "Norma",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 796,
+        "bc": 0.354,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Oryx",
+        "weight": 180,
+        "country": "Sweden",
+        "url": "https://www.norma-ammunition.com/en-us/products/dedicated-hunting/centerfire-rifle/norma-oryx/norma-oryx-308-winchester-180gr---20174732"
       }
     },
     {
@@ -3604,17 +3604,17 @@
       "bulletVendor": "NORMA",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Norma Vulkan .308 Winchester 180gr",
         "vendor": "Norma",
-        "bulletVendor": "",
+        "bulletVendor": "Norma",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 796,
+        "bc": 0.315,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Vulkan",
+        "weight": 180,
+        "country": "Sweden",
+        "url": "https://www.norma-ammunition.com/en-us/products/dedicated-hunting/centerfire-rifle/norma-vulkan/norma-vulkan-308-winchester-180gr---20176602"
       }
     },
     {
@@ -3687,14 +3687,14 @@
       "meta": {
         "productName": "",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
+        "bulletType": "RWS Evolution Green",
         "weight": null,
-        "country": "",
+        "country": "Germany",
         "url": null
       }
     },
@@ -3712,17 +3712,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .308 Win. KS 9,7g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 850,
+        "bc": 0.298,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Kegelspitz / KS",
+        "weight": 150,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-308-win-ks-9-7g"
       }
     },
     {
@@ -3739,17 +3739,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .308 Win. HIT 10,7g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 820,
+        "bc": 0.420,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "RWS HIT",
+        "weight": 165,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-308-win-hit-10-7g"
       }
     },
     {
@@ -3766,17 +3766,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .308 Win. SPEED TIP PRO 10,7g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 830,
+        "bc": 0.422,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "SPEED TIP Professional",
+        "weight": 165,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-308-win-speed-tip-pro-10-7g"
       }
     },
     {
@@ -3795,14 +3795,14 @@
       "meta": {
         "productName": "",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "Kegelspitz / KS",
+        "weight": 165,
+        "country": "Germany",
         "url": null
       }
     },
@@ -3849,14 +3849,14 @@
       "meta": {
         "productName": "",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "RWS Evolution Green",
+        "weight": 180,
+        "country": "Germany",
         "url": null
       }
     },
@@ -3874,17 +3874,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .308 Win. EVOLUTION 11,9g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 750,
+        "bc": 0.366,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "RWS Evolution Green",
+        "weight": 184,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-308-win-evo-11-9g"
       }
     },
     {
@@ -3901,17 +3901,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "308 WIN. FMJV340802 124 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 905,
+        "bc": 0.379,
+        "g7": 0.191,
+        "bulletType": "FMJ",
+        "weight": 124,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-training-fmj/detail/252/"
       }
     },
     {
@@ -3928,17 +3928,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "308 WIN. FMJV332202 180 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
+        "muzzle_velocity": 735,
+        "bc": 0.498,
+        "g7": 0.250,
         "bulletType": "FMJ",
-        "weight": null,
-        "country": "",
-        "url": null
+        "weight": 180,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-fmj/detail/144/"
       }
     },
     {
@@ -3955,17 +3955,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "308 WIN. FMJV332212 147 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
+        "muzzle_velocity": 850,
+        "bc": 0.407,
+        "g7": 0.204,
         "bulletType": "FMJ",
-        "weight": null,
-        "country": "",
-        "url": null
+        "weight": 147,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-fmj/detail/145/"
       }
     },
     {
@@ -4037,7 +4037,7 @@
       "dragModelType": "G1",
       "meta": {
         "productName": "",
-        "vendor": "Sellier & Bellot",
+        "vendor": "Sierra",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
@@ -4063,17 +4063,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "308 WIN. HPBTV341812 175 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 800,
+        "bc": 0.474,
+        "g7": 0.239,
+        "bulletType": "HPBT",
+        "weight": 175,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-target-match/detail/472/"
       }
     },
     {
@@ -4092,14 +4092,14 @@
       "meta": {
         "productName": "",
         "vendor": "Hornady",
-        "bulletVendor": "",
+        "bulletVendor": "Sierra",
         "caliber": "308 Winchester / 7.62×51mm NATO",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -4423,7 +4423,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -4441,17 +4441,17 @@
       "bulletVendor": "SWISS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
-        "vendor": "Swiss",
+        "productName": ".308 Win. SWISS P Subsonic",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 315,
+        "bc": 0.3636,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "HPBT",
+        "weight": 200,
+        "country": "Belgium",
+        "url": "https://www.swiss-p.com/en/Products/308-Win-SWISS-P-Subsonic-130-g-200-gr"
       }
     },
     {
@@ -4468,17 +4468,17 @@
       "bulletVendor": "SWISS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
-        "vendor": "Swiss",
+        "productName": ".308 Win. SWISS P Styx Action",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 810,
+        "bc": 0.3630,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "JHP",
+        "weight": 167,
+        "country": "Belgium",
+        "url": "https://www.swiss-p.com/en/Products/308-Win-SWISS-P-Styx-Action-108-g-167-gr"
       }
     },
     {
@@ -4504,7 +4504,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -4522,17 +4522,17 @@
       "bulletVendor": "SWISS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
-        "vendor": "Swiss",
+        "productName": ".308 Win. SWISS P Target",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "308 Winchester / 7.62×51mm NATO",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 805,
+        "bc": 0.4893,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "HPBT",
+        "weight": 168,
+        "country": "Belgium",
+        "url": "https://www.swiss-p.com/en/Products/308-Win-SWISS-P-Target-109-g-168-gr"
       }
     },
     {
@@ -4612,7 +4612,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -4696,7 +4696,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -4723,7 +4723,7 @@
         "g7": 0.394,
         "bulletType": "ELD® Match",
         "weight": 285,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/ammunition/rifle/338-lapua-285-gr-eld-match#!/",
         "_fields": {
           "twistRate": "1-10"
@@ -4771,17 +4771,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS .338 Lapua Magnum SPEED TIP PRO 16,2g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "338 Lapua Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 875,
+        "bc": 0.566,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "SPEED TIP Professional",
+        "weight": 250,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-338-lapua-magnum-speed-tip-pro-16-2g"
       }
     },
     {
@@ -4807,7 +4807,7 @@
         "g7": null,
         "bulletType": "ELD-X®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -4825,17 +4825,17 @@
       "bulletVendor": "SWISS",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
-        "vendor": "Swiss",
+        "productName": ".338 Lapua Mag. SWISS P Target",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "338 Lapua Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 865,
+        "bc": 0.6839,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "HPBT",
+        "weight": 250,
+        "country": "Belgium",
+        "url": "https://www.swiss-p.com/en/Products/338-Lapua-Mag-SWISS-P-Target-162-g-250-gr"
       }
     },
     {
@@ -4852,17 +4852,17 @@
       "bulletVendor": "SWISS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
-        "vendor": "Swiss",
+        "productName": ".338 Lapua Mag. SWISS P Ball",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "338 Lapua Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 855,
+        "bc": 0.6571,
         "g7": null,
         "bulletType": "FMJ",
         "weight": 251,
-        "country": "",
-        "url": null
+        "country": "Belgium",
+        "url": "https://www.swiss-p.com/en/Products/338-Lapua-Mag-SWISS-P-Ball-163-g-251-gr"
       }
     },
     {
@@ -4879,16 +4879,16 @@
       "dragModelType": "G1",
       "meta": {
         "productName": "",
-        "vendor": "Swiss",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "338 Lapua Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 847,
+        "bc": 0.6773,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Armour Piercing",
+        "weight": 260,
+        "country": "Belgium",
+        "url": "https://www.swiss-p.com/en/Products/338-Lapua-Mag-SWISS-P-Armour-Piercing-168-g-260-gr"
       }
     },
     {
@@ -4914,7 +4914,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -4933,16 +4933,16 @@
       "dragModelType": "G7",
       "meta": {
         "productName": "",
-        "vendor": "Swiss",
+        "vendor": "Swiss P",
         "bulletVendor": "",
         "caliber": "338 Lapua Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 847,
+        "bc": 0.6773,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Armour Piercing",
+        "weight": 260,
+        "country": "Belgium",
+        "url": "https://www.swiss-p.com/en/Products/338-Lapua-Mag-SWISS-P-Armour-Piercing-168-g-260-gr"
       }
     },
     {
@@ -4968,7 +4968,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -4995,7 +4995,7 @@
         "g7": null,
         "bulletType": "",
         "weight": null,
-        "country": "",
+        "country": "Ukraine",
         "url": null
       }
     },
@@ -5177,14 +5177,14 @@
       "meta": {
         "productName": "",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "375 H&H Magnum",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "Kegelspitz / KS",
+        "weight": 300,
+        "country": "Germany",
         "url": null
       }
     },
@@ -5366,7 +5366,7 @@
         "g7": null,
         "bulletType": "A‑MAX®",
         "weight": null,
-        "country": "",
+        "country": "USA",
         "url": null
       }
     },
@@ -5571,17 +5571,17 @@
       "bulletVendor": "NORMA",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "Norma Diamond Line 6XC 105gr",
         "vendor": "Norma",
-        "bulletVendor": "",
-        "caliber": "6 mm XC / 6XC",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletVendor": "Norma",
+        "caliber": "6mm XC / 6XC",
+        "muzzle_velocity": 920,
+        "bc": 0.517,
+        "g7": 0.255,
+        "bulletType": "Diamond",
+        "weight": 105,
+        "country": "Sweden",
+        "url": "https://www.norma-ammunition.com/en-us/products/dedicated-precision/centerfire-rifle/norma-diamond-line/norma-diamond-line-6xc-105gr---10160182"
       }
     },
     {
@@ -5704,17 +5704,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "7,62 × 39 SPV342212 124 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "7.62x39mm",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "muzzle_velocity": 743,
+        "bc": 0.238,
+        "g7": 0.120,
+        "bulletType": "Semi-Jacketed Soft Point",
+        "weight": 124,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-sp/detail/131/"
       }
     },
     {
@@ -5731,17 +5731,17 @@
       "bulletVendor": "SELLIER & BELLOT",
       "dragModelType": "G7",
       "meta": {
-        "productName": "",
+        "productName": "7,62 × 39 FMJV340832 124 GRS",
         "vendor": "Sellier & Bellot",
         "bulletVendor": "",
         "caliber": "7.62x39mm",
-        "muzzle_velocity": null,
-        "bc": null,
-        "g7": null,
+        "muzzle_velocity": 738,
+        "bc": 0.286,
+        "g7": 0.143,
         "bulletType": "FMJ",
-        "weight": null,
-        "country": "",
-        "url": null
+        "weight": 124,
+        "country": "Czech",
+        "url": "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-fmj/detail/132/"
       }
     },
     {
@@ -5894,17 +5894,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS 7mm Rem. Mag. KS 10,5g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "7mm Remington Magnum",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 890,
+        "bc": 0.381,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Kegelspitz / KS",
+        "weight": 162,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-7mm-rem-mag-ks-10-5g"
       }
     },
     {
@@ -5921,17 +5921,17 @@
       "bulletVendor": "NORMA",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Norma Vulkan 7x64 170gr",
         "vendor": "Norma",
-        "bulletVendor": "",
+        "bulletVendor": "Norma",
         "caliber": "7×64mm / Brenneke",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 840,
+        "bc": 0.353,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Vulkan",
+        "weight": 170,
+        "country": "Sweden",
+        "url": "https://www.norma-ammunition.com/en-us/products/dedicated-hunting/centerfire-rifle/norma-vulkan/norma-vulkan-7x64-170gr---20170182"
       }
     },
     {
@@ -5951,13 +5951,13 @@
         "productName": "",
         "vendor": "RWS",
         "bulletVendor": "",
-        "caliber": "",
+        "caliber": "7x65R / 7x65mm",
         "muzzle_velocity": null,
         "bc": null,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
+        "bulletType": "RWS Classic",
+        "weight": 177,
+        "country": "Germany",
         "url": null
       }
     },
@@ -5970,22 +5970,22 @@
       "profileName": "8x57 BLASER 196GR CDP",
       "name": "8x57 BLASER 12.7 CDP BLASER 12.7 CDP",
       "cartridge": "BLASER 12.7 CDP",
-      "bullet": "BLASER 12.7 CDP",
+      "bullet": "BLASER 8x57 IS – 12,7 g",
       "cartridgeVendor": "BLASER",
       "bulletVendor": "BLASER",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "Blaser CDP 196GR",
         "vendor": "Blaser",
-        "bulletVendor": "",
-        "caliber": "8x57 JS",
-        "muzzle_velocity": 790,
-        "bc": null,
+        "bulletVendor": "Blaser",
+        "caliber": "8х57 JS / IS / JRS / IRS",
+        "muzzle_velocity": 770,
+        "bc": 0.388,
         "g7": null,
         "bulletType": "CDP",
         "weight": 196,
-        "country": "",
-        "url": null
+        "country": "Germany",
+        "url": "https://www.blaser.de/fileadmin/media/pdf/Ballistik-Daten/Blaser_CDP/Blaser_CDP_Ammunition_EN.pdf"
       }
     },
     {
@@ -6002,17 +6002,17 @@
       "bulletVendor": "BLASER",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
-        "vendor": "Norma",
-        "bulletVendor": "",
-        "caliber": "8x57 JS",
-        "muzzle_velocity": null,
-        "bc": null,
+        "productName": "Norma Vulkan 8x57 JRS 196gr",
+        "vendor": "Blaser",
+        "bulletVendor": "Norma",
+        "caliber": "8х57 JS / IS / JRS / IRS",
+        "muzzle_velocity": 730,
+        "bc": 0.347,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
+        "bulletType": "Vulkan",
+        "weight": 196,
         "country": "",
-        "url": null
+        "url": "https://www.norma-ammunition.com/en-gb/products/dedicated-hunting/centerfire-rifle/norma-vulkan/norma-vulkan-8x57-jrs-196gr---20180192"
       }
     },
     {
@@ -6029,17 +6029,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS 8x57 JRS SPEED TIP PRO 11,7g",
         "vendor": "RWS",
-        "bulletVendor": "",
-        "caliber": "8х57 JS",
-        "muzzle_velocity": null,
-        "bc": null,
+        "bulletVendor": "RWS",
+        "caliber": "8х57 JS / IS / JRS / IRS",
+        "muzzle_velocity": 745,
+        "bc": 0.394,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "SPEED TIP Professional",
+        "weight": 180,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-8x57-jrs-speed-tip-pro-11-7g"
       }
     },
     {
@@ -6110,17 +6110,17 @@
       "bulletVendor": "RWS",
       "dragModelType": "G1",
       "meta": {
-        "productName": "",
+        "productName": "RWS 9,3x74 R KS 16,0g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "9.3×74mm R",
-        "muzzle_velocity": null,
-        "bc": null,
+        "muzzle_velocity": 740,
+        "bc": 0.320,
         "g7": null,
-        "bulletType": "",
-        "weight": null,
-        "country": "",
-        "url": null
+        "bulletType": "Kegelspitz / KS",
+        "weight": 247,
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-9-3x74-r-ks-16-0g"
       }
     },
     {
@@ -6139,15 +6139,15 @@
       "meta": {
         "productName": "RWS 8x68 S KS 11,7g",
         "vendor": "RWS",
-        "bulletVendor": "",
+        "bulletVendor": "RWS",
         "caliber": "8x68 S",
         "muzzle_velocity": 950,
         "bc": 0.31,
         "g7": null,
         "bulletType": "Kegelspitz / KS",
         "weight": 180,
-        "country": "",
-        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-8x68-s-ks-11-7g?tx_twruag_ammolist%5BfilterForm%5D%5Bfilter%5D%5Bcaliber%5D=122&tx_twruag_ammolist%5BfilterForm%5D%5Bfilter%5D%5Bfamily%5D=78&cHash=35cc4caf9d2c3d22675511d1703d4d93"
+        "country": "Germany",
+        "url": "https://rws-ammunition.com/en/products/centerfire-rifle-cartridges/rws-8x68-s-ks-11-7g"
       }
     },
     {
@@ -6166,7 +6166,7 @@
       "meta": {
         "productName": "9x21 8G FMJ",
         "vendor": "(NATO)",
-        "bulletVendor": "",
+        "bulletVendor": "(NATO)",
         "caliber": "9mm Luger / IMI",
         "muzzle_velocity": null,
         "bc": null,
@@ -6193,7 +6193,7 @@
       "meta": {
         "productName": "CODE: #719387 9 x 21 LL",
         "vendor": "Fiocchi",
-        "bulletVendor": "",
+        "bulletVendor": "Fiocchi",
         "caliber": "9mm Luger / IMI",
         "muzzle_velocity": 355,
         "bc": null,
@@ -6247,14 +6247,14 @@
       "meta": {
         "productName": "9mm Luger 147 gr XTP®",
         "vendor": "Hornady",
-        "bulletVendor": "",
+        "bulletVendor": "Hornady",
         "caliber": "9mm Luger / IMI",
         "muzzle_velocity": 297,
         "bc": 0.212,
         "g7": null,
         "bulletType": "XTP®",
         "weight": 147,
-        "country": "",
+        "country": "USA",
         "url": "https://www.hornady.com/ammunition/handgun/9mm-luger-147-gr-xtp#!/"
       }
     },
