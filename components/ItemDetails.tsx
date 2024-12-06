@@ -30,6 +30,10 @@ const ItemDetails: React.FC<ItemDetailsProps> = ({ item, visible, onDismiss }) =
         fetchDetails({ path: item.path, onSuccess: (data) => setData(data), onError: () => setData(null) })
     }, [item])
 
+    const mv = item?.meta?.muzzle_velocity ? `${item?.meta?.muzzle_velocity.toFixed(0)} m/s` : "undefined";
+    const dia = item?.diameter ? `${item?.diameter?.toFixed(3)} inch` : "undefined";
+    const wght = item?.weight ? `${item?.weight?.toFixed(1)} gr` : "undefined";
+
     return (
         <Portal>
             <Dialog visible={visible} onDismiss={onDismiss} style={{ maxWidth: 350, minWidth: 300, maxHeight: "50%", alignSelf: "center" }}>
@@ -41,11 +45,11 @@ const ItemDetails: React.FC<ItemDetailsProps> = ({ item, visible, onDismiss }) =
                     <Divider />
                     <DataRow label={"Bullet Type"} value={item?.meta?.bulletType || item?.bullet}/>
                     <Divider />
-                    <DataRow label={"Bullet weight"} value={`${item?.weight?.toFixed(1)} gr`}/>
+                    <DataRow label={"Bullet weight"} value={wght}/>
                     <Divider />
-                    <DataRow label={"Bullet diameter"} value={`${item?.diameter?.toFixed(3)} inch`}/>
+                    <DataRow label={"Bullet diameter"} value={dia}/>
                     <Divider />
-                    <DataRow label={"Muzzle velocity"} value={`${item?.meta?.muzzle_velocity.toFixed(0)} m/s`}/>
+                    <DataRow label={"Muzzle velocity"} value={mv}/>
                     <Divider />
                     <DataRow label={"Drag model"} value={item?.dragModelType}/>
                     {/* <DataRow label={"Source"} value={item?.meta?.url} /> */}
