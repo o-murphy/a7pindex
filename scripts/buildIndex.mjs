@@ -189,7 +189,7 @@ const resolveVendor = (vendor, filePath = "") => {
 // Function to collect unique values for a given key
 const collectUniqueValues = (data, key) => {
     return [...new Set(data.map(item =>
-        item[key] != null ? (typeof item[key] === 'string' ? item[key].trim().toLowerCase() : item[key]) : undefined
+        item[key] != null ? (typeof item[key] === 'string' ? item[key].trim() : item[key]) : undefined
     )).values()].filter(value => value != null); // Filter out null and undefined
 };
 
