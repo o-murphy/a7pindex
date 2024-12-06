@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FAB, Surface } from "react-native-paper";
 import Select from "./Select";
 import { ProfileIndexType, ProfilesJson, useFilterContext } from "@/hooks/FilterHook";
@@ -29,6 +29,10 @@ const FilterSurface = () => {
         }));
     };
 
+    useEffect(() => {
+        applyFilter();
+    }, [weight, diameter, localFilter])
+
     const applyFilter = () => {
         setFilter({
             diameter: parseFloat(diameter.replace(",", ".")) || 0,
@@ -36,6 +40,7 @@ const FilterSurface = () => {
             caliber: localFilter?.caliber,
             bulletVendor: localFilter?.bulletVendor,
             cartridgeVendor: localFilter?.cartridgeVendor,
+            dragModelType: localFilter?.dragModelType
         });
     };
 
@@ -43,7 +48,6 @@ const FilterSurface = () => {
         setDiameter((0).toFixed(3))
         setWeight((0).toFixed(1))
         setLocalFilter({});
-        setFilter({});
     };
 
     return (
@@ -93,9 +97,6 @@ const FilterSurface = () => {
                 onChange={(value) => onFilterChange("dragModelType", value)}
             />
             <Surface elevation={0} style={{ flexDirection: "row" }}>
-                <Surface elevation={0} style={{ justifyContent: "center", margin: 4 }}>
-                    <FAB size={"small"} variant={"secondary"} style={{}} icon={"filter"} onPress={applyFilter} />
-                </Surface>
                 <Surface elevation={0} style={{ justifyContent: "center", margin: 4 }}>
                     <FAB
                         size={"small"}

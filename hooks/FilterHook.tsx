@@ -14,7 +14,8 @@ type ProfileIndexType = {
     profileName?: string;
     cartridge?: string;
     bullet?: string;
-    dragModelType?: "G1" | "G7" | "CUSTOM"
+    dragModelType?: "G1" | "G7" | "CUSTOM";
+    meta?: any;
 };
 
 // Corrected type for uniqueKeys

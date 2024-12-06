@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TextInput, TextInputProps } from "react-native-paper";
+import { debounce } from "lodash";
 
 type DecimalInputProps = {
     value: string; 
@@ -8,6 +9,18 @@ type DecimalInputProps = {
 
 
 const DecimalInput: React.FC<DecimalInputProps> = ({ value, onChangeText, ...props }) => {
+
+
+    const [localValue, setLocalValue] = useState(value)
+
+    const onDebounceSearch = debounce((value: string) => {
+        onChangeText(value);
+    }, 1000);
+
+    const onChangeSearchText = (val: string) => {
+        handleInputChange(val);
+        onDebounceSearch(val);
+    };
 
     const handleInputChange = (text: string) => {
         
@@ -19,16 +32,22 @@ const DecimalInput: React.FC<DecimalInputProps> = ({ value, onChangeText, ...pro
             return;
         }
         if (validText) {
-            onChangeText?.(validText);
+            // onChangeText?.(validText);
+            setLocalValue(validText)
         } else {
-            onChangeText?.("")
+            // onChangeText?.("")
+            setLocalValue("")
         }
     };
 
+    useEffect(() => {
+        setLocalValue(value)
+    }, [value])
+
     return (
         <TextInput
-            value={value ?? ""}
-            onChangeText={handleInputChange}
+            value={localValue ?? ""}
+            onChangeText={onChangeSearchText}
             {...props}
         />
     );

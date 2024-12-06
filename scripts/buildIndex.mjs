@@ -282,14 +282,17 @@ const createIndex = async () => {
             console.log("Error load lastIndex")
         }
         console.log(profilesIndex)
+
+        const mergedIndex = mergeProfilesIndex({prevProfilesIndex, profilesIndex});
+        const mergedMeta = mergedIndex.map(item => item.meta)
         
         const outputData = {
-            profiles: mergeProfilesIndex({prevProfilesIndex, profilesIndex}),
+            profiles: mergedIndex,
             uniqueKeys: {
-                calibers: collectUniqueValues(profilesIndex, 'caliber'),
-                diameters: collectUniqueValues(profilesIndex, 'diameter'),
-                bulletVendors: collectUniqueValues(profilesIndex, 'bulletVendor'),
-                cartridgeVendors: collectUniqueValues(profilesIndex, 'cartridgeVendor')
+                calibers: collectUniqueValues(mergedMeta, 'caliber'),
+                diameters: collectUniqueValues(mergedIndex, 'diameter'),
+                bulletVendors: collectUniqueValues(mergedMeta, 'bulletVendor'),
+                cartridgeVendors: collectUniqueValues(mergedMeta, 'vendor')
             }
         }
 

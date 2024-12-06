@@ -19,16 +19,16 @@ const ItemRow = ({item}: {item: Partial<ProfileIndexType>}) => {
                 <IconButton size={20} icon={"eye"} style={{ padding: 2 }} onPress={() => setDetailsVisible(true)} />
             </Surface>
             <Surface elevation={0} style={{ flex: 3, padding: 4, justifyContent: "center", margin: 4, minWidth: 100 }}>
-                <Text>{item.name}</Text>
+                <Text>{item.meta?.productName || item.name}</Text>
             </Surface>
             <Surface elevation={0} style={{ flex: 2, padding: 4, justifyContent: "center", margin: 4, minWidth: 100 }}>
-                <Text>{item.caliber}</Text>
+                <Text>{item.meta?.caliber || item.caliber}</Text>
             </Surface>
             <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
-                <Text>{item.bulletVendor}</Text>
+                <Text>{item.meta?.vendor || item.cartridgeVendor}</Text>
             </Surface>
             <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
-                <Text>{item.cartridgeVendor}</Text>
+                <Text>{item.meta?.bulletVendor || item.bulletVendor}</Text>
             </Surface>
             <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
                 <Text>{item.weight} {"gr"}</Text>
