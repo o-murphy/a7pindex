@@ -13,9 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install
-      - run: npm run fetchRepo
-      - run: npm run buildIndex
+      - run: npm install -g yarn
+      - run: yarn index:update
 
       # Upload the profiles.json file as an artifact
       - name: Upload profiles.json as artifact
