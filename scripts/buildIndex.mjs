@@ -1,61 +1,10 @@
-import protobuf from 'protobufjs';
 import crypto from 'crypto';
 import path from 'path';
 import fs from 'fs';
 import vendors from '../dicts/vendors.js';
 import caliberTagMapping from '../dicts/possibleCalibers.js';
+import {decode} from "a7p-js";
 
-
-// Path to your protobuf file
-const PROTO_URL = path.resolve('./public/proto/profedit.proto'); // Adjust this path
-
-// MD5 hash function using Node.js crypto module
-function md5(data) {
-    return crypto.createHash('md5').update(data).digest('hex').toLowerCase(); // Convert to lowercase hex
-}
-
-// Function to load and validate data from the A7P file
-async function loadA7P(string, validate = true) {
-    // Ensure string is a Buffer
-    if (!Buffer.isBuffer(string)) {
-        string = Buffer.from(string, 'binary');
-    }
-
-    // Extract the actual data after the first 32 bytes (MD5 checksum)
-    const data = string.slice(32);
-
-    // Extract the MD5 checksum (first 32 bytes) and compare
-    const md5Checksum = string.slice(0, 32).toString('utf8').toLowerCase(); // MD5 checksum as a hex string
-    const calculatedChecksum = md5(data);
-
-    // Check if the MD5 checksum matches
-    if (md5Checksum === calculatedChecksum) {
-        // Load protobuf schema
-        const root = await protobuf.load(PROTO_URL);
-        const Payload = root.lookupType('profedit.Payload');
-
-        // Decode the payload from the data
-        const profile = Payload.decode(data);
-        const profileObject = Payload.toObject(profile, {
-            longs: Number,
-            enums: String,
-            bytes: String,
-            defaults: true,
-            arrays: true
-        });
-
-        // Optional validation of profile
-        if (validate) {
-            // Perform your validation logic here, e.g.:
-            // validator.validate(profileObject);  // Assuming you have a validator
-        }
-
-        // Return the profile object
-        return profileObject;
-    } else {
-        throw new Error('Input data is missing for MD5 hashing or checksum mismatch');
-    }
-}
 
 // Function to parse A7P file by path
 async function parseA7P(filePath, validate = true) {
@@ -65,13 +14,13 @@ async function parseA7P(filePath, validate = true) {
         const fileBuffer = fs.readFileSync(filePath);
 
         // Pass the file data (Buffer) to the loadA7P function for processing
-        const profile = await loadA7P(fileBuffer, validate);
+        const profile = decode(fileBuffer)
 
         // Return the decoded profile
         return profile;
     } catch (error) {
         // console.error('Error parsing A7P file:', error);
-        throw new Error(`Error parsing A7P file: ${error.message}`);
+        throw new Error(`Error parsing A7P file: ${filePath} ${error.message}`);
     }
 }
 
@@ -281,7 +230,7 @@ const createIndex = async () => {
         } catch {
             console.log("Error load lastIndex")
         }
-        console.log(profilesIndex)
+        // console.log(profilesIndex)
 
         const mergedIndex = mergeProfilesIndex({prevProfilesIndex, profilesIndex});
         const mergedMeta = mergedIndex.map(item => item.meta)

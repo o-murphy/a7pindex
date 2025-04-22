@@ -12,7 +12,7 @@ type ItemDetailsProps = {
 }
 
 
-const DataRow = ({ label, value }) => {
+const DataRow = ({ label, value }: { label: string, value: any }) => {
     return (
         <Surface elevation={0} style={{ flexDirection: "row", paddingVertical: 4, justifyContent: "space-between" }}>
             <Text style={{ marginHorizontal: 4, flex: 1 }} >{label}</Text>
@@ -27,7 +27,15 @@ const ItemDetails: React.FC<ItemDetailsProps> = ({ item, visible, onDismiss }) =
     const [data, setData] = useState<any>(null);
 
     useEffect(() => {
-        fetchDetails({ path: item.path, onSuccess: (data) => setData(data), onError: () => setData(null) })
+        const fetchDetailsAsync = async () => {
+            try {
+                const details = await fetchDetails(item.path)
+                setData(details)
+            } catch (error) {
+                setData(null)
+            }
+        }
+        fetchDetailsAsync()
     }, [item])
 
     const mv = item?.meta?.muzzle_velocity ? `${item?.meta?.muzzle_velocity.toFixed(0)} m/s` : "undefined";
@@ -65,7 +73,7 @@ const ItemDetails: React.FC<ItemDetailsProps> = ({ item, visible, onDismiss }) =
                 </Dialog.Content>
                 <Surface style={{ flexDirection: "row", padding: 8, flex: 1 }} elevation={0}>
                     <FAB style={{ margin: 4, flex: 1 }} variant={"primary"} label={"Download"} icon={"download"} onPress={onDownloadPress} />
-                    <FAB style={{ margin: 4, flex: 1 }} variant={"tertiary"} label={"Open in new tab (beta)"} icon={"arrow-top-right-thick"} onPress={onOpenPress} />
+                    <FAB style={{ margin: 4, flex: 1 }} variant={"tertiary"} label={"Open in editor"} icon={"arrow-top-right-thick"} onPress={onOpenPress} />
                 </Surface>
             </Dialog>
         </Portal>
