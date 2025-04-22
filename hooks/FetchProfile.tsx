@@ -2,6 +2,8 @@ import protobuf from 'protobufjs';
 import CryptoJS from 'crypto-js';
 import { Linking, Platform } from 'react-native';
 
+import { fromByteArray } from 'base64-js';
+
 type FetchProfileArgs = {
     path?: string;
     onSuccess?: (result: any) => void;
@@ -10,6 +12,7 @@ type FetchProfileArgs = {
 
 // Path to your protobuf file
 const PUBLIC_PATH = __DEV__ ? '/' : '/a7pIndex/'
+const EDITOR_PATH = '/ArcherBC2-Web'
 const PROTO_URL = PUBLIC_PATH + 'proto/profedit.proto';
 const MD5_LENGTH = 32;
 
@@ -83,6 +86,32 @@ export const fetchDetails = async ({ path, onSuccess, onError }: FetchProfileArg
     } catch (error) {
         console.error("Error fetching file:", error);
         onError?.()
+    }
+}
+
+
+export const openInEditor = async (path: string | undefined) => {
+    if (!path) return;
+
+    const fileUrl = PUBLIC_PATH + path; // Path to the file in the public directory
+    try {
+        const response = await fetch(fileUrl);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const buffer = await response.arrayBuffer();
+        const payload = encodeURIComponent(fromByteArray(new Uint8Array(buffer)));
+        if (Platform.OS !== "web") return;
+
+        if (payload) {
+            const url = `${window.location.origin}${EDITOR_PATH}?payload=${payload}`;
+            // const url = `https://portfolio.o-murphy.net${EDITOR_PATH}?payload=${payload}`;
+            console.log(url)
+            window.open(url, '_blank');
+        }
+    } catch (error) {
+        console.error("Error fetching file:", error);
+        throw error
     }
 }
 

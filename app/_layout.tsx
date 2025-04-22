@@ -6,11 +6,12 @@ import TopAppBar from "@/components/TopAppBar";
 import FilterSurface from "@/components/FilterSurface";
 import ProfilesDataTable from "@/components/DataTable";
 import { FilterProvider } from "@/hooks/FilterHook";
+import { ArmyDarkTheme } from "@/theme/theme";
 
 
 export default function RootLayout() {
 
-  const theme = MD3DarkTheme;
+  const theme = ArmyDarkTheme;
 
   return (
     <SafeAreaProvider>
