@@ -32,13 +32,13 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
+      - name: Copy Gallery Assets to dist
+        run: mkdir -p ./public/gallery && cp -r ./a7p/gallery/* ./public/gallery/
+
       - name: Build Index (and Expo Web)
         run: |
           yarn index:build
           yarn predeploy # This will run 'expo export -p web'
-
-      - name: Copy Gallery Assets to dist
-        run: mkdir -p dist/gallery && cp -r ./a7p/gallery/* ./dist/gallery/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
