@@ -1295,7 +1295,7 @@
       }
     },
     {
-      "id": 49,
+      "id": 50,
       "diameter": 0.224,
       "weight": 62,
       "caliber": "5.56x45",
@@ -1322,7 +1322,7 @@
       }
     },
     {
-      "id": 50,
+      "id": 51,
       "diameter": 0.224,
       "weight": 55,
       "caliber": "5.56x45",
@@ -1349,7 +1349,7 @@
       }
     },
     {
-      "id": 51,
+      "id": 52,
       "diameter": 0.224,
       "weight": 80.5,
       "caliber": "224 VALKYRIE",
@@ -1376,7 +1376,7 @@
       }
     },
     {
-      "id": 52,
+      "id": 53,
       "diameter": 0.224,
       "weight": 75,
       "caliber": "224 VALKYRIE",
@@ -1403,7 +1403,7 @@
       }
     },
     {
-      "id": 53,
+      "id": 54,
       "diameter": 0.224,
       "weight": 88,
       "caliber": "224 VALKYRIE",
@@ -1430,7 +1430,7 @@
       }
     },
     {
-      "id": 54,
+      "id": 55,
       "diameter": 0.22,
       "weight": 40,
       "caliber": "22LR",
@@ -1457,7 +1457,7 @@
       }
     },
     {
-      "id": 55,
+      "id": 56,
       "diameter": 0.22,
       "weight": 40,
       "caliber": "22LR",
@@ -1484,7 +1484,7 @@
       }
     },
     {
-      "id": 56,
+      "id": 57,
       "diameter": 0.22,
       "weight": 40,
       "caliber": "22LR",
@@ -1511,7 +1511,7 @@
       }
     },
     {
-      "id": 57,
+      "id": 58,
       "diameter": 0.264,
       "weight": 147,
       "caliber": ".260REM",
@@ -1538,7 +1538,7 @@
       }
     },
     {
-      "id": 58,
+      "id": 59,
       "diameter": 0.277,
       "weight": 130,
       "caliber": ".270 Winchester",
@@ -1565,7 +1565,7 @@
       }
     },
     {
-      "id": 59,
+      "id": 60,
       "diameter": 0.277,
       "weight": 180,
       "caliber": ".270 Winchester",
@@ -1592,7 +1592,7 @@
       }
     },
     {
-      "id": 60,
+      "id": 61,
       "diameter": 0.277,
       "weight": 145,
       "caliber": ".270 Winchester",
@@ -1619,7 +1619,7 @@
       }
     },
     {
-      "id": 61,
+      "id": 62,
       "diameter": 0.277,
       "weight": 140,
       "caliber": ".270 Winchester",
@@ -1646,7 +1646,7 @@
       }
     },
     {
-      "id": 62,
+      "id": 63,
       "diameter": 0.277,
       "weight": 150,
       "caliber": ".270 WSM",
@@ -1673,7 +1673,7 @@
       }
     },
     {
-      "id": 63,
+      "id": 64,
       "diameter": 0.308,
       "weight": 210,
       "caliber": "30-338LM",
@@ -1700,7 +1700,7 @@
       }
     },
     {
-      "id": 64,
+      "id": 65,
       "diameter": 0.308,
       "weight": 150,
       "caliber": "300 Blackout/Whisper",
@@ -1727,7 +1727,7 @@
       }
     },
     {
-      "id": 65,
+      "id": 66,
       "diameter": 0.308,
       "weight": 155,
       "caliber": "300 Blackout/Whisper",
@@ -1754,7 +1754,7 @@
       }
     },
     {
-      "id": 66,
+      "id": 67,
       "diameter": 0.308,
       "weight": 190,
       "caliber": "300 Blackout/Whisper",
@@ -1781,7 +1781,7 @@
       }
     },
     {
-      "id": 67,
+      "id": 68,
       "diameter": 0.308,
       "weight": 208,
       "caliber": "300 Blackout/Whisper",
@@ -1808,7 +1808,7 @@
       }
     },
     {
-      "id": 68,
+      "id": 69,
       "diameter": 0.308,
       "weight": 194,
       "caliber": "300 Blackout/Whisper",
@@ -1835,7 +1835,7 @@
       }
     },
     {
-      "id": 69,
+      "id": 70,
       "diameter": 0.308,
       "weight": 125,
       "caliber": "300 Blackout/Whisper",
@@ -1862,7 +1862,7 @@
       }
     },
     {
-      "id": 70,
+      "id": 71,
       "diameter": 0.308,
       "weight": 220,
       "caliber": "300 Blackout/Whisper",
@@ -1889,7 +1889,7 @@
       }
     },
     {
-      "id": 71,
+      "id": 72,
       "diameter": 0.308,
       "weight": 220,
       "caliber": "300 Blackout/Whisper",
@@ -1916,7 +1916,7 @@
       }
     },
     {
-      "id": 72,
+      "id": 73,
       "diameter": 0.308,
       "weight": 210,
       "caliber": ".300 Norma Magnum",
@@ -1943,7 +1943,7 @@
       }
     },
     {
-      "id": 73,
+      "id": 74,
       "diameter": 0.308,
       "weight": 230,
       "caliber": ".300 Norma Magnum",
@@ -1970,7 +1970,7 @@
       }
     },
     {
-      "id": 74,
+      "id": 75,
       "diameter": 0.308,
       "weight": 225,
       "caliber": ".300 Norma Magnum",
@@ -1997,7 +1997,7 @@
       }
     },
     {
-      "id": 75,
+      "id": 76,
       "diameter": 0.308,
       "weight": 230,
       "caliber": ".300 Norma Magnum",
@@ -2024,7 +2024,7 @@
       }
     },
     {
-      "id": 76,
+      "id": 77,
       "diameter": 0.308,
       "weight": 200,
       "caliber": ".300 RUM",
@@ -2051,7 +2051,7 @@
       }
     },
     {
-      "id": 77,
+      "id": 78,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".300 RUM",
@@ -2078,7 +2078,7 @@
       }
     },
     {
-      "id": 78,
+      "id": 79,
       "diameter": 0.308,
       "weight": 150,
       "caliber": ".308 Winchester",
@@ -2105,7 +2105,7 @@
       }
     },
     {
-      "id": 79,
+      "id": 80,
       "diameter": 0.308,
       "weight": 150,
       "caliber": ".308 Winchester",
@@ -2130,7 +2130,7 @@
       }
     },
     {
-      "id": 80,
+      "id": 81,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -2157,7 +2157,7 @@
       }
     },
     {
-      "id": 81,
+      "id": 82,
       "diameter": 0.308,
       "weight": 170,
       "caliber": ".308 Winchester",
@@ -2184,7 +2184,7 @@
       }
     },
     {
-      "id": 82,
+      "id": 83,
       "diameter": 0.308,
       "weight": 174,
       "caliber": ".308 Winchester",
@@ -2211,7 +2211,7 @@
       }
     },
     {
-      "id": 83,
+      "id": 84,
       "diameter": 0.308,
       "weight": 147,
       "caliber": ".308 Winchester",
@@ -2238,7 +2238,7 @@
       }
     },
     {
-      "id": 84,
+      "id": 85,
       "diameter": 0.308,
       "weight": 155,
       "caliber": ".308 Winchester",
@@ -2265,7 +2265,7 @@
       }
     },
     {
-      "id": 85,
+      "id": 86,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2292,7 +2292,7 @@
       }
     },
     {
-      "id": 86,
+      "id": 87,
       "diameter": 0.308,
       "weight": 178,
       "caliber": ".308 Winchester",
@@ -2319,7 +2319,7 @@
       }
     },
     {
-      "id": 87,
+      "id": 88,
       "diameter": 0.308,
       "weight": 178,
       "caliber": ".308 Winchester",
@@ -2346,7 +2346,7 @@
       }
     },
     {
-      "id": 88,
+      "id": 89,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2373,7 +2373,7 @@
       }
     },
     {
-      "id": 89,
+      "id": 90,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2400,7 +2400,7 @@
       }
     },
     {
-      "id": 90,
+      "id": 91,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2427,7 +2427,7 @@
       }
     },
     {
-      "id": 91,
+      "id": 92,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2454,7 +2454,7 @@
       }
     },
     {
-      "id": 92,
+      "id": 93,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -2481,7 +2481,7 @@
       }
     },
     {
-      "id": 93,
+      "id": 94,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -2508,7 +2508,7 @@
       }
     },
     {
-      "id": 94,
+      "id": 95,
       "diameter": 0.308,
       "weight": 185,
       "caliber": ".308 Winchester",
@@ -2535,7 +2535,7 @@
       }
     },
     {
-      "id": 95,
+      "id": 96,
       "diameter": 0.308,
       "weight": 185,
       "caliber": ".308 Winchester",
@@ -2562,7 +2562,7 @@
       }
     },
     {
-      "id": 96,
+      "id": 97,
       "diameter": 0.308,
       "weight": 210,
       "caliber": ".308 Winchester",
@@ -2589,7 +2589,7 @@
       }
     },
     {
-      "id": 97,
+      "id": 98,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2619,7 +2619,7 @@
       }
     },
     {
-      "id": 98,
+      "id": 99,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -2646,7 +2646,7 @@
       }
     },
     {
-      "id": 99,
+      "id": 100,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -2673,7 +2673,7 @@
       }
     },
     {
-      "id": 100,
+      "id": 101,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -2700,7 +2700,7 @@
       }
     },
     {
-      "id": 101,
+      "id": 102,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2727,7 +2727,7 @@
       }
     },
     {
-      "id": 102,
+      "id": 103,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -2754,7 +2754,7 @@
       }
     },
     {
-      "id": 103,
+      "id": 104,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -2781,7 +2781,7 @@
       }
     },
     {
-      "id": 104,
+      "id": 105,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -2808,7 +2808,7 @@
       }
     },
     {
-      "id": 105,
+      "id": 106,
       "diameter": 0.308,
       "weight": 170,
       "caliber": ".308 Winchester",
@@ -2835,7 +2835,7 @@
       }
     },
     {
-      "id": 106,
+      "id": 107,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -2862,7 +2862,7 @@
       }
     },
     {
-      "id": 107,
+      "id": 108,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -2889,7 +2889,7 @@
       }
     },
     {
-      "id": 108,
+      "id": 109,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -2916,7 +2916,7 @@
       }
     },
     {
-      "id": 109,
+      "id": 110,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -2943,7 +2943,7 @@
       }
     },
     {
-      "id": 110,
+      "id": 111,
       "diameter": 0.308,
       "weight": 190,
       "caliber": ".308 Winchester",
@@ -2970,7 +2970,7 @@
       }
     },
     {
-      "id": 111,
+      "id": 112,
       "diameter": 0.308,
       "weight": 150,
       "caliber": ".308 Winchester",
@@ -2997,7 +2997,7 @@
       }
     },
     {
-      "id": 112,
+      "id": 113,
       "diameter": 0.308,
       "weight": 150,
       "caliber": ".308 Winchester",
@@ -3024,7 +3024,7 @@
       }
     },
     {
-      "id": 113,
+      "id": 114,
       "diameter": 0.308,
       "weight": 155,
       "caliber": ".308 Winchester",
@@ -3051,7 +3051,7 @@
       }
     },
     {
-      "id": 114,
+      "id": 115,
       "diameter": 0.308,
       "weight": 155,
       "caliber": ".308 Winchester",
@@ -3078,7 +3078,7 @@
       }
     },
     {
-      "id": 115,
+      "id": 116,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -3105,7 +3105,7 @@
       }
     },
     {
-      "id": 116,
+      "id": 117,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -3132,7 +3132,7 @@
       }
     },
     {
-      "id": 117,
+      "id": 118,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -3159,7 +3159,7 @@
       }
     },
     {
-      "id": 118,
+      "id": 119,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -3186,7 +3186,7 @@
       }
     },
     {
-      "id": 119,
+      "id": 120,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -3213,7 +3213,7 @@
       }
     },
     {
-      "id": 120,
+      "id": 121,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -3240,7 +3240,7 @@
       }
     },
     {
-      "id": 121,
+      "id": 122,
       "diameter": 0.308,
       "weight": 178,
       "caliber": ".308 Winchester",
@@ -3267,7 +3267,7 @@
       }
     },
     {
-      "id": 122,
+      "id": 123,
       "diameter": 0.308,
       "weight": 178,
       "caliber": ".308 Winchester",
@@ -3294,7 +3294,7 @@
       }
     },
     {
-      "id": 123,
+      "id": 124,
       "diameter": 0.308,
       "weight": 178,
       "caliber": ".308 Winchester",
@@ -3321,7 +3321,7 @@
       }
     },
     {
-      "id": 124,
+      "id": 125,
       "diameter": 0.308,
       "weight": 220,
       "caliber": ".308 Winchester",
@@ -3348,7 +3348,7 @@
       }
     },
     {
-      "id": 125,
+      "id": 126,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -3375,7 +3375,7 @@
       }
     },
     {
-      "id": 126,
+      "id": 127,
       "diameter": 0.308,
       "weight": 185,
       "caliber": ".308 Winchester",
@@ -3402,7 +3402,7 @@
       }
     },
     {
-      "id": 127,
+      "id": 128,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -3429,7 +3429,7 @@
       }
     },
     {
-      "id": 128,
+      "id": 129,
       "diameter": 0.308,
       "weight": 146,
       "caliber": ".308 Winchester",
@@ -3456,7 +3456,7 @@
       }
     },
     {
-      "id": 129,
+      "id": 130,
       "diameter": 0.308,
       "weight": 148,
       "caliber": ".308 Winchester",
@@ -3483,7 +3483,7 @@
       }
     },
     {
-      "id": 130,
+      "id": 131,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -3510,7 +3510,7 @@
       }
     },
     {
-      "id": 131,
+      "id": 132,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -3537,7 +3537,7 @@
       }
     },
     {
-      "id": 132,
+      "id": 133,
       "diameter": 0.308,
       "weight": 220,
       "caliber": ".308 Winchester",
@@ -3564,7 +3564,7 @@
       }
     },
     {
-      "id": 133,
+      "id": 134,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -3591,7 +3591,7 @@
       }
     },
     {
-      "id": 134,
+      "id": 135,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -3618,7 +3618,7 @@
       }
     },
     {
-      "id": 135,
+      "id": 136,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -3645,7 +3645,7 @@
       }
     },
     {
-      "id": 136,
+      "id": 137,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -3672,7 +3672,7 @@
       }
     },
     {
-      "id": 137,
+      "id": 138,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -3699,7 +3699,7 @@
       }
     },
     {
-      "id": 138,
+      "id": 139,
       "diameter": 0.308,
       "weight": 136,
       "caliber": ".308 Winchester",
@@ -3726,7 +3726,7 @@
       }
     },
     {
-      "id": 139,
+      "id": 140,
       "diameter": 0.308,
       "weight": 150,
       "caliber": ".308 Winchester",
@@ -3753,7 +3753,7 @@
       }
     },
     {
-      "id": 140,
+      "id": 141,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -3780,7 +3780,7 @@
       }
     },
     {
-      "id": 141,
+      "id": 142,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -3807,7 +3807,7 @@
       }
     },
     {
-      "id": 142,
+      "id": 143,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -3834,7 +3834,7 @@
       }
     },
     {
-      "id": 143,
+      "id": 144,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -3861,7 +3861,7 @@
       }
     },
     {
-      "id": 144,
+      "id": 145,
       "diameter": 0.308,
       "weight": 184,
       "caliber": ".308 Winchester",
@@ -3888,7 +3888,7 @@
       }
     },
     {
-      "id": 145,
+      "id": 146,
       "diameter": 0.308,
       "weight": 124,
       "caliber": ".308 Winchester",
@@ -3915,7 +3915,7 @@
       }
     },
     {
-      "id": 146,
+      "id": 147,
       "diameter": 0.308,
       "weight": 147,
       "caliber": ".308 Winchester",
@@ -3942,7 +3942,7 @@
       }
     },
     {
-      "id": 147,
+      "id": 148,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -3969,7 +3969,7 @@
       }
     },
     {
-      "id": 148,
+      "id": 149,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -3996,7 +3996,7 @@
       }
     },
     {
-      "id": 149,
+      "id": 150,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -4023,7 +4023,7 @@
       }
     },
     {
-      "id": 150,
+      "id": 151,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -4050,7 +4050,7 @@
       }
     },
     {
-      "id": 151,
+      "id": 152,
       "diameter": 0.308,
       "weight": 110,
       "caliber": ".308 Winchester",
@@ -4077,7 +4077,7 @@
       }
     },
     {
-      "id": 152,
+      "id": 153,
       "diameter": 0.308,
       "weight": 155,
       "caliber": ".308 Winchester",
@@ -4104,7 +4104,7 @@
       }
     },
     {
-      "id": 153,
+      "id": 154,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -4131,7 +4131,7 @@
       }
     },
     {
-      "id": 154,
+      "id": 155,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -4158,7 +4158,7 @@
       }
     },
     {
-      "id": 155,
+      "id": 156,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -4185,7 +4185,7 @@
       }
     },
     {
-      "id": 156,
+      "id": 157,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -4212,7 +4212,7 @@
       }
     },
     {
-      "id": 157,
+      "id": 158,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -4239,7 +4239,7 @@
       }
     },
     {
-      "id": 158,
+      "id": 159,
       "diameter": 0.308,
       "weight": 190,
       "caliber": ".308 Winchester",
@@ -4266,7 +4266,7 @@
       }
     },
     {
-      "id": 159,
+      "id": 160,
       "diameter": 0.308,
       "weight": 150,
       "caliber": ".308 Winchester",
@@ -4293,7 +4293,7 @@
       }
     },
     {
-      "id": 160,
+      "id": 161,
       "diameter": 0.308,
       "weight": 150,
       "caliber": ".308 Winchester",
@@ -4320,7 +4320,7 @@
       }
     },
     {
-      "id": 161,
+      "id": 162,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -4347,7 +4347,7 @@
       }
     },
     {
-      "id": 162,
+      "id": 163,
       "diameter": 0.308,
       "weight": 165,
       "caliber": ".308 Winchester",
@@ -4374,7 +4374,7 @@
       }
     },
     {
-      "id": 163,
+      "id": 164,
       "diameter": 0.308,
       "weight": 180,
       "caliber": ".308 Winchester",
@@ -4401,7 +4401,7 @@
       }
     },
     {
-      "id": 164,
+      "id": 165,
       "diameter": 0.308,
       "weight": 178,
       "caliber": ".308 Winchester",
@@ -4428,7 +4428,7 @@
       }
     },
     {
-      "id": 165,
+      "id": 166,
       "diameter": 0.308,
       "weight": 167,
       "caliber": ".308 Winchester",
@@ -4455,7 +4455,7 @@
       }
     },
     {
-      "id": 166,
+      "id": 167,
       "diameter": 0.308,
       "weight": 168,
       "caliber": ".308 Winchester",
@@ -4482,7 +4482,7 @@
       }
     },
     {
-      "id": 167,
+      "id": 168,
       "diameter": 0.308,
       "weight": 200,
       "caliber": ".308 Winchester",
@@ -4509,7 +4509,7 @@
       }
     },
     {
-      "id": 168,
+      "id": 169,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -4536,7 +4536,7 @@
       }
     },
     {
-      "id": 169,
+      "id": 170,
       "diameter": 0.308,
       "weight": 175,
       "caliber": ".308 Winchester",
@@ -4563,7 +4563,7 @@
       }
     },
     {
-      "id": 170,
+      "id": 171,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -4590,7 +4590,7 @@
       }
     },
     {
-      "id": 171,
+      "id": 172,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -4617,7 +4617,7 @@
       }
     },
     {
-      "id": 172,
+      "id": 173,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -4644,7 +4644,7 @@
       }
     },
     {
-      "id": 173,
+      "id": 174,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -4674,7 +4674,7 @@
       }
     },
     {
-      "id": 174,
+      "id": 175,
       "diameter": 0.338,
       "weight": 250,
       "caliber": ".338 Lapua Magnum",
@@ -4701,7 +4701,7 @@
       }
     },
     {
-      "id": 175,
+      "id": 176,
       "diameter": 0.338,
       "weight": 285,
       "caliber": ".338 Lapua Magnum",
@@ -4731,7 +4731,7 @@
       }
     },
     {
-      "id": 176,
+      "id": 177,
       "diameter": 0.338,
       "weight": 285,
       "caliber": ".338 Lapua Magnum",
@@ -4758,7 +4758,7 @@
       }
     },
     {
-      "id": 177,
+      "id": 178,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -4785,7 +4785,7 @@
       }
     },
     {
-      "id": 178,
+      "id": 179,
       "diameter": 0.338,
       "weight": 250,
       "caliber": ".338 Lapua Magnum",
@@ -4812,7 +4812,7 @@
       }
     },
     {
-      "id": 179,
+      "id": 180,
       "diameter": 0.338,
       "weight": 285,
       "caliber": ".338 Lapua Magnum",
@@ -4839,7 +4839,7 @@
       }
     },
     {
-      "id": 180,
+      "id": 181,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -4866,7 +4866,7 @@
       }
     },
     {
-      "id": 181,
+      "id": 182,
       "diameter": 0.338,
       "weight": 250,
       "caliber": ".338 Lapua Magnum",
@@ -4893,7 +4893,7 @@
       }
     },
     {
-      "id": 182,
+      "id": 183,
       "diameter": 0.338,
       "weight": 251,
       "caliber": ".338 Lapua Magnum",
@@ -4920,7 +4920,7 @@
       }
     },
     {
-      "id": 183,
+      "id": 184,
       "diameter": 0.338,
       "weight": 260,
       "caliber": ".338 Lapua Magnum",
@@ -4946,7 +4946,7 @@
       }
     },
     {
-      "id": 184,
+      "id": 185,
       "diameter": 0.338,
       "weight": 260,
       "caliber": ".338 Lapua Magnum",
@@ -4973,7 +4973,7 @@
       }
     },
     {
-      "id": 185,
+      "id": 186,
       "diameter": 0.338,
       "weight": 250,
       "caliber": ".338 Lapua Magnum",
@@ -5000,7 +5000,7 @@
       }
     },
     {
-      "id": 186,
+      "id": 187,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -5027,7 +5027,7 @@
       }
     },
     {
-      "id": 188,
+      "id": 189,
       "diameter": 0.338,
       "weight": 300,
       "caliber": ".338 Lapua Magnum",
@@ -5054,7 +5054,7 @@
       }
     },
     {
-      "id": 189,
+      "id": 190,
       "diameter": 0.338,
       "weight": 200,
       "caliber": ".338 WinMag",
@@ -5081,7 +5081,7 @@
       }
     },
     {
-      "id": 190,
+      "id": 191,
       "diameter": 0.375,
       "weight": 407,
       "caliber": ".375 CheyTac",
@@ -5108,7 +5108,7 @@
       }
     },
     {
-      "id": 191,
+      "id": 192,
       "diameter": 0.375,
       "weight": 375,
       "caliber": ".375 CheyTac",
@@ -5135,7 +5135,7 @@
       }
     },
     {
-      "id": 192,
+      "id": 193,
       "diameter": 0.375,
       "weight": 352,
       "caliber": ".375 CheyTac",
@@ -5162,7 +5162,7 @@
       }
     },
     {
-      "id": 193,
+      "id": 194,
       "diameter": 0.375,
       "weight": 350,
       "caliber": ".375 CheyTac",
@@ -5189,7 +5189,7 @@
       }
     },
     {
-      "id": 194,
+      "id": 195,
       "diameter": 0.375,
       "weight": 300,
       "caliber": ".375 H&H",
@@ -5216,7 +5216,7 @@
       }
     },
     {
-      "id": 195,
+      "id": 196,
       "diameter": 0.408,
       "weight": 420,
       "caliber": ".408 CheyTac",
@@ -5243,7 +5243,7 @@
       }
     },
     {
-      "id": 196,
+      "id": 197,
       "diameter": 0.408,
       "weight": 370,
       "caliber": ".408 CheyTac",
@@ -5269,7 +5269,7 @@
       }
     },
     {
-      "id": 197,
+      "id": 198,
       "diameter": 0.416,
       "weight": 400,
       "caliber": ".416 Remington Magnum",
@@ -5296,7 +5296,7 @@
       }
     },
     {
-      "id": 198,
+      "id": 199,
       "diameter": 0.458,
       "weight": 349,
       "caliber": "45 Blaser",
@@ -5323,7 +5323,7 @@
       }
     },
     {
-      "id": 199,
+      "id": 200,
       "diameter": 0.22,
       "weight": 67,
       "caliber": "5.45x39mm",
@@ -5348,7 +5348,7 @@
       }
     },
     {
-      "id": 200,
+      "id": 201,
       "diameter": 0.22,
       "weight": 52,
       "caliber": "5.45x39mm",
@@ -5373,7 +5373,7 @@
       }
     },
     {
-      "id": 201,
+      "id": 202,
       "diameter": 0.22,
       "weight": 52,
       "caliber": "5.45x39mm",
@@ -5398,7 +5398,7 @@
       }
     },
     {
-      "id": 202,
+      "id": 203,
       "diameter": 0.51,
       "weight": 750,
       "caliber": ".50 BMG",
@@ -5425,7 +5425,7 @@
       }
     },
     {
-      "id": 203,
+      "id": 204,
       "diameter": 0.51,
       "weight": 661,
       "caliber": ".50 BMG",
@@ -5452,7 +5452,7 @@
       }
     },
     {
-      "id": 204,
+      "id": 205,
       "diameter": 0.51,
       "weight": 623,
       "caliber": ".50 BMG",
@@ -5479,7 +5479,34 @@
       }
     },
     {
-      "id": 205,
+      "id": 206,
+      "diameter": 0.51,
+      "weight": 761,
+      "caliber": ".50 BMG",
+      "path": "gallery/50BMG/50BMG_MK211_761GR_G1.a7p",
+      "profileName": ".50BMG MK211 761GR",
+      "name": ".50 BMG MK211 761GR MK211 761GR",
+      "cartridge": "MK211 761GR",
+      "bullet": "MK211 761GR",
+      "cartridgeVendor": "(NATO)",
+      "bulletVendor": "(NATO)",
+      "dragModelType": "G1",
+      "meta": {
+        "productName": "",
+        "vendor": "",
+        "bulletVendor": "",
+        "caliber": "",
+        "muzzle_velocity": null,
+        "bc": null,
+        "g7": null,
+        "bulletType": "",
+        "weight": null,
+        "country": "",
+        "url": null
+      }
+    },
+    {
+      "id": 207,
       "diameter": 0.51,
       "weight": 600,
       "caliber": ".50 BMG",
@@ -5506,7 +5533,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 208,
       "diameter": 0.51,
       "weight": 660,
       "caliber": ".50 BMG",
@@ -5531,7 +5558,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 209,
       "diameter": 0.264,
       "weight": 140,
       "caliber": "6.5-284 NORMA",
@@ -5558,7 +5585,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 210,
       "diameter": 0.243,
       "weight": 105,
       "caliber": "6mm Norma BR",
@@ -5585,7 +5612,7 @@
       }
     },
     {
-      "id": 209,
+      "id": 211,
       "diameter": 0.243,
       "weight": 105,
       "caliber": "6XC",
@@ -5612,7 +5639,7 @@
       }
     },
     {
-      "id": 210,
+      "id": 212,
       "diameter": 0.306,
       "weight": 165,
       "caliber": "7.5x55mm Swiss",
@@ -5639,7 +5666,7 @@
       }
     },
     {
-      "id": 211,
+      "id": 213,
       "diameter": 0.311,
       "weight": 123,
       "caliber": "7.62x39mm",
@@ -5666,7 +5693,7 @@
       }
     },
     {
-      "id": 212,
+      "id": 214,
       "diameter": 0.311,
       "weight": 123,
       "caliber": "7.62x39mm",
@@ -5693,7 +5720,7 @@
       }
     },
     {
-      "id": 213,
+      "id": 215,
       "diameter": 0.311,
       "weight": 123,
       "caliber": "7.62x39mm",
@@ -5718,7 +5745,7 @@
       }
     },
     {
-      "id": 214,
+      "id": 216,
       "diameter": 0.311,
       "weight": 123,
       "caliber": "7.62x39mm",
@@ -5745,7 +5772,7 @@
       }
     },
     {
-      "id": 215,
+      "id": 217,
       "diameter": 0.311,
       "weight": 124,
       "caliber": "7.62x39mm",
@@ -5772,7 +5799,7 @@
       }
     },
     {
-      "id": 216,
+      "id": 218,
       "diameter": 0.311,
       "weight": 194,
       "caliber": "7.62x39mm",
@@ -5797,7 +5824,7 @@
       }
     },
     {
-      "id": 217,
+      "id": 219,
       "diameter": 0.308,
       "weight": 150,
       "caliber": "7,82 WARBIRD",
@@ -5824,7 +5851,7 @@
       }
     },
     {
-      "id": 218,
+      "id": 220,
       "diameter": 0.308,
       "weight": 168,
       "caliber": "7,82 WARBIRD",
@@ -5851,7 +5878,7 @@
       }
     },
     {
-      "id": 219,
+      "id": 221,
       "diameter": 0.284,
       "weight": 180,
       "caliber": "7mm Remington Magnum",
@@ -5878,7 +5905,7 @@
       }
     },
     {
-      "id": 220,
+      "id": 222,
       "diameter": 0.284,
       "weight": 180,
       "caliber": "7mm Remington Magnum",
@@ -5908,7 +5935,7 @@
       }
     },
     {
-      "id": 221,
+      "id": 223,
       "diameter": 0.284,
       "weight": 162,
       "caliber": "7mm Remington Magnum",
@@ -5935,7 +5962,7 @@
       }
     },
     {
-      "id": 222,
+      "id": 224,
       "diameter": 0.285,
       "weight": 170,
       "caliber": "7x64mm Brenneke",
@@ -5962,7 +5989,7 @@
       }
     },
     {
-      "id": 223,
+      "id": 225,
       "diameter": 0.285,
       "weight": 177,
       "caliber": "7x65R",
@@ -5989,7 +6016,7 @@
       }
     },
     {
-      "id": 224,
+      "id": 226,
       "diameter": 0.324,
       "weight": 196,
       "caliber": "8x57",
@@ -6016,7 +6043,7 @@
       }
     },
     {
-      "id": 225,
+      "id": 227,
       "diameter": 0.324,
       "weight": 196,
       "caliber": "8x57",
@@ -6043,7 +6070,7 @@
       }
     },
     {
-      "id": 226,
+      "id": 228,
       "diameter": 0.324,
       "weight": 180,
       "caliber": "8x57",
@@ -6070,7 +6097,7 @@
       }
     },
     {
-      "id": 227,
+      "id": 229,
       "diameter": 0.323,
       "weight": 198,
       "caliber": "8x68S",
@@ -6097,7 +6124,7 @@
       }
     },
     {
-      "id": 228,
+      "id": 230,
       "diameter": 0.323,
       "weight": 196,
       "caliber": "8x68mm S",
@@ -6124,7 +6151,7 @@
       }
     },
     {
-      "id": 229,
+      "id": 231,
       "diameter": 0.323,
       "weight": 185,
       "caliber": "8x68mm",
@@ -6151,7 +6178,7 @@
       }
     },
     {
-      "id": 230,
+      "id": 232,
       "diameter": 0.323,
       "weight": 180,
       "caliber": "8x68S",
@@ -6178,7 +6205,7 @@
       }
     },
     {
-      "id": 231,
+      "id": 233,
       "diameter": 0.366,
       "weight": 247,
       "caliber": "9.3x74R",
@@ -6205,7 +6232,7 @@
       }
     },
     {
-      "id": 232,
+      "id": 234,
       "diameter": 0.356,
       "weight": 125,
       "caliber": "9x21mm IMI",
@@ -6232,7 +6259,7 @@
       }
     },
     {
-      "id": 233,
+      "id": 235,
       "diameter": 0.356,
       "weight": 148,
       "caliber": "9x21mm IMI",
@@ -6259,7 +6286,7 @@
       }
     },
     {
-      "id": 234,
+      "id": 236,
       "diameter": 0.356,
       "weight": 147,
       "caliber": "9x21mm IMI",
@@ -6286,7 +6313,7 @@
       }
     },
     {
-      "id": 235,
+      "id": 237,
       "diameter": 0.5,
       "weight": 485,
       "caliber": "BOLT",
@@ -6313,7 +6340,7 @@
       }
     },
     {
-      "id": 237,
+      "id": 239,
       "diameter": 1,
       "weight": 1000,
       "caliber": "Выстрел",
