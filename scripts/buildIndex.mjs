@@ -83,7 +83,12 @@ const extractFilePaths = (tree) => {
 }
 
 // Example Usage
-const outputDir = './extracted-repo'; // Adjust to the extracted repo directory
+// const outputDir = './extracted-repo'; // Adjust to the extracted repo directory
+// const galleryPath = path.join(outputDir, "a7p-master", "gallery")
+
+const outputDir = './a7p'; // Adjust to the extracted repo directory
+const galleryPath = path.join(outputDir, "gallery")
+const excludeUnvalidated = path.join(galleryPath, ".unvalidated")
 const indexPath = 'assets/profiles.json';
 const assetsDir = path.dirname(indexPath);
 
@@ -169,10 +174,12 @@ const createIndex = async () => {
     const criteria = (filePath) => ['.a7p'].includes(path.extname(filePath));
 
     // Get the filtered tree
-    const filteredTree = getFilteredTree(path.join(outputDir, "a7p-master", "gallery"), criteria);
+    const filteredTree = getFilteredTree(galleryPath, criteria);
 
     const flatFilePaths = extractFilePaths(filteredTree);
-    const validFilePaths = flatFilePaths.filter(filePath => !asPosix(filePath).startsWith("extracted-repo/a7p-master/gallery/.unvalidated"))
+    // const validFilePaths = flatFilePaths.filter(filePath => !asPosix(filePath).startsWith(excludeUnvalidated))
+    const validFilePaths = flatFilePaths.filter(filePath => !asPosix(filePath).startsWith(asPosix(excludeUnvalidated)));
+
 
     // Use Promise.all to wait for all asynchronous parseA7P operations to finish
     const parsePromises = validFilePaths.map((filePath, index) =>
