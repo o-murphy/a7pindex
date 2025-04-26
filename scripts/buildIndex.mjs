@@ -1,4 +1,3 @@
-import crypto from 'crypto';
 import path from 'path';
 import fs from 'fs';
 import vendors from '../dicts/vendors.js';
