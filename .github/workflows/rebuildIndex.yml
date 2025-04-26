@@ -1,24 +1,51 @@
-name: Rebuild Index
+name: Rebuild and Deploy Index
 
 on:
-  #   release:
-  # types: [created]
+  release:
+    types: [created]
+  push:
+    tags:
+      - '*' # This will trigger on any new tag being pushed
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  rebuild:
+  rebuild_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+        with:
+          submodules: recursive
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install -g yarn
-      - run: yarn index:update
 
-      # Upload the profiles.json file as an artifact
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Build Index (and Expo Web)
+        run: |
+          yarn index:build
+          yarn predeploy # This will run 'expo export -p web'
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./dist  # IMPORTANT: Use 'dist' to match your deploy script
+
+      # Upload the profiles.json file as an artifact (optional)
       - name: Upload profiles.json as artifact
+        if: failure() || success()
         uses: actions/upload-artifact@v4
         with:
           name: profiles-json
-          path: ./assets/profiles.json
+          path: ./dist/profiles.json # Assuming profiles.json is in the dist folder
