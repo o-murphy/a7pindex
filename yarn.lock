@@ -2064,7 +2064,7 @@
   resolved "https://registry.yarnpkg.com/@zxing/text-encoding/-/text-encoding-0.9.0.tgz#fb50ffabc6c7c66a0c96b4c03e3d9be74864b70b"
   integrity sha512-U/4aVJ2mxI0aDNI8Uq0wEhMgY+u4CNtEb0om3+y3+niDAsoTCOB33UF0sxpzqzdqXLqmvc+vZyAt4O8pPdfkwA==
 
-a7p-js@^1.0.2:
+a7p-js@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.0.3.tgz#fdcc6d4f67ec16fe357535a4e68739a4f069f385"
   integrity sha512-/P/ptBLKS88tTRxiOcubxXA8/Tfs+nZ6uTtjee/sSxorrJMrVhJ8xfEbtt/MdUxS2Z+uMcEb2AryKRRn9jvA4w==

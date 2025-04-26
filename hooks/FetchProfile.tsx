@@ -47,10 +47,35 @@ export const fetchDetails = async (path: string | undefined) => {
 }
 
 
+// export const openInEditor = async (path: string | undefined) => {
+//     if (!path) return;
+
+//     const fileUrl = PUBLIC_PATH + path; // Path to the file in the public directory
+//     try {
+//         const response = await fetch(fileUrl);
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+//         const buffer = await response.arrayBuffer();
+//         const payload = encodeURIComponent(fromByteArray(new Uint8Array(buffer)));
+//         if (Platform.OS !== "web") return;
+
+//         if (payload) {
+//             const url = `${window.location.origin}${EDITOR_PATH}?payload=${payload}`;
+//             // const url = `https://portfolio.o-murphy.net${EDITOR_PATH}?payload=${payload}`;
+//             console.log(url)
+//             window.open(url, '_blank');
+//         }
+//     } catch (error) {
+//         console.error("Error fetching file:", error);
+//         throw error
+//     }
+// }
+
 export const openInEditor = async (path: string | undefined) => {
     if (!path) return;
 
-    const fileUrl = PUBLIC_PATH + path; // Path to the file in the public directory
+    const fileUrl = `${window.location.origin}${PUBLIC_PATH}${path}`;
     try {
         const response = await fetch(fileUrl);
         if (!response.ok) {
@@ -58,19 +83,25 @@ export const openInEditor = async (path: string | undefined) => {
         }
         const buffer = await response.arrayBuffer();
         const payload = encodeURIComponent(fromByteArray(new Uint8Array(buffer)));
-        if (Platform.OS !== "web") return;
 
-        if (payload) {
+        if (Platform.OS === "web" && payload) {
             const url = `${window.location.origin}${EDITOR_PATH}?payload=${payload}`;
             // const url = `https://portfolio.o-murphy.net${EDITOR_PATH}?payload=${payload}`;
-            console.log(url)
-            window.open(url, '_blank');
+            const link = document.createElement('a');
+            link.href = url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            console.log(url);
         }
     } catch (error) {
         console.error("Error fetching file:", error);
-        throw error
+        throw error;
     }
-}
+};
 
 export const downloadProfile = (path?: string) => {
     if (!path) {
