@@ -51,7 +51,7 @@ const FilterSurface = () => {
     };
 
     return (
-        <Surface elevation={3} style={{ flexDirection: "row", flexWrap: "wrap", padding: 8, margin: 8 }}>
+        <Surface style={{ flexDirection: "column", flexWrap: "wrap", padding: 8, margin: 8 }}>
             <Select
                 label={"Caliber"}
                 items={[allValues, ...calibers]}
@@ -101,6 +101,7 @@ const FilterSurface = () => {
                     <FAB
                         size={"small"}
                         variant={"secondary"}
+                        mode="flat"
                         style={{}}
                         icon={"filter-off"}
                         onPress={resetFilter}

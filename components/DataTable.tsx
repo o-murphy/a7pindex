@@ -1,8 +1,8 @@
-import React from "react"
-import { FlatList, ScrollView } from "react-native"
+import React from "react";
+import { FlatList } from "react-native";
 import { ProfileIndexType, ProfilesJson, useFilterContext } from "@/hooks/FilterHook";
-import ItemRow from "./ItemRow";
-
+import { HeaderRow, ItemRow } from "./ItemRow";
+import { Surface } from "react-native-paper";
 
 const filterIndex = (profiles: Array<Partial<ProfileIndexType>>, filter: Partial<ProfileIndexType>) => {
     return profiles
@@ -12,25 +12,25 @@ const filterIndex = (profiles: Array<Partial<ProfileIndexType>>, filter: Partial
         .filter(item => filter.diameter ? item.diameter === filter.diameter : true)
         .filter(item => filter.weight ? item.weight === filter.weight : true)
         .filter(item => filter.dragModelType ? item.dragModelType === filter.dragModelType : true);
-}
+};
 
 const ProfilesDataTable = () => {
     const { profiles } = ProfilesJson;
     const { filter } = useFilterContext();
     const filteredProfiles = filterIndex(profiles, filter);
 
-    console.log(filter);
-
     return (
-        <FlatList
-            data={filteredProfiles}
-            keyExtractor={(_, index) => index.toString()}
-            renderItem={({ item }) => <ItemRow item={item} />}
-            contentContainerStyle={{ flexGrow: 1 }}
-            initialNumToRender={10}
-        />
+        <Surface style={{ flexDirection: "column", padding: 8, margin: 8, flex: 1 }}>
+            {/* <HeaderRow /> */}
+            <FlatList
+                data={filteredProfiles}
+                keyExtractor={(_, index) => index.toString()}
+                renderItem={({ item }) => <ItemRow item={item} />}
+                contentContainerStyle={{ flexGrow: 1 }}
+                initialNumToRender={10}
+            />
+        </Surface>
     );
 };
-
 
 export default ProfilesDataTable;

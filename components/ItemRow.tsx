@@ -1,69 +1,132 @@
-import { ProfileIndexType } from "@/hooks/FilterHook";
-import React, { useState } from "react";
-import { TouchableOpacity } from "react-native";
-import { Divider, IconButton, Surface, Text, Tooltip } from "react-native-paper";
+import React, { useState, useCallback } from "react";
+import { TouchableOpacity, View, StyleSheet, ViewStyle } from "react-native";
+import { Divider, IconButton, Tooltip, Text, Surface } from "react-native-paper";
 import ItemDetails from "./ItemDetails";
 import { downloadProfile, openInEditor } from "@/hooks/FetchProfile";
+import { ProfileIndexType } from "@/hooks/FilterHook";
 
+interface ItemRowProps {
+    item: Partial<ProfileIndexType>;
+}
 
+interface ActionButtonsProps {
+    item: Partial<ProfileIndexType>;
+    onShowDetails: () => void;
+    onDownload: () => void;
+    onOpen: () => void;
+}
 
-const ItemRow = ({ item }: { item: Partial<ProfileIndexType> }) => {
+interface HeaderRowProps { };
 
-    const [detailsVisible, setDetailsVisible] = useState(false);
+export const HeaderRow = React.memo<HeaderRowProps>(() => {
 
-    const onShowDetailsPress = () => {
-        setDetailsVisible(true)
-    }
-
-    const onDownloadPress = () => {
-        downloadProfile(item.path)
-    }
-
-    const onOpenPress = () => {
-        openInEditor(item.path);
-    };
+    const labels = ["Product Name", "Caliber", "Vendor", "Bullet Vendor", "Weight", "Diameter", "Drag Model"];
+    const flexValues = [1, 1, 1, 1, 0.5, 0.5, 1]; // Match the flex values in ItemRow
 
     return (
-        <TouchableOpacity onPress={() => setDetailsVisible(true)}>
-            <Surface elevation={0} style={{ flexDirection: "row", flexWrap: "wrap" }}>
-                <Surface elevation={0} style={{ flexDirection: "row", justifyContent: "center", margin: 4, padding: 4, minWidth: 80 }}>
-                    <Tooltip title="Download" leaveTouchDelay={0.2}>
-                        <IconButton size={20} icon={"download"} style={{ padding: 2 }} onPress={onDownloadPress} />
-                    </Tooltip>
-                    <Tooltip title="Details" leaveTouchDelay={0.2}>
-                        <IconButton size={20} icon={"eye"} style={{ padding: 2 }} onPress={onShowDetailsPress} />
-                    </Tooltip>
-                    <Tooltip title="Open in editor" leaveTouchDelay={0.2}>
-                        <IconButton size={20} icon={"arrow-top-right-thick"} style={{ padding: 2 }} onPress={onOpenPress} />
-                    </Tooltip>
-                </Surface>
-                <Surface elevation={0} style={{ flex: 3, padding: 4, justifyContent: "center", margin: 4, minWidth: 100 }}>
-                    <Text>{item.meta?.productName || item.name}</Text>
-                </Surface>
-                <Surface elevation={0} style={{ flex: 2, padding: 4, justifyContent: "center", margin: 4, minWidth: 100 }}>
-                    <Text>{item.meta?.caliber || item.caliber}</Text>
-                </Surface>
-                <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
-                    <Text>{item.meta?.vendor || item.cartridgeVendor}</Text>
-                </Surface>
-                <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
-                    <Text>{item.meta?.bulletVendor || item.bulletVendor}</Text>
-                </Surface>
-                <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
-                    <Text>{item.weight} {"gr"}</Text>
-                </Surface>
-                <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
-                    <Text>{item.diameter} {"inch"}</Text>
-                </Surface>
-                <Surface elevation={0} style={{ flex: 1, padding: 4, justifyContent: "center", margin: 4, minWidth: 50 }}>
-                    <Text>{item.dragModelType}</Text>
-                </Surface>
-            </Surface>
+        <Surface style={styles.rowContainer}>
+            <View style={styles.iconContainer} />
+            <View style={styles.textRow}>
+                {labels.map((label, index) => (
+                    <Text key={index} style={[styles.text, styles.headerText]}>
+                        {label}
+                    </Text>
+                ))}
+            </View>
+        </Surface>
+    );
+});
+
+const ActionButtons = React.memo<ActionButtonsProps>(({ item, onShowDetails, onDownload, onOpen }) => (
+    <View style={styles.iconContainer}>
+        <Tooltip title="Download" leaveTouchDelay={0.2}>
+            <IconButton size={20} icon={"download"} style={styles.icon} onPress={onDownload} />
+        </Tooltip>
+        <Tooltip title="Details" leaveTouchDelay={0.2}>
+            <IconButton size={20} icon={"eye"} style={styles.icon} onPress={onShowDetails} />
+        </Tooltip>
+        <Tooltip title="Open in editor" leaveTouchDelay={0.2}>
+            <IconButton size={20} icon={"arrow-top-right-thick"} style={styles.icon} onPress={onOpen} />
+        </Tooltip>
+    </View>
+), (prevProps, nextProps) => (
+    prevProps.item?.path === nextProps.item?.path
+));
+
+export const ItemRow = React.memo<ItemRowProps>(({ item }) => {
+    const [detailsVisible, setDetailsVisible] = useState(false);
+
+    const onShowDetailsPress = useCallback(() => {
+        setDetailsVisible(true);
+    }, []);
+
+    const onDownloadPress = useCallback(() => {
+        downloadProfile(item.path);
+    }, [item.path]);
+
+    const onOpenPress = useCallback(() => {
+        openInEditor(item.path);
+    }, [item.path]);
+
+    return (
+        <TouchableOpacity onPress={onShowDetailsPress}>
+            <View style={styles.rowContainer}>
+                <ActionButtons
+                    item={item}
+                    onShowDetails={onShowDetailsPress}
+                    onDownload={onDownloadPress}
+                    onOpen={onOpenPress}
+                />
+                <View style={styles.textRow}>
+                    <Text style={[styles.text, { flex: 1 }]}>{item.meta?.productName || item.name}</Text>
+                    <Text style={[styles.text, { flex: 1 }]}>{item.meta?.caliber || item.caliber}</Text>
+                    <Text style={[styles.text, { flex: 1 }]}>{item.meta?.vendor || item.cartridgeVendor}</Text>
+                    <Text style={[styles.text, { flex: 1 }]}>{item.meta?.bulletVendor || item.bulletVendor}</Text>
+                    <Text style={[styles.text, { flex: 0.5 }]}>{item.weight} {"gr"}</Text>
+                    <Text style={[styles.text, { flex: 0.5 }]}>{item.diameter} {"inch"}</Text>
+                    <Text style={[styles.text, { flex: 1 }]}>{item.dragModelType}</Text>
+                </View>
+            </View>
             <Divider />
             {detailsVisible && <ItemDetails item={item} visible={detailsVisible} onDismiss={() => setDetailsVisible(false)} />}
         </TouchableOpacity>
-    )
-}
+    );
+}, (prevProps, nextProps) => (
+    prevProps.item === nextProps.item
+));
 
-
-export default ItemRow;
+export const styles = StyleSheet.create({
+    rowContainer: {
+        flexDirection: "row",
+        alignItems: "center", // Align buttons and text row vertically
+        gap: 8
+    },
+    iconContainer: {
+        flex: 0.2,
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        minWidth: 'auto',
+    },
+    textRow: {
+        flex: 1,
+        flexDirection: "row",
+        flexWrap: "wrap", // Enable wrapping for text elements
+        alignItems: "center",
+        gap: 8
+    },
+    icon: {
+        width: 20,
+        height: 20
+    },
+    text: {
+        paddingVertical: 2,
+        marginVertical: 2,
+        minWidth: 'auto',
+        textAlignVertical: "center",
+        textAlign: "left"
+    },
+    headerText: {
+        fontWeight: 'bold',
+    },
+});
