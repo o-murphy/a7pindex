@@ -1,11 +1,23 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Button, Chip, ChipProps, Icon, Surface, Text, TextInput, useTheme } from "react-native-paper";
+import { useCallback, useEffect, useState } from "react";
+import {
+    Button,
+    Chip,
+    ChipProps,
+    Icon,
+    Surface,
+    Text,
+    TextInput,
+    useTheme,
+} from "react-native-paper";
 import Select from "./Select";
-import { ProfileIndexType, ProfilesJson, useFilterContext } from "@/hooks/FilterHook";
+import {
+    ProfileIndexType,
+    ProfilesJson,
+    useFilterContext,
+} from "@/hooks/FilterHook";
 import DecimalInput from "./Decimalnput";
 import { TouchableOpacity, View } from "react-native";
 import { useResponsiveLayout } from "@/hooks/useResponsiveLayout";
-
 
 const allValues = "All";
 
@@ -13,38 +25,31 @@ const { uniqueKeys } = ProfilesJson;
 const { calibers, cartridgeVendors, bulletVendors } = uniqueKeys;
 const dragModelTypes = ["G1", "G7", "CUSTOM"];
 
-
 const FilterView = () => {
     const { filter, setFilter } = useFilterContext();
 
-    const [localFilter, setLocalFilter] = useState<Partial<ProfileIndexType>>({});
-    const [diameter, setDiameter] = useState<string>((filter?.diameter || 0)?.toFixed(3))
-    const [weight, setWeight] = useState<string>((filter?.weight || 0)?.toFixed(1))
-    // Helper function to check if the filter is empty
-    const isFilterEmpty = useMemo(() =>
-        Object.values(filter).every((value) => value === null || value === undefined),
-        [filter, setFilter]
-    )
+    const [localFilter, setLocalFilter] = useState<Partial<ProfileIndexType>>(
+        {},
+    );
 
     useEffect(() => {
-        setLocalFilter((prevFilter) => (filter));
-    }, [filter])
+        setLocalFilter(() => filter);
+    }, [filter]);
 
     const onFilterChange = (key: string, value: any) => {
-        setLocalFilter((prevFilter) => ({
-            ...prevFilter,
+        setFilter({
+            ...filter,
             [key]: value === allValues ? null : value,
-        }));
+        });
     };
 
     const applyFilter = () => {
         setFilter({
-            diameter: parseFloat(diameter.replace(",", ".")) || 0,
-            weight: parseFloat(weight.replace(",", ".")) || 0,
+            ...filter,
             caliber: localFilter?.caliber,
             bulletVendor: localFilter?.bulletVendor,
             cartridgeVendor: localFilter?.cartridgeVendor,
-            dragModelType: localFilter?.dragModelType
+            dragModelType: localFilter?.dragModelType,
         });
     };
 
@@ -70,8 +75,10 @@ const FilterView = () => {
             />
             <View style={{ flexDirection: "row", gap: 8 }}>
                 <DecimalInput
-                    value={diameter}
-                    onChangeText={setDiameter}
+                    value={(filter.diameter || 0).toString()}
+                    onChangeText={(value) =>
+                        onFilterChange("diameter", parseFloat(value))
+                    }
                     mode={"outlined"}
                     dense={true}
                     label={"Diameter"}
@@ -80,8 +87,10 @@ const FilterView = () => {
                     style={{ width: 125 }}
                 />
                 <DecimalInput
-                    value={weight}
-                    onChangeText={setWeight}
+                    value={(filter.weight || 0).toString()}
+                    onChangeText={(value) =>
+                        onFilterChange("weight", parseFloat(value))
+                    }
                     mode={"outlined"}
                     dense={true}
                     label={"Weight"}
@@ -96,87 +105,111 @@ const FilterView = () => {
                 value={localFilter.dragModelType ?? allValues}
                 onChange={(value) => onFilterChange("dragModelType", value)}
             />
-            <Button
-                icon={"check"}
-                mode={"outlined"}
-                onPress={applyFilter}
-            >
+            <Button icon={"check"} mode={"outlined"} onPress={applyFilter}>
                 Apply filter
             </Button>
         </View>
-    )
-}
+    );
+};
 
 interface FilterChipProps extends ChipProps {
-    key?: any | undefined
+    key?: any | undefined;
 }
 
-const FilterChip: React.FC<FilterChipProps> = ({ children, key = undefined, ...props }) => {
-    // const [hovered, setHovered] = useState(false)
+const FilterChip: React.FC<FilterChipProps> = ({
+    children,
+    key = undefined,
+    ...props
+}) => {
+    const [hovered, setHovered] = useState(false);
+
+    const theme = useTheme();
 
     return (
         <Chip
+            style={[
+                props.style,
+                hovered && { backgroundColor: theme.colors.errorContainer },
+            ]}
             key={key}
             {...props}
-        // onPointerEnter={() => setHovered(true)}
-        // onPointerLeave={() => setHovered(false)}
+            onPointerEnter={() => setHovered(true)}
+            onPointerLeave={() => setHovered(false)}
         >
             {children}
         </Chip>
-    )
-}
-
+    );
+};
 
 const FilterSurface = () => {
-
-    const theme = useTheme()
-    const { layout: layoutMode } = useResponsiveLayout()
-    const [collapsed, setCollapsed] = useState<boolean>(true)
+    const theme = useTheme();
+    const { layout: layoutMode } = useResponsiveLayout();
+    const [collapsed, setCollapsed] = useState<boolean>(true);
     const { filter, setFilter } = useFilterContext();
 
     const clearChip = (key: string) => {
         setFilter({
             ...filter,
-            [key]: null
-        })
-    }
+            [key]: null,
+        });
+    };
 
     const resetFilter = () => {
-        console.log("RESET")
+        console.log("RESET");
         setFilter({
             diameter: 0,
             weight: 0,
             caliber: "",
             bulletVendor: "",
             cartridgeVendor: "",
-            dragModelType: undefined
-        })
+            dragModelType: undefined,
+        });
     };
 
     const renderChips = useCallback(() => {
+        const fmt = (key: string, value: any) => {
+            if (key === "diameter") {
+                return `${value} inch`;
+            } else if (key === "weight") {
+                return `${value} gr`;
+            }
+            return value;
+        };
+
         const chips = Object.entries(filter)
             .map(([key, value]) => {
                 if (!value) {
                     return null;
                 }
-                return <FilterChip key={key} closeIcon={"close"}
-                    onPress={() => clearChip(key)}
-                    onClose={() => clearChip(key)}>
-                    {value}
-                </FilterChip>;
+                return (
+                    <FilterChip
+                        key={key}
+                        closeIcon={"close"}
+                        onPress={() => clearChip(key)}
+                        onClose={() => clearChip(key)}
+                    >
+                        {fmt(key, value)}
+                    </FilterChip>
+                );
             })
-            .filter(chip => chip !== null); // Filter out the null values
+            .filter((chip) => chip !== null); // Filter out the null values
 
         console.log(chips);
         return (
             <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
                 {chips}
-                {chips.length > 0 && <FilterChip
-                    onPress={resetFilter}
-                    closeIcon={"filter-off"}
-                    onClose={resetFilter}
-                    style={{ backgroundColor: theme.colors.tertiaryContainer }}
-                >Reset filter</FilterChip>}
+                {chips.length > 0 && (
+                    <FilterChip
+                        onPress={resetFilter}
+                        closeIcon={"filter-off"}
+                        onClose={resetFilter}
+                        style={{
+                            backgroundColor: theme.colors.tertiaryContainer,
+                        }}
+                    >
+                        Reset filter
+                    </FilterChip>
+                )}
             </View>
         );
     }, [filter, clearChip, resetFilter]);
@@ -184,14 +217,24 @@ const FilterSurface = () => {
     return (
         <Surface style={{ gap: 8, padding: 8 }}>
             {(layoutMode === "mobile" && collapsed) || <FilterView />}
-            {layoutMode === "mobile" && <TouchableOpacity
-                style={{ flexDirection: "row", gap: 8, padding: 8, justifyContent: "space-between" }}
-                onPress={() => setCollapsed(!collapsed)}
-            >
-                <Icon source={"filter"} size={20} />
-                <Text>{collapsed ? "Show filter" : "Hide filter"}</Text>
-                <Icon source={collapsed ? "chevron-down" : "chevron-up"} size={20} />
-            </TouchableOpacity>}
+            {layoutMode === "mobile" && (
+                <TouchableOpacity
+                    style={{
+                        flexDirection: "row",
+                        gap: 8,
+                        padding: 8,
+                        justifyContent: "space-between",
+                    }}
+                    onPress={() => setCollapsed(!collapsed)}
+                >
+                    <Icon source={"filter"} size={20} />
+                    <Text>{collapsed ? "Show filter" : "Hide filter"}</Text>
+                    <Icon
+                        source={collapsed ? "chevron-down" : "chevron-up"}
+                        size={20}
+                    />
+                </TouchableOpacity>
+            )}
             {renderChips()}
         </Surface>
     );

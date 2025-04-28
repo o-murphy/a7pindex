@@ -114,7 +114,7 @@ To obtain values from an .a7p profile in the desired units, you need to divide t
 For the reverse operation, you need to perform the inverse operation and convert to an integer.
 
 | key                      | unit           | multiplier | desc                                        |
-|--------------------------|----------------|------------|---------------------------------------------|
+| ------------------------ | -------------- | ---------- | ------------------------------------------- |
 | sc_height                | mm             | 1          | sight height in mm                          |
 | r_twist                  | inch           | 100        | positive twist value                        |
 | c_zero_temperature       | C              | 1          | temperature at c_muzzle_velocity            |
@@ -135,6 +135,6 @@ For the reverse operation, you need to perform the inverse operation and convert
 | zero_x                   | <int>          | -1000      | zeroing h-clicks for specific device        |
 | zero_y                   | <int>          | 1000       | zeroing v-clicks for specific device        |
 | coef_rows.bc_cd (G1/G7)  |                | 10000      | bc coefficient for mv                       |
-| coef_rows.mv    (G1/G7)  | mps            | 10         | mv for bc provided                          |
+| coef_rows.mv (G1/G7)     | mps            | 10         | mv for bc provided                          |
 | coef_rows.bc_cd (CUSTOM) |                | 10000      | drag coefficient (Cd)                       |
-| coef_rows.mv    (CUSTOM) | mach           | 10         | speed in mach                               |
+| coef_rows.mv (CUSTOM)    | mach           | 10         | speed in mach                               |

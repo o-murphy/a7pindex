@@ -3,7 +3,7 @@ import profilesJson from "@/assets/profiles.json";
 
 // Define the type for the filter object
 type ProfileIndexType = {
-    id?: number,
+    id?: number;
     diameter?: number;
     weight?: number;
     name?: string;
@@ -28,7 +28,7 @@ type UniqueKeysType = {
 
 // Corrected ProfilesJsonType
 type ProfilesJsonType = {
-    profiles: Array<Partial<ProfileIndexType>>; 
+    profiles: Array<Partial<ProfileIndexType>>;
     uniqueKeys: UniqueKeysType; // Adjusted to match the structure in profilesJson
 };
 
@@ -64,7 +64,9 @@ const FilterProvider: React.FC<FilterProviderProps> = ({ children }) => {
 const useFilterContext = (): FilterContextType => {
     const context = useContext(FilterContext);
     if (!context) {
-        throw new Error("useFilterContext must be used within a FilterProvider");
+        throw new Error(
+            "useFilterContext must be used within a FilterProvider",
+        );
     }
     return context;
 };
@@ -76,5 +78,5 @@ export {
     useFilterContext,
     UniqueKeysType,
     ProfilesJson,
-    ProfilesJsonType
+    ProfilesJsonType,
 };
