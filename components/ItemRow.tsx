@@ -55,22 +55,23 @@ export const Item = React.memo<ItemProps>(({ item }) => {
     return (
         <TouchableOpacity onPress={onShowDetailsPress} style={[styles.touchable, layoutMode === "mobile" && { width: "auto" }]}>
             <Card elevation={3} style={[styles.card, layoutMode === "mobile" && { width: "auto" }]}>
+                <Card.Title title={item.meta?.productName || item.name} />
                 <Card.Content style={styles.content}>
                     <View style={styles.row}>
                         <Text style={styles.label}>Product:</Text>
-                        <Text style={styles.value}>{item.meta?.productName || item.name}</Text>
+                        <Text style={styles.value} ellipsizeMode="tail" numberOfLines={2}>{item.meta?.productName || item.name}</Text>
                     </View>
                     <View style={styles.row}>
                         <Text style={styles.label}>Caliber:</Text>
-                        <Text style={styles.value}>{item.meta?.caliber || item.caliber}</Text>
+                        <Text style={styles.value} ellipsizeMode="tail" numberOfLines={2}>{item.meta?.caliber || item.caliber}</Text>
                     </View>
                     <View style={styles.row}>
                         <Text style={styles.label}>Vendor:</Text>
-                        <Text style={styles.value}>{item.meta?.vendor || item.cartridgeVendor}</Text>
+                        <Text style={styles.value} ellipsizeMode="tail" numberOfLines={2}>{item.meta?.vendor || item.cartridgeVendor}</Text>
                     </View>
                     <View style={styles.row}>
                         <Text style={styles.label}>Bullet Vendor:</Text>
-                        <Text style={styles.value}>{item.meta?.bulletVendor || item.bulletVendor}</Text>
+                        <Text style={styles.value} ellipsizeMode="tail" numberOfLines={2}>{item.meta?.bulletVendor || item.bulletVendor}</Text>
                     </View>
                     <View style={styles.row}>
                         <Text style={styles.label}>Weight:</Text>
@@ -105,17 +106,18 @@ export const Item = React.memo<ItemProps>(({ item }) => {
 export const styles = StyleSheet.create({
     touchable: {
         width: 350,
-        height: 300,
+        // height: 300,
         margin: 8,
     },
     card: {
         width: 350,
-        height: 300,
+        height: 320,
         display: 'flex',
         flexDirection: 'column',
     },
     content: {
-        paddingVertical: 16,
+        gap: 4,
+        paddingVertical: 8,
         paddingHorizontal: 16,
         flexGrow: 1,
     },
@@ -135,6 +137,7 @@ export const styles = StyleSheet.create({
     },
     actionsWrapper: {
         // No flexGrow here
+        flexGrow: 1,
     },
     actionsContainer: {
         padding: 8,

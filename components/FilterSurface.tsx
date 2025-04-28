@@ -1,27 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { FAB, Surface, TextInput } from "react-native-paper";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { Button, Chip, ChipProps, Icon, Surface, Text, TextInput, useTheme } from "react-native-paper";
 import Select from "./Select";
 import { ProfileIndexType, ProfilesJson, useFilterContext } from "@/hooks/FilterHook";
 import DecimalInput from "./Decimalnput";
-import { View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
+import { useResponsiveLayout } from "@/hooks/useResponsiveLayout";
 
 
 const allValues = "All";
 
-const FilterSurface = () => {
-    const { uniqueKeys } = ProfilesJson;
-    const { calibers, cartridgeVendors, bulletVendors } = uniqueKeys;
-    const dragModelTypes = ["G1", "G7", "CUSTOM"];
+const { uniqueKeys } = ProfilesJson;
+const { calibers, cartridgeVendors, bulletVendors } = uniqueKeys;
+const dragModelTypes = ["G1", "G7", "CUSTOM"];
 
+
+const FilterView = () => {
     const { filter, setFilter } = useFilterContext();
 
     const [localFilter, setLocalFilter] = useState<Partial<ProfileIndexType>>({});
     const [diameter, setDiameter] = useState<string>((filter?.diameter || 0)?.toFixed(3))
     const [weight, setWeight] = useState<string>((filter?.weight || 0)?.toFixed(1))
-
     // Helper function to check if the filter is empty
-    const isFilterEmpty = () =>
-        Object.values(filter).every((value) => value === null || value === undefined);
+    const isFilterEmpty = useMemo(() =>
+        Object.values(filter).every((value) => value === null || value === undefined),
+        [filter, setFilter]
+    )
+
+    useEffect(() => {
+        setLocalFilter((prevFilter) => (filter));
+    }, [filter])
 
     const onFilterChange = (key: string, value: any) => {
         setLocalFilter((prevFilter) => ({
@@ -29,10 +36,6 @@ const FilterSurface = () => {
             [key]: value === allValues ? null : value,
         }));
     };
-
-    useEffect(() => {
-        applyFilter();
-    }, [weight, diameter, localFilter])
 
     const applyFilter = () => {
         setFilter({
@@ -45,14 +48,8 @@ const FilterSurface = () => {
         });
     };
 
-    const resetFilter = () => {
-        setDiameter((0).toFixed(3))
-        setWeight((0).toFixed(1))
-        setLocalFilter({});
-    };
-
     return (
-        <Surface style={{ flexDirection: "column", flexWrap: "wrap", padding: 8, margin: 8, gap: 4 }}>
+        <View style={{ flexDirection: "column", flexWrap: "wrap", gap: 8 }}>
             <Select
                 label={"Caliber"}
                 items={[allValues, ...calibers]}
@@ -80,7 +77,7 @@ const FilterSurface = () => {
                     label={"Diameter"}
                     inputMode={"decimal"}
                     right={<TextInput.Affix text="inch" />}
-                    style={{width: 125}}
+                    style={{ width: 125 }}
                 />
                 <DecimalInput
                     value={weight}
@@ -90,7 +87,7 @@ const FilterSurface = () => {
                     label={"Weight"}
                     inputMode={"decimal"}
                     right={<TextInput.Affix text="gr" />}
-                    style={{width: 125}}
+                    style={{ width: 125 }}
                 />
             </View>
             <Select
@@ -99,18 +96,103 @@ const FilterSurface = () => {
                 value={localFilter.dragModelType ?? allValues}
                 onChange={(value) => onFilterChange("dragModelType", value)}
             />
-            <Surface elevation={0} style={{ flexDirection: "row" }}>
-                <Surface elevation={0} style={{ justifyContent: "center", margin: 4 }}>
-                    <FAB
-                        size={"small"}
-                        variant={"secondary"}
-                        mode="flat"
-                        icon={"filter-off"}
-                        onPress={resetFilter}
-                        disabled={isFilterEmpty()}
-                    />
-                </Surface>
-            </Surface>
+            <Button
+                icon={"check"}
+                mode={"outlined"}
+                onPress={applyFilter}
+            >
+                Apply filter
+            </Button>
+        </View>
+    )
+}
+
+interface FilterChipProps extends ChipProps {
+    key?: any | undefined
+}
+
+const FilterChip: React.FC<FilterChipProps> = ({ children, key = undefined, ...props }) => {
+    // const [hovered, setHovered] = useState(false)
+
+    return (
+        <Chip
+            key={key}
+            {...props}
+        // onPointerEnter={() => setHovered(true)}
+        // onPointerLeave={() => setHovered(false)}
+        >
+            {children}
+        </Chip>
+    )
+}
+
+
+const FilterSurface = () => {
+
+    const theme = useTheme()
+    const { layout: layoutMode } = useResponsiveLayout()
+    const [collapsed, setCollapsed] = useState<boolean>(true)
+    const { filter, setFilter } = useFilterContext();
+
+    const clearChip = (key: string) => {
+        setFilter({
+            ...filter,
+            [key]: null
+        })
+    }
+
+    const resetFilter = () => {
+        console.log("RESET")
+        setFilter({
+            diameter: 0,
+            weight: 0,
+            caliber: "",
+            bulletVendor: "",
+            cartridgeVendor: "",
+            dragModelType: undefined
+        })
+    };
+
+    const renderChips = useCallback(() => {
+        const chips = Object.entries(filter)
+            .map(([key, value]) => {
+                if (!value) {
+                    return null;
+                }
+                return <FilterChip key={key} closeIcon={"close"}
+                    onPress={() => clearChip(key)}
+                    onClose={() => clearChip(key)}>
+                    {value}
+                </FilterChip>;
+            })
+            .filter(chip => chip !== null); // Filter out the null values
+
+        console.log(chips);
+        return (
+            <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
+                {chips}
+                {chips.length > 0 && <FilterChip
+                    onPress={resetFilter}
+                    closeIcon={"filter-off"}
+                    onClose={resetFilter}
+                    style={{ backgroundColor: theme.colors.tertiaryContainer }}
+                >Reset filter</FilterChip>}
+            </View>
+        );
+    }, [filter, clearChip, resetFilter]);
+
+    return (
+        <Surface style={{ gap: 8, padding: 8 }}>
+            {(layoutMode === "mobile" && collapsed) || <FilterView />}
+            {layoutMode === "mobile" && <TouchableOpacity
+                style={{ flexDirection: "row", gap: 8, padding: 8, justifyContent: "space-between" }}
+                onPress={() => setCollapsed(!collapsed)}
+            >
+                <Icon source={"filter"} size={20} />
+                <Text>{collapsed ? "Show filter" : "Hide filter"}</Text>
+                <Icon source={collapsed ? "chevron-down" : "chevron-up"} size={20} />
+            </TouchableOpacity>}
+            {renderChips()}
         </Surface>
     );
 };
