@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { FAB, Surface } from "react-native-paper";
+import { FAB, Surface, TextInput } from "react-native-paper";
 import Select from "./Select";
 import { ProfileIndexType, ProfilesJson, useFilterContext } from "@/hooks/FilterHook";
 import DecimalInput from "./Decimalnput";
+import { View } from "react-native";
 
 
 const allValues = "All";
@@ -51,7 +52,7 @@ const FilterSurface = () => {
     };
 
     return (
-        <Surface style={{ flexDirection: "column", flexWrap: "wrap", padding: 8, margin: 8 }}>
+        <Surface style={{ flexDirection: "column", flexWrap: "wrap", padding: 8, margin: 8, gap: 4 }}>
             <Select
                 label={"Caliber"}
                 items={[allValues, ...calibers]}
@@ -70,26 +71,28 @@ const FilterSurface = () => {
                 value={localFilter.bulletVendor ?? allValues}
                 onChange={(value) => onFilterChange("bulletVendor", value)}
             />
-            <DecimalInput
-                value={diameter}
-                onChangeText={setDiameter}
-                mode={"outlined"}
-                dense={true}
-                label={"Diameter"}
-                inputMode={"decimal"}
-                // keyboardType={"numeric"}
-                style={{ margin: 4 }}
-            />
-            <DecimalInput
-                value={weight}
-                onChangeText={setWeight}
-                mode={"outlined"}
-                dense={true}
-                label={"Weight"}
-                inputMode={"decimal"}
-                // keyboardType={"numeric"}
-                style={{ margin: 4 }}
-            />
+            <View style={{ flexDirection: "row", gap: 8 }}>
+                <DecimalInput
+                    value={diameter}
+                    onChangeText={setDiameter}
+                    mode={"outlined"}
+                    dense={true}
+                    label={"Diameter"}
+                    inputMode={"decimal"}
+                    right={<TextInput.Affix text="inch" />}
+                    style={{width: 125}}
+                />
+                <DecimalInput
+                    value={weight}
+                    onChangeText={setWeight}
+                    mode={"outlined"}
+                    dense={true}
+                    label={"Weight"}
+                    inputMode={"decimal"}
+                    right={<TextInput.Affix text="gr" />}
+                    style={{width: 125}}
+                />
+            </View>
             <Select
                 label={"Drag Model"}
                 items={[allValues, ...dragModelTypes]}
@@ -102,7 +105,6 @@ const FilterSurface = () => {
                         size={"small"}
                         variant={"secondary"}
                         mode="flat"
-                        style={{}}
                         icon={"filter-off"}
                         onPress={resetFilter}
                         disabled={isFilterEmpty()}
