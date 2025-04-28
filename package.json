@@ -1,7 +1,7 @@
 {
     "name": "a7pindex",
     "main": "expo-router/entry",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "homepage": "https://o-murphy.github.io/a7pindex",
     "scripts": {
         "start": "expo start",
@@ -21,7 +21,7 @@
     "dependencies": {
         "@expo/vector-icons": "^14.0.4",
         "@react-native-async-storage/async-storage": "^2.1.2",
-        "a7p-js": "^1.0.3",
+        "a7p-js": "^1.0.4",
         "expo": "^52.0.14",
         "expo-blur": "~14.0.1",
         "expo-constants": "~17.0.3",
