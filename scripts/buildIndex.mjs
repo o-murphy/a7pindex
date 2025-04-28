@@ -1,9 +1,8 @@
-import path from 'path';
-import fs from 'fs';
-import vendors from '../dicts/vendors.js';
-import caliberTagMapping from '../dicts/possibleCalibers.js';
-import {decode} from "a7p-js";
-
+import path from "path";
+import fs from "fs";
+import vendors from "../dicts/vendors.js";
+import caliberTagMapping from "../dicts/possibleCalibers.js";
+import { decode } from "a7p-js";
 
 // Function to parse A7P file by path
 async function parseA7P(filePath, validate = true) {
@@ -13,7 +12,7 @@ async function parseA7P(filePath, validate = true) {
         const fileBuffer = fs.readFileSync(filePath);
 
         // Pass the file data (Buffer) to the loadA7P function for processing
-        const profile = decode(fileBuffer)
+        const profile = decode(fileBuffer);
 
         // Return the decoded profile
         return profile;
@@ -23,14 +22,13 @@ async function parseA7P(filePath, validate = true) {
     }
 }
 
-
 const asPosix = (filePath) => {
     return path.posix.join(...filePath.split(path.sep));
-}
+};
 
 /**
  * Recursively builds a tree of files and directories, filtering them by criteria.
- * 
+ *
  * @param {string} dir - The directory to traverse.
  * @param {function} criteria - A callback function to filter files. Receives the file's full path.
  * @returns {object[]} A tree of files and directories matching the criteria.
@@ -47,7 +45,7 @@ const getFilteredTree = (dir, criteria) => {
             const children = getFilteredTree(fullPath, criteria);
             if (children.length > 0 || criteria(fullPath)) {
                 result.push({
-                    type: 'directory',
+                    type: "directory",
                     name: item.name,
                     path: fullPath,
                     children,
@@ -56,7 +54,7 @@ const getFilteredTree = (dir, criteria) => {
         } else if (item.isFile() && criteria(fullPath)) {
             // Add the file if it matches the criteria
             result.push({
-                type: 'file',
+                type: "file",
                 name: item.name,
                 path: fullPath,
             });
@@ -64,53 +62,52 @@ const getFilteredTree = (dir, criteria) => {
     }
 
     return result;
-}
+};
 
 const extractFilePaths = (tree) => {
     const filePaths = [];
 
     for (const node of tree) {
-        if (node.type === 'file') {
+        if (node.type === "file") {
             filePaths.push(node.path); // Add file path to the array
-        } else if (node.type === 'directory' && node.children) {
+        } else if (node.type === "directory" && node.children) {
             // Recursively process directory children
             filePaths.push(...extractFilePaths(node.children));
         }
     }
 
     return filePaths;
-}
+};
 
 // Example Usage
 // const outputDir = './extracted-repo'; // Adjust to the extracted repo directory
 // const galleryPath = path.join(outputDir, "a7p-master", "gallery")
 
-const outputDir = './a7p'; // Adjust to the extracted repo directory
-const galleryPath = path.join(outputDir, "gallery")
-const excludeUnvalidated = path.join(galleryPath, ".unvalidated")
-const indexPath = 'assets/profiles.json';
+const outputDir = "./a7p"; // Adjust to the extracted repo directory
+const galleryPath = path.join(outputDir, "gallery");
+const excludeUnvalidated = path.join(galleryPath, ".unvalidated");
+const indexPath = "assets/profiles.json";
 const assetsDir = path.dirname(indexPath);
 
-
 const resolveCaliber = (caliber, diameter) => {
-    const keys = Object.keys(caliberTagMapping).map(item => item.toUpperCase())
+    const keys = Object.keys(caliberTagMapping).map((item) =>
+        item.toUpperCase(),
+    );
     try {
         if (keys.includes(caliber.toUpperCase())) {
             if (caliberTagMapping[caliber]?.length === 1) {
-                return caliberTagMapping[caliber][0]
+                return caliberTagMapping[caliber][0];
             }
         }
         // return `${diameter}`
-        return caliber
-
+        return caliber;
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
-}
-
+};
 
 const resolveVendor = (vendor, filePath = "") => {
-    const vendorUpper = vendor.toUpperCase()
+    const vendorUpper = vendor.toUpperCase();
     const words = vendorUpper.split(" ");
 
     let resolved = undefined; // Changed to `let`
@@ -121,16 +118,16 @@ const resolveVendor = (vendor, filePath = "") => {
         }
     }
 
-    const vendorKeys = Object.keys(vendors)
+    const vendorKeys = Object.keys(vendors);
     for (const key of vendorKeys) {
         if (vendorUpper.includes(key)) {
-            return vendorKeys[key]
+            return vendorKeys[key];
         }
     }
 
     for (const key of vendorKeys) {
         if (filePath.includes(key)) {
-            return vendorKeys[key]
+            return vendorKeys[key];
         }
     }
 
@@ -138,55 +135,68 @@ const resolveVendor = (vendor, filePath = "") => {
     return resolved ?? null;
 };
 
-
 // Function to collect unique values for a given key
 const collectUniqueValues = (data, key) => {
-    return [...new Set(data.map(item =>
-        item[key] != null ? (typeof item[key] === 'string' ? item[key].trim() : item[key]) : undefined
-    )).values()].filter(value => value != null); // Filter out null and undefined
+    return [
+        ...new Set(
+            data.map((item) =>
+                item[key] != null
+                    ? typeof item[key] === "string"
+                        ? item[key].trim()
+                        : item[key]
+                    : undefined,
+            ),
+        ).values(),
+    ].filter((value) => value != null); // Filter out null and undefined
 };
 
-
-
-const mergeProfilesIndex = ({prevProfilesIndex, profilesIndex}) => {    
+const mergeProfilesIndex = ({ prevProfilesIndex, profilesIndex }) => {
     const mergedProfilesIndex = [];
-    profilesIndex.map(cur => {
-        const found = prevProfilesIndex.find(item => item?.path === cur?.path );
+    profilesIndex.map((cur) => {
+        const found = prevProfilesIndex.find(
+            (item) => item?.path === cur?.path,
+        );
         if (found) {
-            const prevIdx = prevProfilesIndex.indexOf(found)
+            const prevIdx = prevProfilesIndex.indexOf(found);
             mergedProfilesIndex.push({
                 ...cur,
-                meta: {...cur?.meta, ...prevProfilesIndex[prevIdx].meta}
-            })
+                meta: { ...cur?.meta, ...prevProfilesIndex[prevIdx].meta },
+            });
         } else {
-            mergedProfilesIndex.push(cur)
+            mergedProfilesIndex.push(cur);
         }
-    })
-    return mergedProfilesIndex
-}
-
+    });
+    return mergedProfilesIndex;
+};
 
 const createIndex = async () => {
     const profilesIndex = [];
 
     // Filter criteria: Include only JavaScript and Markdown files
-    const criteria = (filePath) => ['.a7p'].includes(path.extname(filePath));
+    const criteria = (filePath) => [".a7p"].includes(path.extname(filePath));
 
     // Get the filtered tree
     const filteredTree = getFilteredTree(galleryPath, criteria);
 
     const flatFilePaths = extractFilePaths(filteredTree);
     // const validFilePaths = flatFilePaths.filter(filePath => !asPosix(filePath).startsWith(excludeUnvalidated))
-    const validFilePaths = flatFilePaths.filter(filePath => !asPosix(filePath).startsWith(asPosix(excludeUnvalidated)));
-
+    const validFilePaths = flatFilePaths.filter(
+        (filePath) =>
+            !asPosix(filePath).startsWith(asPosix(excludeUnvalidated)),
+    );
 
     // Use Promise.all to wait for all asynchronous parseA7P operations to finish
     const parsePromises = validFilePaths.map((filePath, index) =>
         parseA7P(filePath, true)
-            .then(result => {
+            .then((result) => {
                 // console.log(result.profile);
-                const normalizedPath = path.normalize(filePath).replace(/\\/g, '/').split("/");
-                const finalPath = normalizedPath.slice(normalizedPath.indexOf('gallery')).join("/")
+                const normalizedPath = path
+                    .normalize(filePath)
+                    .replace(/\\/g, "/")
+                    .split("/");
+                const finalPath = normalizedPath
+                    .slice(normalizedPath.indexOf("gallery"))
+                    .join("/");
 
                 if (result && result.profile) {
                     const profile = result?.profile;
@@ -194,71 +204,78 @@ const createIndex = async () => {
                         id: index,
                         diameter: profile.bDiameter / 1000,
                         weight: profile.bWeight / 10,
-                        caliber: resolveCaliber(profile.caliber, profile.bDiameter / 1000),
+                        caliber: resolveCaliber(
+                            profile.caliber,
+                            profile.bDiameter / 1000,
+                        ),
                         path: finalPath,
                         profileName: profile.profileName,
                         name: `${profile.caliber} ${profile.cartridgeName} ${profile.bulletName}`,
                         cartridge: profile.cartridgeName,
                         bullet: profile.bulletName,
-                        cartridgeVendor: resolveVendor(profile.cartridgeName, filePath),
-                        bulletVendor: resolveVendor(profile.bulletName,),
+                        cartridgeVendor: resolveVendor(
+                            profile.cartridgeName,
+                            filePath,
+                        ),
+                        bulletVendor: resolveVendor(profile.bulletName),
                         dragModelType: profile.bcType,
                         meta: {
-                            "productName": "",
-                            "vendor": "",
-                            "bulletVendor": "",
-                            "caliber": "",
-                            "muzzle_velocity": null,
-                            "bc": null,
-                            "g7": null,
-                            "bulletType": "",
-                            "weight": null,
-                            "country": "",
-                            "url": null
-                        }
+                            productName: "",
+                            vendor: "",
+                            bulletVendor: "",
+                            caliber: "",
+                            muzzle_velocity: null,
+                            bc: null,
+                            g7: null,
+                            bulletType: "",
+                            weight: null,
+                            country: "",
+                            url: null,
+                        },
                     });
                 } else {
-                    throw new Error(`Error on file: ${filePath}`)
+                    throw new Error(`Error on file: ${filePath}`);
                 }
-
             })
-            .catch(error => console.error(`Error on file: ${filePath}`))
+            .catch((error) => console.error(`Error on file: ${filePath}`)),
     );
 
-
     try {
-        await Promise.all(parsePromises)
+        await Promise.all(parsePromises);
         let prevProfilesIndex = [];
         try {
-            const fileData = fs.readFileSync(indexPath, 'utf8');
+            const fileData = fs.readFileSync(indexPath, "utf8");
             const fileJsonData = JSON.parse(fileData);
             prevProfilesIndex = fileJsonData.profiles || [];
         } catch {
-            console.log("Error load lastIndex")
+            console.log("Error load lastIndex");
         }
         // console.log(profilesIndex)
 
-        const mergedIndex = mergeProfilesIndex({prevProfilesIndex, profilesIndex});
-        const mergedMeta = mergedIndex.map(item => item.meta)
-        
+        const mergedIndex = mergeProfilesIndex({
+            prevProfilesIndex,
+            profilesIndex,
+        });
+        const mergedMeta = mergedIndex.map((item) => item.meta);
+
         const outputData = {
             profiles: mergedIndex,
             uniqueKeys: {
-                calibers: collectUniqueValues(mergedMeta, 'caliber'),
-                diameters: collectUniqueValues(mergedIndex, 'diameter'),
-                bulletVendors: collectUniqueValues(mergedMeta, 'bulletVendor'),
-                cartridgeVendors: collectUniqueValues(mergedMeta, 'vendor')
-            }
-        }
+                calibers: collectUniqueValues(mergedMeta, "caliber"),
+                diameters: collectUniqueValues(mergedIndex, "diameter"),
+                bulletVendors: collectUniqueValues(mergedMeta, "bulletVendor"),
+                cartridgeVendors: collectUniqueValues(mergedMeta, "vendor"),
+            },
+        };
 
         const jsonString = JSON.stringify(outputData, null, 2);
 
         fs.mkdirSync(assetsDir, { recursive: true });
-        fs.writeFileSync(indexPath, jsonString, 'utf8');
+        fs.writeFileSync(indexPath, jsonString, "utf8");
 
-        console.log('Files saved successfully!');
+        console.log("Files saved successfully!");
 
-        console.log("Profiles updated:", validFilePaths.length)
+        console.log("Profiles updated:", validFilePaths.length);
     } catch (error) {
         console.error(`Error during parsing: ${error.message}`);
     }
@@ -267,7 +284,7 @@ const createIndex = async () => {
     // Promise.all(parsePromises)
     //     .then(() => {
     //         // After all promises are resolved, save the file
-            
+
     //         let prevProfilesIndex = [];
     //         try {
     //             const fileData = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
@@ -298,8 +315,6 @@ const createIndex = async () => {
     //     .catch(error => {
     //         console.error('Error during parsing:', error.message);
     //     });
-
-
-}
+};
 
 createIndex();

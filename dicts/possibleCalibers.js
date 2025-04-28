@@ -42,10 +42,10 @@ const caliberTagMapping = {
     "9.3x74r": ["9.3x74mmR"],
     "9x21": ["9x21mm IMI"],
     "8x68": ["8x68mm"],
-    "0.338": ["338 Lapua Magnum"],
-    "bolt": ["Generic term, not a caliber"],
-    "ракета": ["Generic term, not a caliber"],
-    "выстрел": ["Generic term, not a caliber"]
+    0.338: ["338 Lapua Magnum"],
+    bolt: ["Generic term, not a caliber"],
+    ракета: ["Generic term, not a caliber"],
+    выстрел: ["Generic term, not a caliber"],
 };
 
 export default caliberTagMapping;
