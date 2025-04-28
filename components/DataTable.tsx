@@ -1,8 +1,7 @@
-import React from "react";
-import { FlatList } from "react-native";
+import React, { useCallback, useState } from "react";
+import { FlatList, View } from "react-native";
 import { ProfileIndexType, ProfilesJson, useFilterContext } from "@/hooks/FilterHook";
-import { HeaderRow, ItemRow } from "./ItemRow";
-import { Surface } from "react-native-paper";
+import { Item } from "./ItemRow";
 
 const filterIndex = (profiles: Array<Partial<ProfileIndexType>>, filter: Partial<ProfileIndexType>) => {
     return profiles
@@ -14,22 +13,38 @@ const filterIndex = (profiles: Array<Partial<ProfileIndexType>>, filter: Partial
         .filter(item => filter.dragModelType ? item.dragModelType === filter.dragModelType : true);
 };
 
+const ITEM_WIDTH = 350 + 16;
+
 const ProfilesDataTable = () => {
     const { profiles } = ProfilesJson;
     const { filter } = useFilterContext();
     const filteredProfiles = filterIndex(profiles, filter);
 
+    const [numColumns, setNumColumns] = useState(4); // Default value
+    const [flatListKey, setFlatListKey] = useState('initialKey');
+
+    const onLayout = useCallback((event: { nativeEvent: { layout: { width: any; }; }; }) => {
+        const { width } = event.nativeEvent.layout;
+        const calculatedColumns = Math.floor(width / ITEM_WIDTH);
+        const newNumColumns = Math.max(1, calculatedColumns);
+        if (newNumColumns !== numColumns) {
+            setNumColumns(newNumColumns);
+            setFlatListKey(`columns-${newNumColumns}`);
+        }
+    }, [ITEM_WIDTH, numColumns]);
+
     return (
-        <Surface style={{ flexDirection: "column", padding: 8, margin: 8, flex: 1 }}>
-            {/* <HeaderRow /> */}
+        <View style={{ flex: 1 }} onLayout={onLayout}>
             <FlatList
+                key={flatListKey}
                 data={filteredProfiles}
+                numColumns={numColumns}
                 keyExtractor={(_, index) => index.toString()}
-                renderItem={({ item }) => <ItemRow item={item} />}
+                renderItem={({ item }) => <Item item={item} />}
                 contentContainerStyle={{ flexGrow: 1 }}
                 initialNumToRender={10}
             />
-        </Surface>
+        </View>
     );
 };
 

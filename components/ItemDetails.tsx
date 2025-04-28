@@ -2,7 +2,7 @@ import { ProfileIndexType } from "@/hooks/FilterHook"
 import React, { useEffect, useState } from "react"
 import { Button, Dialog, Divider, FAB, Portal, Surface, Text } from "react-native-paper"
 import { fetchDetails, downloadProfile, openInEditor } from "@/hooks/FetchProfile";
-import { Linking, Platform } from "react-native";
+import { Linking, Platform, ScrollView } from "react-native";
 
 
 type ItemDetailsProps = {
@@ -52,26 +52,30 @@ const ItemDetails: React.FC<ItemDetailsProps> = ({ item, visible, onDismiss }) =
 
     return (
         <Portal>
-            <Dialog visible={visible} onDismiss={onDismiss} style={{ maxWidth: 350, minWidth: 300, maxHeight: "50%", alignSelf: "center" }}>
+            <Dialog visible={visible} onDismiss={onDismiss} style={{ maxWidth: 350, minWidth: 300, maxHeight: 500, alignSelf: "center" }}>
                 <Dialog.Title>{item?.meta?.productName || data?.profileName}</Dialog.Title>
-                <Dialog.Content style={{ paddingBottom: 0 }}>
-                    <DataRow label={"Caliber"} value={item?.meta?.caliber || data?.caliber} />
-                    <Divider />
-                    <DataRow label={"Cartridge vendor"} value={item?.meta?.vendor || item?.cartridgeVendor} />
-                    <Divider />
-                    <DataRow label={"Bullet Type"} value={item?.meta?.bulletType || item?.bullet} />
-                    <Divider />
-                    <DataRow label={"Bullet weight"} value={wght} />
-                    <Divider />
-                    <DataRow label={"Bullet diameter"} value={dia} />
-                    <Divider />
-                    <DataRow label={"Muzzle velocity"} value={mv} />
-                    <Divider />
-                    <DataRow label={"Drag model"} value={item?.dragModelType} />
-                    {/* <DataRow label={"Source"} value={item?.meta?.url} /> */}
-                    {item?.meta?.url && <Button icon={"open-in-new"} mode={"outlined"} onPress={() => Linking.openURL(item?.meta?.url)}>Vendor page</Button>}
+                <Dialog.Content style={{ paddingBottom: 0, flex: 1  }}>
+                    <Dialog.ScrollArea>
+                        <ScrollView contentContainerStyle={{gap: 4}}>
+                            <DataRow label={"Caliber"} value={item?.meta?.caliber || data?.caliber} />
+                            <Divider />
+                            <DataRow label={"Cartridge vendor"} value={item?.meta?.vendor || item?.cartridgeVendor} />
+                            <Divider />
+                            <DataRow label={"Bullet Type"} value={item?.meta?.bulletType || item?.bullet} />
+                            <Divider />
+                            <DataRow label={"Bullet weight"} value={wght} />
+                            <Divider />
+                            <DataRow label={"Bullet diameter"} value={dia} />
+                            <Divider />
+                            <DataRow label={"Muzzle velocity"} value={mv} />
+                            <Divider />
+                            <DataRow label={"Drag model"} value={item?.dragModelType} />
+                            {/* <DataRow label={"Source"} value={item?.meta?.url} /> */}
+                            {item?.meta?.url && <Button icon={"open-in-new"} mode={"outlined"} onPress={() => Linking.openURL(item?.meta?.url)}>Vendor page</Button>}
+                        </ScrollView>
+                    </Dialog.ScrollArea>
                 </Dialog.Content>
-                <Surface style={{ flexDirection: "row", padding: 8, flex: 1 }} elevation={0}>
+                <Surface style={{ flexDirection: "row", padding: 8 }} elevation={0}>
                     <FAB style={{ margin: 4, flex: 1 }} variant={"primary"} label={"Download"} icon={"download"} onPress={onDownloadPress} />
                     <FAB style={{ margin: 4, flex: 1 }} variant={"tertiary"} label={"Open in editor"} icon={"arrow-top-right-thick"} onPress={onOpenPress} />
                 </Surface>
