@@ -2064,10 +2064,10 @@
   resolved "https://registry.npmjs.org/@zxing/text-encoding/-/text-encoding-0.9.0.tgz"
   integrity sha512-U/4aVJ2mxI0aDNI8Uq0wEhMgY+u4CNtEb0om3+y3+niDAsoTCOB33UF0sxpzqzdqXLqmvc+vZyAt4O8pPdfkwA==
 
-a7p-js@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/a7p-js/-/a7p-js-1.0.3.tgz"
-  integrity sha512-/P/ptBLKS88tTRxiOcubxXA8/Tfs+nZ6uTtjee/sSxorrJMrVhJ8xfEbtt/MdUxS2Z+uMcEb2AryKRRn9jvA4w==
+a7p-js@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.0.4.tgz#cccb742cba6dac180eecc1c341f21e1e20a4529b"
+  integrity sha512-8Iq2eQ3xCR4iiv7xEaHazCF8Ptc0Jn1U/0nmzxlAaWy1MZk6r4m8dgAxXhZl90BsYR07HLFaywoqTm1qcFLHkQ==
   dependencies:
     base64-js "^1.5.1"
     crypto-js "^4.2.0"
