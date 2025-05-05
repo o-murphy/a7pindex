@@ -12,7 +12,6 @@ import {
 import Select from "./Select";
 import {
     ProfileIndexType,
-    ProfilesJson,
     useFilterContext,
 } from "@/hooks/FilterHook";
 import DecimalInput from "./Decimalnput";
@@ -21,12 +20,13 @@ import { useResponsiveLayout } from "@/hooks/useResponsiveLayout";
 
 const allValues = "All";
 
-const { uniqueKeys } = ProfilesJson;
-const { calibers, cartridgeVendors, bulletVendors } = uniqueKeys;
+
 const dragModelTypes = ["G1", "G7", "CUSTOM"];
 
 const FilterView = () => {
     const { filter, setFilter } = useFilterContext();
+
+    const { webHookData: profilesIndex } = useFilterContext();
 
     const [localFilter, setLocalFilter] = useState<Partial<ProfileIndexType>>(
         {},
@@ -52,6 +52,18 @@ const FilterView = () => {
             dragModelType: localFilter?.dragModelType,
         });
     };
+
+    if (!profilesIndex) {
+        return <></>
+    }
+
+    const uniqueKeys = profilesIndex?.uniqueKeys || {
+        calibers: [],
+        cartridgeVendors: [],
+        bulletVendors: []
+    }
+
+    const { calibers, cartridgeVendors, bulletVendors } = uniqueKeys;
 
     return (
         <View style={{ flexDirection: "column", flexWrap: "wrap", gap: 8 }}>
