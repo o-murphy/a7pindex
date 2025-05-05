@@ -2,7 +2,6 @@ import { useCallback, useState } from "react";
 import { FlatList, View } from "react-native";
 import {
     ProfileIndexType,
-    ProfilesJson,
     useFilterContext,
 } from "@/hooks/FilterHook";
 import { Item } from "./ItemRow";
@@ -15,19 +14,19 @@ const filterIndex = (
         .filter((item) =>
             filter.caliber
                 ? item.meta?.caliber?.toLowerCase() ===
-                  filter.caliber?.toLowerCase()
+                filter.caliber?.toLowerCase()
                 : true,
         )
         .filter((item) =>
             filter.bulletVendor
                 ? item.meta?.bulletVendor.toLowerCase() ===
-                  filter.bulletVendor?.toLowerCase()
+                filter.bulletVendor?.toLowerCase()
                 : true,
         )
         .filter((item) =>
             filter.cartridgeVendor
                 ? item.meta?.vendor.toLowerCase() ===
-                  filter.cartridgeVendor?.toLowerCase()
+                filter.cartridgeVendor?.toLowerCase()
                 : true,
         )
         .filter((item) =>
@@ -46,9 +45,9 @@ const filterIndex = (
 const ITEM_WIDTH = 350 + 16;
 
 const ProfilesDataTable = () => {
-    const { profiles } = ProfilesJson;
+    const { webHookData: profilesIndex } = useFilterContext();
+
     const { filter } = useFilterContext();
-    const filteredProfiles = filterIndex(profiles, filter);
 
     const [numColumns, setNumColumns] = useState(4); // Default value
     const [flatListKey, setFlatListKey] = useState("initialKey");
@@ -65,6 +64,12 @@ const ProfilesDataTable = () => {
         },
         [ITEM_WIDTH, numColumns],
     );
+
+    if (!profilesIndex?.profiles) {
+        return <></>
+    }
+
+    const filteredProfiles = filterIndex(profilesIndex?.profiles, filter);
 
     return (
         <View style={{ flex: 1 }} onLayout={onLayout}>

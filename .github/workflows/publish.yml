@@ -1,4 +1,4 @@
-name: Rebuild and Deploy Index
+name: Publish
 
 on:
     release:
@@ -32,12 +32,8 @@ jobs:
             - name: Install Dependencies
               run: yarn install
 
-            - name: Copy Gallery Assets to dist
-              run: mkdir -p ./public/gallery && cp -r ./a7p/gallery/* ./public/gallery/
-
             - name: Build Index (and Expo Web)
               run: |
-                  yarn index:build
                   yarn predeploy # This will run 'expo export -p web'
 
             - name: Deploy to GitHub Pages
@@ -45,11 +41,3 @@ jobs:
               with:
                   publish_dir: ./dist
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-
-            # Upload the profiles.json file as an artifact (optional)
-            - name: Upload profiles.json as artifact
-              if: failure() || success()
-              uses: actions/upload-artifact@v4
-              with:
-                  name: profiles-json
-                  path: ./dist/profiles.json # Assuming profiles.json is in the dist folder

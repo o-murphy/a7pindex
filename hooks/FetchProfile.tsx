@@ -7,6 +7,7 @@ import { decode } from "a7p-js";
 // Path to your protobuf file
 const PUBLIC_PATH = __DEV__ ? "/" : "/a7pIndex/";
 const EDITOR_PATH = "/ArcherBC2-Web";
+const LIB_URL = "https://portfolio.o-murphy.net/a7p-lib/"
 
 // Utility function to convert array buffer to base64
 export function bufferToBase64(buffer: any) {
@@ -30,7 +31,7 @@ export function md5(data: any) {
 export const fetchDetails = async (path: string | undefined) => {
     if (!path) throw new Error("Invalid path");
 
-    const fileUrl = PUBLIC_PATH + path; // Path to the file in the public directory
+    const fileUrl = LIB_URL + path; // Path to the file in the public directory
     try {
         const response = await fetch(fileUrl);
         if (!response.ok) {
@@ -109,7 +110,7 @@ export const downloadProfile = (path?: string) => {
         return;
     }
 
-    const fileUrl = PUBLIC_PATH + path;
+    const fileUrl = LIB_URL + path;
 
     if (Platform.OS === "web") {
         const anchor = document.createElement("a");
