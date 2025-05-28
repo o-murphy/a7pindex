@@ -1,16 +1,14 @@
-import React from "react"
-import { Appbar } from "react-native-paper"
-
+import React from "react";
+import { Appbar } from "react-native-paper";
+import { ThemeToggle } from "./ThemeToggle";
 
 const TopAppBar = () => {
     return (
         <Appbar.Header elevated={true}>
-          {/* <Appbar.BackAction onPress={() => { }} /> */}
-          <Appbar.Content title="Archer Balistic Profiles Library" />
-          {/* <Appbar.Action icon="calendar" onPress={() => { }} /> */}
-          {/* <Appbar.Action icon="magnify" onPress={() => { }} /> */}
+            <Appbar.Content title="Archer Balistic Profiles Library" />
+            <ThemeToggle />
         </Appbar.Header>
-    )
-}
+    );
+};
 
 export default TopAppBar;

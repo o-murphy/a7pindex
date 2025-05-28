@@ -13,7 +13,10 @@ export const detectDevice = () => {
     if (/android/i.test(ua)) {
         return "Android";
     }
-    if (/iPad|iPhone|iPod/.test(ua) && !(typeof window !== 'undefined' && (window as any).MSStream)) {
+    if (
+        /iPad|iPhone|iPod/.test(ua) &&
+        !(typeof window !== "undefined" && (window as any).MSStream)
+    ) {
         return "iOS";
     }
     if (/Windows NT/.test(ua)) {
@@ -31,7 +34,6 @@ export const detectDevice = () => {
 
 export const isMobileUA = () => {
     const dev = detectDevice();
-    console.log("Device", dev);
     switch (dev) {
         case "Android":
         case "iOS":
@@ -42,13 +44,11 @@ export const isMobileUA = () => {
 };
 
 export const isWebPlatform = () => {
-    console.log("Platform", Platform.OS);
     return Platform.OS === "web";
 };
 
 export const isMobileWidth = () => {
-    const { width, height } = Dimensions.get("window");
-    console.log("dimensions", width, height);
+    const { width } = Dimensions.get("window");
     return width < MIN_DESKTOP_WIDTH;
 };
 

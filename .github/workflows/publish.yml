@@ -1,0 +1,43 @@
+name: Publish
+
+on:
+    release:
+        types: [created]
+    push:
+        tags:
+            - "*"
+    workflow_dispatch:
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+jobs:
+    rebuild_and_deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  submodules: recursive
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 22
+
+            - name: Install Yarn
+              run: npm install -g yarn
+
+            - name: Install Dependencies
+              run: yarn install
+
+            - name: Build Index (and Expo Web)
+              run: |
+                  yarn predeploy # This will run 'expo export -p web'
+
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  publish_dir: ./dist
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
