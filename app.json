@@ -37,7 +37,7 @@
         ],
         "experiments": {
             "typedRoutes": true,
-            "baseUrl": "/a7pIndex"
+            "baseUrl": "/a7pindex"
         }
     }
 }
