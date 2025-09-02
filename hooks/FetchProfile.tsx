@@ -5,7 +5,7 @@ import { fromByteArray } from "base64-js";
 import { decode } from "a7p-js";
 
 // Path to your protobuf file
-const PUBLIC_PATH = __DEV__ ? "/" : "/a7pIndex/";
+const PUBLIC_PATH = __DEV__ ? "/" : "/a7pindex/";
 const EDITOR_PATH = "/ArcherBC2-Web";
 const LIB_URL = "https://portfolio.o-murphy.net/a7p-lib/"
 
