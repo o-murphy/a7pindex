@@ -6,7 +6,7 @@ import { decode } from "a7p-js";
 
 // Path to your protobuf file
 const PUBLIC_PATH = __DEV__ ? "/" : "/a7pindex/";
-const EDITOR_PATH = "/ArcherBC2-Web";
+const EDITOR_PATH = "/archerbc2-web";
 const LIB_URL = "https://portfolio.o-murphy.net/a7p-lib/"
 
 // Utility function to convert array buffer to base64
