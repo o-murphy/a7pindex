@@ -48,7 +48,8 @@ export default {
         ],
         experiments: {
             typedRoutes: true,
-            ...(isGhPages && { baseUrl: '/a7pindex' }), // only include for GH-Pages
+            // ...(isGhPages && { baseUrl: '/a7pindex' }), // only include for GH-Pages
+            baseUrl: '/a7pindex'
         },
     },
 };
