@@ -11,7 +11,7 @@
         "web": "expo start --web",
         "test": "jest --watchAll",
         "lint": "expo lint",
-        "deploy": "cross-env SERVE_ENV=gh-pages gh-pages --nojekyll -t -d dist",
+        "deploy": "gh-pages --nojekyll -t -d dist",
         "predeploy": "expo export -p web",
         "serve": "expo serve"
     },
