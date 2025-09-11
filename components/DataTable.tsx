@@ -46,15 +46,22 @@ const ITEM_WIDTH = 350 + 16;
 
 const ProfilesDataTable = () => {
     const { webHookData: profilesIndex } = useFilterContext();
-
     const { filter } = useFilterContext();
 
-    const [numColumns, setNumColumns] = useState(4); // Default value
+    const [numColumns, setNumColumns] = useState(4);
     const [flatListKey, setFlatListKey] = useState("initialKey");
+    const [containerHeight, setContainerHeight] = useState(0);
 
     const onLayout = useCallback(
-        (event: { nativeEvent: { layout: { width: any } } }) => {
-            const { width } = event.nativeEvent.layout;
+        (event: { nativeEvent: { layout: { width: number; height: number } } }) => {
+            const { width, height } = event.nativeEvent.layout;
+
+            // Set the actual container height
+            if (height > 0 && height !== containerHeight) {
+                setContainerHeight(height);
+            }
+
+            // Calculate columns
             const calculatedColumns = Math.floor(width / ITEM_WIDTH);
             const newNumColumns = Math.max(1, calculatedColumns);
             if (newNumColumns !== numColumns) {
@@ -62,26 +69,32 @@ const ProfilesDataTable = () => {
                 setFlatListKey(`columns-${newNumColumns}`);
             }
         },
-        [ITEM_WIDTH, numColumns],
+        [numColumns, containerHeight],
     );
 
     if (!profilesIndex?.profiles) {
-        return <></>
+        return <View style={{ flex: 1 }} />;
     }
 
     const filteredProfiles = filterIndex(profilesIndex?.profiles, filter);
 
     return (
         <View style={{ flex: 1 }} onLayout={onLayout}>
-            <FlatList
-                key={flatListKey}
-                data={filteredProfiles}
-                numColumns={numColumns}
-                keyExtractor={(_, index) => index.toString()}
-                renderItem={({ item }) => <Item item={item} />}
-                contentContainerStyle={{ flexGrow: 1 }}
-                initialNumToRender={10}
-            />
+            {containerHeight > 0 ? (
+                <FlatList
+                    key={flatListKey}
+                    data={filteredProfiles}
+                    numColumns={numColumns}
+                    keyExtractor={(_, index) => index.toString()}
+                    renderItem={({ item }) => <Item item={item} />}
+                    contentContainerStyle={{ flexGrow: 1 }}
+                    initialNumToRender={10}
+                    style={{ height: containerHeight }}
+                />
+            ) : (
+                // Fallback while measuring
+                <View style={{ flex: 1 }} />
+            )}
         </View>
     );
 };
