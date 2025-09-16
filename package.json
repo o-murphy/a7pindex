@@ -1,7 +1,7 @@
 {
     "name": "a7pindex",
     "main": "expo-router/entry",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "homepage": "https://o-murphy.github.io/a7pindex",
     "scripts": {
         "start": "expo start",
