@@ -5,6 +5,7 @@ import {
     useFilterContext,
 } from "@/hooks/FilterHook";
 import { Item } from "./ItemRow";
+import { Text } from "react-native-paper";
 
 const filterIndex = (
     profiles: Array<Partial<ProfileIndexType>>,
@@ -45,8 +46,7 @@ const filterIndex = (
 const ITEM_WIDTH = 350 + 16;
 
 const ProfilesDataTable = () => {
-    const { webHookData: profilesIndex } = useFilterContext();
-    const { filter } = useFilterContext();
+    const { webHookData: profilesIndex, filter } = useFilterContext();
 
     const [numColumns, setNumColumns] = useState(4);
     const [flatListKey, setFlatListKey] = useState("initialKey");
@@ -72,11 +72,15 @@ const ProfilesDataTable = () => {
         [numColumns, containerHeight],
     );
 
-    if (!profilesIndex?.profiles) {
-        return <View style={{ flex: 1 }} />;
+    if (!profilesIndex || !profilesIndex.profiles) {
+        return (
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }} onLayout={onLayout}>
+                <Text>Loading data...</Text>
+            </View>
+        );
     }
 
-    const filteredProfiles = filterIndex(profilesIndex?.profiles, filter);
+    const filteredProfiles = filterIndex(profilesIndex.profiles, filter);
 
     return (
         <View style={{ flex: 1 }} onLayout={onLayout}>

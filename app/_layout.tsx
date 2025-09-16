@@ -32,8 +32,6 @@ const MainView = () => {
                 backgroundColor: theme.colors.background,
             }}
         >
-            {" "}
-            {/* Added flex: 1 here */}
             <FilterSurface />
             <ProfilesDataTable />
         </View>

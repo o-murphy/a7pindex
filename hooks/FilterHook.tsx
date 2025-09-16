@@ -87,13 +87,14 @@ const FilterProvider: React.FC<FilterProviderProps> = ({ children }) => {
             try {
                 const data = await fetchDataFromWebhook(webhookUrl);
                 setWebhookData(data);
+                console.log("FETCHED")
             } catch (err: any) {
                 setError(err.message || 'An error occurred while fetching data.');
                 setWebhookData(null); // Clear any previous data on error
+                console.error(err)
             } finally {
                 setLoading(false);
             }
-            console.log("FETCHED")
         }
         handleFetchData();
     }, []);
