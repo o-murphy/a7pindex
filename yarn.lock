@@ -3771,10 +3771,10 @@ expo-status-bar@~3.0.7:
   dependencies:
     react-native-is-edge-to-edge "^1.2.1"
 
-expo-symbols@~1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/expo-symbols/-/expo-symbols-1.0.6.tgz#23f9be409b19bc11c4b01ad57798ea92b94cfbd2"
-  integrity sha512-866OfsPJUjT9OhxP6ol/tnQLUY3h2LGHXGpb2SR9OLbM2M/xv+5Ko1+GBMcTbJ3wqW6uZKEgQBNLLKXUIvi/bg==
+expo-symbols@~1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/expo-symbols/-/expo-symbols-1.0.7.tgz#3e69d9b2fa84844dc7c39ec445a05e5a783deffd"
+  integrity sha512-ZqFUeTXbwO6BrE00n37wTXYfJmsjFrfB446jeB9k9w7aA8a6eugNUIzNsUIUfbFWoOiY4wrGmpLSLPBwk4PH+g==
   dependencies:
     sf-symbols-typescript "^2.0.0"
 
