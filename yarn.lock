@@ -2175,15 +2175,15 @@
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.11.tgz#b79de2d67389734c57c52595f7a7305e30c2d608"
   integrity sha512-cQzWCtO6C8TQiYl1ruKNn2U6Ao4o4WBBcbL61yJl84x+j5sOWWFU9X7DpND8XZG3daDppSsigMdfAIl2upQBRw==
 
-a7p-js@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.0.7.tgz#d606414198baa995b753e1a6ff57fb7a2d5fb73e"
-  integrity sha512-7HhrAw5orX6RxUsXiJJ6jA2LK3ZDC104ARloWsef9s2M4Wm63snAKUxFMpJ7wP3x02lJvqirVlSDOAiT9FesEw==
+a7p-js@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.0.8.tgz#9159a67bfeecf32b7885da5bfdca556e51f8729c"
+  integrity sha512-Cc4HqXu5brDroEeXrGzwc+LmL6tomHKGBkJYQ1FaUOdG1zSfH4/gWjitSkje9hWueliXwHM95KbHf1rUtLPqag==
   dependencies:
     base64-js "^1.5.1"
     crypto-js "^4.2.0"
     protobufjs "^7.5.0"
-    yup "^1.6.1"
+    yup "^1.7.1"
 
 abab@^2.0.6:
   version "2.0.6"
@@ -7269,10 +7269,10 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-yup@^1.6.1:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/yup/-/yup-1.7.0.tgz#5d2feeccc1725c39bfed6ec677cc0622527dafaf"
-  integrity sha512-VJce62dBd+JQvoc+fCVq+KZfPHr+hXaxCcVgotfwWvlR0Ja3ffYKaJBT8rptPOSKOGJDCUnW2C2JWpud7aRP6Q==
+yup@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/yup/-/yup-1.7.1.tgz#4c47c6bb367df08d4bc597f8c4c4f5fc4277f6ab"
+  integrity sha512-GKHFX2nXul2/4Dtfxhozv701jLQHdf6J34YDh2cEkpqoo8le5Mg6/LrdseVLrFarmFygZTlfIhHx/QKfb/QWXw==
   dependencies:
     property-expr "^2.0.5"
     tiny-case "^1.0.3"
