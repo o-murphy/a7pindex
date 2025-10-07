@@ -93,7 +93,8 @@ const ProfilesDataTable = () => {
                     renderItem={({ item }) => <Item item={item} />}
                     contentContainerStyle={{ flexGrow: 1 }}
                     initialNumToRender={10}
-                    style={{ height: containerHeight }}
+                    // style={{ height: containerHeight }}
+                    style={{ height: 0 }}
                 />
             ) : (
                 // Fallback while measuring
