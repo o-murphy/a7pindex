@@ -3539,10 +3539,10 @@ expo-modules-core@3.0.20:
   dependencies:
     invariant "^2.2.4"
 
-expo-router@~6.0.10:
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-6.0.10.tgz#414b6ecce389c35073600cde9eb7bc88c8be53b1"
-  integrity sha512-QdMvNgjpH5L1ndE2KcYk14CjfulQTZNJNjM24/NigF+2cwkE7Ixdkw2EdpslcXPCgwcoJmvJIJtySsGhoPTNdg==
+expo-router@~6.0.12:
+  version "6.0.12"
+  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-6.0.12.tgz#ec2ea4d8d35bd5cb6d005db44805680325fa6d09"
+  integrity sha512-GBfMHAbHoPv7aCfHOEgFNxcadw4euPyI/SqHNNtw+Sm+JtvauHP34wi7Bg25JxatHQ8EdhxAj6w0D8D6QRnayg==
   dependencies:
     "@expo/metro-runtime" "^6.1.2"
     "@expo/schema-utils" "^0.1.7"
@@ -3554,7 +3554,7 @@ expo-router@~6.0.10:
     client-only "^0.0.1"
     debug "^4.3.4"
     escape-string-regexp "^4.0.0"
-    expo-server "^1.0.0"
+    expo-server "^1.0.1"
     fast-deep-equal "^3.1.3"
     invariant "^2.2.4"
     nanoid "^3.3.8"
@@ -3568,10 +3568,10 @@ expo-router@~6.0.10:
     use-latest-callback "^0.2.1"
     vaul "^1.1.2"
 
-expo-server@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/expo-server/-/expo-server-1.0.0.tgz#b505dbb96b8da269a938c25790691b433ae4a3d9"
-  integrity sha512-fAAI0ZXxayc2Rt5KfQjULv+TFreuLRZ+hdpc5TxZJ7CDpW1ZIqaVzELHh1rYTRVEBDFDiCBXtioS9WWTEAX+fg==
+expo-server@^1.0.0, expo-server@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/expo-server/-/expo-server-1.0.1.tgz#9e04605310be090896a85aadce2cb7eaf6aae9b7"
+  integrity sha512-J3JlpzNXOkkr4BbapTrcv6klBQcw6NzrBBVIU7qkNE2eU3U1on9rp27wi0+cihjG/QgxSIqQVkrga5z3HWnH0A==
 
 expo-splash-screen@~31.0.10:
   version "31.0.10"
