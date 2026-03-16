@@ -130,13 +130,12 @@ interface FilterChipProps extends ChipProps {
 
 const FilterChip: React.FC<FilterChipProps> = ({
     children,
-    key = undefined,
     ...props
 }) => {
     const [hovered, setHovered] = useState(false);
 
     const theme = useTheme();
-
+    const { key } = props;
     return (
         <Chip
             style={[
