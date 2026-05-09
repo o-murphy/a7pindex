@@ -78,7 +78,7 @@ const FilterProvider: React.FC<FilterProviderProps> = ({ children }) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
-    const webhookUrl = "https://portfolio.o-murphy.net/a7p-lib/public/profiles.json"
+    const webhookUrl = "https://o-murphy.net/a7p-lib/public/profiles.json"
 
     useEffect(() => {
         const handleFetchData = async () => {
