@@ -37,7 +37,7 @@
         "react": "19.2.7",
         "react-dom": "19.2.7",
         "react-native": "0.86.0",
-        "react-native-gesture-handler": "~3.0.1",
+        "react-native-gesture-handler": "~3.0.2",
         "react-native-paper": "^5.15.3",
         "react-native-paper-dropdown": "^2.3.1",
         "react-native-safe-area-context": "~5.8.0",
@@ -45,7 +45,7 @@
         "react-native-web": "^0.21.2"
     },
     "devDependencies": {
-        "@babel/core": "^8.0.0",
+        "@babel/core": "^8.0.1",
         "@types/crypto-js": "^4.2.2",
         "@types/jest": "30.0.0",
         "@types/lodash": "^4.17.24",
@@ -57,7 +57,7 @@
         "gh-pages": "^6.3.0",
         "jest": "~30.4.2",
         "jest-expo": "~56.0.5",
-        "prettier": "^3.8.4",
+        "prettier": "^3.9.4",
         "react-test-renderer": "^19.2.7",
         "typescript": "~6.0.3"
     },
