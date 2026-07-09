@@ -45,3 +45,4 @@ updates:
       - dependency-name: "jest"
       - dependency-name: "@types/jest"
       - dependency-name: "@babel/core"
+      - dependency-name: "typescript"
