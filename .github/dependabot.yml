@@ -14,3 +14,34 @@ updates:
       dependencies:
         patterns:
           - "*"
+
+    # Packages whose versions are driven by the installed Expo SDK
+    # (see `npx expo install --check` / expo/bundledNativeModules.json).
+    # "expo" itself is intentionally NOT ignored so Dependabot can
+    # still propose SDK upgrades.
+    ignore:
+      - dependency-name: "expo-blur"
+      - dependency-name: "expo-constants"
+      - dependency-name: "expo-font"
+      - dependency-name: "expo-haptics"
+      - dependency-name: "expo-linking"
+      - dependency-name: "expo-router"
+      - dependency-name: "expo-splash-screen"
+      - dependency-name: "expo-status-bar"
+      - dependency-name: "expo-symbols"
+      - dependency-name: "expo-system-ui"
+      - dependency-name: "expo-web-browser"
+      - dependency-name: "@expo/vector-icons"
+      - dependency-name: "@react-native-async-storage/async-storage"
+      - dependency-name: "react"
+      - dependency-name: "react-dom"
+      - dependency-name: "react-native"
+      - dependency-name: "react-native-gesture-handler"
+      - dependency-name: "react-native-safe-area-context"
+      - dependency-name: "react-native-screens"
+      - dependency-name: "react-native-web"
+      - dependency-name: "jest-expo"
+      - dependency-name: "babel-preset-expo"
+      - dependency-name: "jest"
+      - dependency-name: "@types/jest"
+      - dependency-name: "@babel/core"
