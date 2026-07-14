@@ -46,3 +46,12 @@ updates:
       - dependency-name: "@types/jest"
       - dependency-name: "@babel/core"
       - dependency-name: "typescript"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
