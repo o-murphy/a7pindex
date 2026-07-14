@@ -1873,10 +1873,10 @@
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.11.tgz#b79de2d67389734c57c52595f7a7305e30c2d608"
   integrity sha512-cQzWCtO6C8TQiYl1ruKNn2U6Ao4o4WBBcbL61yJl84x+j5sOWWFU9X7DpND8XZG3daDppSsigMdfAIl2upQBRw==
 
-a7p-js@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.2.1.tgz#3ddef055eb86905050160883b0f8e53930944dab"
-  integrity sha512-/TfMxllsFKDD4nvlMM+mMtLJptbTrNzCSFJSXErzDIQarSCOS/udWsyCboHH2RUc+1i2H7CYY3iVbfwEWnJjkA==
+a7p-js@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.2.3.tgz#d24933ddf2236797f957da9e45671f2573bcdb85"
+  integrity sha512-kVRobP+46U2m2O738VN0rHbhBin9/lezW2+fCR9GWsc/u/ot36dOSiZzOxnxS/JabGv2ucdsLHU3auAemvwpAA==
   dependencies:
     "@bufbuild/protobuf" "^2.12.0"
     ajv "^8.20.0"
@@ -5169,10 +5169,10 @@ postcss@^8.5.14:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
-prettier@^3.9.4:
-  version "3.9.4"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.9.4.tgz#a9c477cf1614376bd1f6bbc593d8c0d414bcec87"
-  integrity sha512-yWG/o/4oJfo036EKAfK6ACAoDOfHeRHx4tuxkfBZiauURiaSmYwlpOr5LQqKtIkRD2z1PLteme2WoxEnj4tHTg==
+prettier@^3.9.5:
+  version "3.9.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.9.5.tgz#4fec97736e33b9d0b620b48914fe93b530e835ad"
+  integrity sha512-/FVl766LpUfB5vXgCYOYa0MeV/441Ia99AeICQIQFTY/Nw0roZwULcXpku5i1/m5kt/baz+s4Zogspd839HSMg==
 
 pretty-format@^29.0.0, pretty-format@^29.7.0:
   version "29.7.0"
