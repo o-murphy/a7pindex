@@ -60,10 +60,10 @@ const ActionButtons = React.memo<ActionButtonsProps>(
 
 const Row = ({ label, value }: { label: string; value: React.ReactNode }) => (
     <div className="mb-1 flex">
-        <span className="mr-2 min-w-[100px] text-left font-bold text-on-surface">
+        <span className="mr-2 w-[128px] shrink-0 text-left font-bold whitespace-nowrap text-on-surface">
             {label}
         </span>
-        <span className="flex-1 truncate text-left text-on-surface-variant">
+        <span className="min-w-0 flex-1 truncate text-left text-on-surface-variant">
             {value}
         </span>
     </div>
