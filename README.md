@@ -1,12 +1,20 @@
 # Ballistic profiles index (.a7p)
 
-## Build & Deploy
+## Development
 
 ```shell
 git clone https://github.com/o-murphy/a7pindex
-cd a7pIndex
-git submodule update --init
+cd a7pindex
 yarn install
-yarn index:build
-yarn deploy
+yarn dev
 ```
+
+## Build
+
+```shell
+yarn build
+```
+
+## Deploy
+
+Deployment to GitHub Pages happens automatically via GitHub Actions on every push to `master` (see `.github/workflows/publish.yml`).
