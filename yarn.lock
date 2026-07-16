@@ -762,10 +762,10 @@
   dependencies:
     "@rolldown/pluginutils" "^1.0.1"
 
-a7p-js@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.2.3.tgz#d24933ddf2236797f957da9e45671f2573bcdb85"
-  integrity sha512-kVRobP+46U2m2O738VN0rHbhBin9/lezW2+fCR9GWsc/u/ot36dOSiZzOxnxS/JabGv2ucdsLHU3auAemvwpAA==
+a7p-js@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/a7p-js/-/a7p-js-1.2.4.tgz#4e5980c0bac224d2baddf018a0165ffcc972bb02"
+  integrity sha512-xlXE2du5S6KHtY9Jvm/ynUFfnHIffZv+ul/XoFxis9jHdsnFkcFHpWkjw+j8SWn6kDcZm9KhC1z3VohlzixogA==
   dependencies:
     "@bufbuild/protobuf" "^2.12.0"
     ajv "^8.20.0"

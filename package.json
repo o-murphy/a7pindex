@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "@headlessui/react": "^2.2.9",
-        "a7p-js": "^1.2.3",
+        "a7p-js": "^1.2.4",
         "base64-js": "^1.5.1",
         "crypto-js": "^4.2.0",
         "lucide-react": "^1.24.0",
