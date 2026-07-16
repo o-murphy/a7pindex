@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Dimensions, Platform } from "react-native";
 
 const MIN_DESKTOP_WIDTH = 600;
 
@@ -13,10 +12,7 @@ export const detectDevice = () => {
     if (/android/i.test(ua)) {
         return "Android";
     }
-    if (
-        /iPad|iPhone|iPod/.test(ua) &&
-        !(typeof window !== "undefined" && (window as any).MSStream)
-    ) {
+    if (/iPad|iPhone|iPod/.test(ua)) {
         return "iOS";
     }
     if (/Windows NT/.test(ua)) {
@@ -43,13 +39,8 @@ export const isMobileUA = () => {
     }
 };
 
-export const isWebPlatform = () => {
-    return Platform.OS === "web";
-};
-
 export const isMobileWidth = () => {
-    const { width } = Dimensions.get("window");
-    return width < MIN_DESKTOP_WIDTH;
+    return window.innerWidth < MIN_DESKTOP_WIDTH;
 };
 
 export const useResponsiveLayout = (): {
@@ -62,17 +53,18 @@ export const useResponsiveLayout = (): {
 
     useEffect(() => {
         const updateLayout = () => {
-            const { width, height } = Dimensions.get("window");
-            const mobile = isMobileUA() || isMobileWidth(); // Assuming these functions use width for mobile detection
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const mobile = isMobileUA() || isMobileWidth();
             setLayout(mobile ? "mobile" : "desktop");
             setDimensions({ width, height });
         };
 
-        updateLayout(); // Initial check
+        updateLayout();
 
-        const sub = Dimensions.addEventListener("change", updateLayout);
+        window.addEventListener("resize", updateLayout);
         return () => {
-            sub.remove?.(); // Required for web compatibility
+            window.removeEventListener("resize", updateLayout);
         };
     }, []);
 
