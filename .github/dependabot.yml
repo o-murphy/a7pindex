@@ -11,9 +11,14 @@ updates:
       interval: "weekly"
 
     groups:
+      typescript:
+        patterns:
+          - "typescript"
       dependencies:
         patterns:
           - "*"
+        exclude-patterns:
+          - "typescript"
 
     # # Packages whose versions are driven by the installed Expo SDK
     # # (see `npx expo install --check` / expo/bundledNativeModules.json).
